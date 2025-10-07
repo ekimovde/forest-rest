@@ -6,17 +6,32 @@
     display: grid;
     place-items: center;
     transition: border-color .25s ease;
-    width: 32px;
-    height: 32px;
-    font-size: 16px;
 
     &:hover {
         border-color: var(--red);
     }
 
-    @media (min-width: 768px) {
-        width: 40px;
-        height: 40px;
-        font-size: 20px;
+    &--size-m {
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+
+        @media (min-width: 768px) {
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+        }
+    }
+
+    &--size-s {
+        width: 28px;
+        height: 28px;
+        font-size: 16px;
+
+        @media (min-width: 768px) {
+            width: 32px;
+            height: 32px;
+            font-size: 20px;
+        }
     }
 }

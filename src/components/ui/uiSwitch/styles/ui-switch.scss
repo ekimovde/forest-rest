@@ -6,7 +6,7 @@
     justify-content: stretch;
     position: relative;
     border: 1px solid var(--gray-400);
-    border-radius: var(--border-radius-huge);
+    border-radius: var(--border-radius-small);
     overflow: hidden;
     padding: var(--padding-tiny);
     height: 40px;
@@ -42,7 +42,7 @@
 
     &__slider {
         background: var(--red);
-        border-radius: var(--border-radius-huge);
+        border-radius: var(--border-radius-small);
         bottom: 0;
         display: none;
         height: calc(100% - 2px);
