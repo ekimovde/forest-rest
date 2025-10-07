@@ -1,0 +1,25 @@
+.g-container {
+  height: 100%;
+  margin: 0 auto;
+  max-width: var(--container);
+  padding: 0 var(--padding-container-left-right);
+  width: 100%;
+}
+
+.g-h1,
+.g-h2,
+.g-h3 {
+  font-family: var(--font-title);
+}
+
+.g-h1 {
+  font-size: var(--font-size-huge);
+}
+
+.g-h2 {
+  font-size: var(--font-size-big);
+}
+
+.g-h3 {
+  font-size: var(--font-size-medium);
+}

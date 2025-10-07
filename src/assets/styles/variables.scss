@@ -1,0 +1,110 @@
+:root {
+  // Layout
+  --html-min-width: 375px;
+  --html-max-width: 1920px;
+  --container: 1328px;
+
+  // Header
+  --vh: 9.655px;
+  --header-height: 74.00px;
+
+  // Colors - White
+  --white: #fff;
+
+  // Colors - Gray
+  --gray-100: #f2f2f2;
+  --gray-200: #f7f7f7;
+  --gray-300: #f9f9f9;
+  --gray-400: #e7e8ec;
+  --gray-500: #949494;
+  --gray-700: #434343;
+  --gray-800: #2e2e2e;
+  --gray-900: #232527;
+
+  // Colors - Red
+  --red: #ff4556;
+  --red-soft: #ff5e6c;
+  --red-light: #ff99a2;
+  --red-transparent: rgba(255,69,86,.1);
+
+  // Colors - Green
+  --green: #20c945;
+  --green-light: #ccffd7;
+
+  // Colors - Yellow
+  --yellow: #f4a306;
+  --yellow-light: #fff0e8;
+
+  // Colors - Blue
+  --blue: #5897fb;
+  --purple: #ab47ec;
+  --purple-transparent: rgba(171,71,236,.1);
+  --purple-2: #a159ff;
+
+  // Colors - Black
+  --black-secondary: #070707;
+
+  // Border Radius
+  --border-radius-tiny: 4px;
+  --border-radius-small: 12px;
+  --border-radius-medium: 16px;
+  --border-radius-big: 24px;
+  --border-radius-huge: 32px;
+  --border-radius-circle: 50%;
+
+  // Padding
+  --padding-tiny: 3px;
+  --padding-mini: 5px;
+  --padding-small: 7px;
+  --padding-medium: 11px;
+  --padding-big: 20px;
+  --padding-huge: 36px;
+  --padding-container-left-right: 10px;
+  --padding-container-top-bottom: 24px;
+
+  // Height
+  --catalog-nav-height: 38px;
+  --modal-drag-height: 40px;
+
+  // Fonts
+  --font-title: Rubik, sans-serif;
+  --font-text: Nunito, sans-serif;
+
+  // Font Size
+  --font-size-tiny: 11px;
+  --font-size-small: 13px;
+  --font-size-medium: 14px;
+  --font-size-large: 17px;
+  --font-size-big: 21px;
+  --font-size-huge: 24px;
+}
+
+@media (min-width: 382px) {
+  :root {
+    --padding-container-left-right: 12px;
+  }
+}
+@media (min-width: 768px) {
+  :root {
+    --padding-tiny: 4px;
+    --padding-mini: 6px;
+    --padding-small: 9px;
+    --padding-medium: 14px;
+    --padding-big: 28px;
+    --padding-huge: 48px;
+    --padding-container-left-right: 22px;
+    --padding-container-top-bottom: 34px;
+
+    --catalog-nav-height: 46px;
+  }
+}
+@media (min-width: 1100px) {
+  :root {
+    --font-size-tiny: 12px;
+    --font-size-small: 14px;
+    --font-size-medium: 16px;
+    --font-size-large: 19px;
+    --font-size-big: 25px;
+    --font-size-huge: 29px;
+  }
+}

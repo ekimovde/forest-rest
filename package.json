@@ -1,0 +1,46 @@
+{
+  "name": "forest-rest",
+  "private": true,
+  "type": "module",
+  "author": "Denis Ekimov",
+  "github": "https://github.com/ekimovde",
+  "license": "MIT",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint:eslint": "eslint \"**/*.{js,vue}\"",
+    "lint:eslint:fix": "eslint \"**/*.{js,vue}\" --fix",
+    "lint:styles": "stylelint \"**/*.{css,scss}\"",
+    "lint:styles:fix": "stylelint \"**/*.{css,scss}\" --fix"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.11.1",
+    "@vueuse/nuxt": "^13.5.0",
+    "motion-v": "^1.5.0",
+    "nuxt": "^3.17.6",
+    "sass": "^1.89.2",
+    "vue": "^3.5.17",
+    "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.28.0",
+    "@eslint/eslintrc": "^3.3.1",
+    "@typescript-eslint/eslint-plugin": "^8.36.0",
+    "@typescript-eslint/parser": "^8.36.0",
+    "eslint": "^9.31.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.5.1",
+    "eslint-plugin-vue": "^10.3.0",
+    "prettier": "^3.6.2",
+    "stylelint": "^16.21.1",
+    "stylelint-config-prettier-scss": "^1.0.0",
+    "stylelint-config-recommended-scss": "^15.0.1",
+    "stylelint-order": "^7.0.0",
+    "vue-eslint-parser": "^10.2.0",
+    "vue-tsc": "^2.2.12"
+  }
+}

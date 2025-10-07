@@ -1,0 +1,24 @@
+@use 'variables' as *;
+@use 'reset' as *;
+@use 'fonts' as *;
+@use 'global' as *;
+
+html {
+  background-color: var(--gray-300);
+  color: var(--gray-800);
+  font-family: var(--font-text);
+  font-size: var(--font-size-medium);
+  line-height: 1.1;
+  max-width: var(--html-max-width);
+  min-width: var(--html-min-width);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: calc(var(--vh, 1vh)*100);
+  overflow-x: hidden;
+  position: relative;
+  touch-action: pan-x pan-y;
+}
