@@ -19,7 +19,7 @@
                             href="tel:79964292405"
                             class="base-footer__phone-link"
                         >
-                            +7 (996) 42 924 05
+                            +7 (996) 429 24 05
                         </a>
                     </div>
 

@@ -1,0 +1,28 @@
+.ui-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    transition-property: transform;
+    background-color: var(--white);
+    border: 1px solid var(--btn-border-color,var(--gray-400));
+    border-radius: var(--border-radius-small);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    padding: 11px 15px;
+    transition: color .25s ease,border-color .25s ease;
+    white-space: nowrap;
+    width: fit-content;
+
+    &--is-active {
+        border-color: var(--red);
+        color: var(--red);
+    }
+
+    &:hover {
+        border-color: var(--red);
+    }
+}

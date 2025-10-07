@@ -27,13 +27,24 @@
     }
   }
 
-  &__product-card {
-    height: 100%;
-    position: relative;
-    flex-shrink: 0;
+  &__types {
+    display: flex;
+    align-items: stretch;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    column-gap: 10px;
 
-    @media (min-width: 768px) {
-      width: auto;
+    @media (max-width: 1099px) {
+      margin-left: calc(var(--padding-container-left-right)*-1);
+      margin-right: calc(var(--padding-container-left-right)*-1);
+      padding-left: 22px;
+      padding-right: 22px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    @media (max-width: 767px) {
+      padding-left: 14px;
+      padding-right: 14px;
     }
   }
 }

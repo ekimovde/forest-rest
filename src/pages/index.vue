@@ -9,12 +9,84 @@
           Роллы
         </template>
 
-        <template #default>
-          <div class="page-index__products-list">
-            <ProductCard class="page-index__product-card" />
-            <ProductCard class="page-index__product-card" />
-            <ProductCard class="page-index__product-card" />
+        <template #types>
+          <div class="page-index__types">
+            <UiButton
+              isCustomActive
+              tag="link"
+              href="/menu/rolls"
+            >
+              Все блюда
+            </UiButton>
+
+            <UiButton
+              tag="link"
+              href="/menu/rolls?type=klassicheskie"
+            >
+              Классические
+            </UiButton>
+
+            <UiButton
+              tag="link"
+              href="/menu/rolls?type=zapechennye"
+            >
+              Запеченные
+            </UiButton>
+
+            <UiButton
+              tag="link"
+              href="/menu/rolls?type=zharenye"
+            >
+              Жаренные
+            </UiButton>
+
+            <UiButton
+              tag="link"
+              href="/menu/rolls?type=lajt-rolly"
+            >
+              Лайт-роллы
+            </UiButton>
+
+            <UiButton
+              tag="link"
+              href="/menu/rolls?type=short-rolly-4-sht"
+            >
+              Short-роллы 4 шт.
+            </UiButton>
           </div>
+        </template>
+
+        <template #default>
+          <UiSlider
+            :slides-per-view="3.2"
+            :space-between="20"
+            :breakpoints="{
+              320: { slidesPerView: 2, spaceBetween: 8 },
+              480: { slidesPerView: 2.2, spaceBetween: 8 },
+              768: { slidesPerView: 3.2, spaceBetween: 12 },
+              1024: { slidesPerView: 4.2, spaceBetween: 16 },
+            }"
+          >
+            <SwiperSlide>
+              <ProductCard />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <ProductCard />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <ProductCard />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <ProductCard />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <ProductCard />
+            </SwiperSlide>
+          </UiSlider>
         </template>
       </ProductGroup>
 
@@ -27,11 +99,28 @@
         </template>
 
         <template #default>
-          <div class="page-index__products-list">
-            <ProductCard class="page-index__product-card" />
-            <ProductCard class="page-index__product-card" />
-            <ProductCard class="page-index__product-card" />
-          </div>
+          <UiSlider
+            :slides-per-view="3.2"
+            :space-between="20"
+            :breakpoints="{
+              320: { slidesPerView: 2, spaceBetween: 8 },
+              480: { slidesPerView: 2.2, spaceBetween: 8 },
+              768: { slidesPerView: 3.2, spaceBetween: 12 },
+              1024: { slidesPerView: 4.2, spaceBetween: 16 },
+            }"
+          >
+            <SwiperSlide>
+              <ProductCard />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <ProductCard />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <ProductCard />
+            </SwiperSlide>
+          </UiSlider>
         </template>
       </ProductGroup>
 
@@ -44,11 +133,28 @@
         </template>
 
         <template #default>
-          <div class="page-index__products-list">
-            <ProductCard class="page-index__product-card" />
-            <ProductCard class="page-index__product-card" />
-            <ProductCard class="page-index__product-card" />
-          </div>
+          <UiSlider
+            :slides-per-view="3.2"
+            :space-between="20"
+            :breakpoints="{
+              320: { slidesPerView: 2, spaceBetween: 8 },
+              480: { slidesPerView: 2.2, spaceBetween: 8 },
+              768: { slidesPerView: 3.2, spaceBetween: 12 },
+              1024: { slidesPerView: 4.2, spaceBetween: 16 },
+            }"
+          >
+            <SwiperSlide>
+              <ProductCard />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <ProductCard />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <ProductCard />
+            </SwiperSlide>
+          </UiSlider>
         </template>
       </ProductGroup>
     </div>
@@ -58,6 +164,9 @@
 <script setup lang="ts">
 import ProductGroup from '~/components/product/productGroup/ProductGroup.vue';
 import ProductCard from '~/components/product/productCard/ProductCard.vue';
+import UiSlider from '~/components/ui/uiSlider/UiSlider.vue';
+import UiButton from '~/components/ui/uiButton/UiButton.vue';
+import { SwiperSlide } from 'swiper/vue';
 
 // Устанавливаем мета-данные для SEO
 useHead({

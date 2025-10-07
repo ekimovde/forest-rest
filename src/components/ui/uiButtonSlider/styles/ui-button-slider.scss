@@ -1,0 +1,26 @@
+.ui-button-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    background-color: var(--white);
+    border: 1px solid var(--gray-400);
+    border-radius: 50%;
+    box-shadow: 0 7px 12px rgba(0,0,0,.07);
+    cursor: pointer;
+    transition: border .25s ease;
+    width: 36px;
+    height: 36px;
+    font-size: 24px;
+
+    &:hover:not(.ui-button-slider--is-disabled) {
+        border-color: var(--red);
+    }
+
+    &--is-disabled {
+        opacity: 0.7;
+        cursor: not-allowed;
+        box-shadow: none;
+    }
+}
