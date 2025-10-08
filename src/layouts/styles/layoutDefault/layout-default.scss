@@ -1,6 +1,8 @@
 .layout-default {
   &__wrapper {
-    flex: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--padding-container-top-bottom);
     margin-top: calc(env(safe-area-inset-top) + var(--header-height) + var(--padding-medium));
   }
 }

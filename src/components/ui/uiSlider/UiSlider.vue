@@ -1,5 +1,8 @@
 <template>
-    <div class="ui-slider">
+    <div
+        class="ui-slider"
+        :class="uiSliderClasses"
+    >
         <UiButtonSlider
             view="prev"
             class="ui-slider__button-prev"
@@ -45,9 +48,10 @@ interface Props {
     };
     pagination?: boolean;
     breakpoints?: Record<number, {
-        slidesPerView?: number;
+        slidesPerView?: number | 'auto';
         spaceBetween?: number;
     }>;
+    view?: 'default' | 'catalog';
 }
 
 const props = withDefaults(defineProps<Props>(), {
@@ -56,6 +60,7 @@ const props = withDefaults(defineProps<Props>(), {
     loop: false,
     autoplay: false,
     pagination: false,
+    view: 'default',
 });
 
 const swiperInstance = ref<SwiperType | null>(null);
@@ -69,6 +74,8 @@ const swiperOptions = computed(() => {
         spaceBetween: props.spaceBetween,
         loop: props.loop,
         breakpoints: props.breakpoints,
+        watchSlidesProgress: true,
+        watchSlidesVisibility: true,
     };
 
     if (props.autoplay) {
@@ -83,6 +90,10 @@ const swiperOptions = computed(() => {
 
     return options;
 });
+
+const uiSliderClasses = computed(() => ({
+    [`ui-slider--view-${props.view}`]: Boolean(props.view),
+}));
 
 const onSwiper = (swiper: SwiperType) => {
     swiperInstance.value = swiper;
@@ -105,6 +116,21 @@ const slidePrev = () => {
 const slideNext = () => {
     swiperInstance.value?.slideNext();
 };
+
+const handleResize = () => {
+    if (swiperInstance.value) {
+        swiperInstance.value.update();
+        updateNavigationState(swiperInstance.value);
+    }
+};
+
+onMounted(() => {
+    window.addEventListener('resize', handleResize);
+});
+
+onUnmounted(() => {
+    window.removeEventListener('resize', handleResize);
+});
 </script>
 
 <style lang="scss">

@@ -30,12 +30,12 @@
         font-weight: 700;
         justify-content: center;
         line-height: 19px;
-        color: var(--red);
+        color: var(--green);
         cursor: pointer;
         transition: color .25s ease;
 
         &:hover {
-            color: var(--red-soft);
+            color: var(--green-soft);
         }
     }
 

@@ -5,13 +5,11 @@
     padding: 16px 0 10px;
     position: fixed;
     top: calc(env(safe-area-inset-top) - 1px);
-    transition: padding-top .25s ease, grid-gap .25s ease;
+    transition: padding-top .25s ease, grid-gap .25s ease, background-color .25s ease;
     width: 100%;
     z-index: 100;
 
     &--is-scrolled {
-        border-radius: 0 0 8px 8px;
-        box-shadow: 0 4px 20px rgba(0,0,0,.03);
         background-color: var(--white);
     }
 

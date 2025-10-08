@@ -18,11 +18,11 @@
     width: fit-content;
 
     &--is-active {
-        border-color: var(--red);
-        color: var(--red);
+        border-color: var(--green);
+        color: var(--green);
     }
 
     &:hover {
-        border-color: var(--red);
+        border-color: var(--green);
     }
 }

@@ -1,0 +1,19 @@
+.base-catalog {
+    transition: all 0.25s ease;
+
+    &--is-scrolled {
+        position: fixed;
+        top: calc(env(safe-area-inset-top) + 65px);
+        right: 0;
+        left: 0;
+        z-index: 100;
+        background-color: var(--white);
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .swiper-slide {
+        width: auto !important;
+        flex-shrink: 0;
+    }
+}

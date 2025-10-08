@@ -11,14 +11,33 @@ html {
   line-height: 1.1;
   max-width: var(--html-max-width);
   min-width: var(--html-min-width);
+  
+  // Safari-specific fixes
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
   min-height: 100vh;
+  min-height: -webkit-fill-available;
   min-height: calc(var(--vh, 1vh)*100);
   overflow-x: hidden;
   position: relative;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   touch-action: pan-x pan-y;
+  
+  // Safari viewport fixes
+  padding-bottom: env(safe-area-inset-bottom, 0);
+  padding-bottom: constant(safe-area-inset-bottom, 0); // iOS 11.0-11.2 support
 }
