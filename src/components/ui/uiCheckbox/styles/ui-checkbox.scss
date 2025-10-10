@@ -1,0 +1,71 @@
+.ui-checkbox {
+    $self: &;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+
+    &:hover:not(&--disabled) {
+        .ui-toggle__checkbox {
+            border-color: var(--green-soft);
+        }
+    }
+
+    &--disabled {
+        cursor: not-allowed;
+        opacity: 0.6;
+    }
+
+    &__input {
+        position: absolute;
+        width: 0;
+        height: 0;
+        opacity: 0;
+        pointer-events: none;
+        display: none;
+    }
+
+    &__checkbox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 20px;
+        height: 20px;
+        border: 1px solid var(--gray-400);
+        border-radius: var(--border-radius-tiny);
+        background-color: var(--white);
+        transition: all 0.25s ease;
+
+        #{$self}--checked & {
+            background-color: var(--green);
+            border-color: var(--green);
+        }
+
+        #{$self}--disabled & {
+            background-color: var(--gray-100);
+        }
+    }
+
+    &__icon {
+        color: var(--white);
+        font-size: 18px;
+        position: relative;
+        z-index: 25;
+    }
+
+    &__label {
+        font-family: var(--font-text);
+        font-size: var(--font-size-medium);
+        font-weight: 600;
+        color: var(--gray-900);
+        line-height: 1.4;
+
+        #{$self}--disabled & {
+            color: var(--gray-500);
+        }
+    }
+}

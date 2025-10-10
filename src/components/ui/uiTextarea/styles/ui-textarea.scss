@@ -1,0 +1,66 @@
+.ui-textarea {
+    display: block;
+    width: 100%;
+
+    &__field {
+        display: block;
+        width: 100%;
+        min-height: 120px;
+        font-family: var(--font-text);
+        font-size: var(--font-size-medium);
+        font-weight: 400;
+        line-height: 1.5;
+        color: var(--gray-900);
+        background-color: var(--white);
+        border: 1px solid var(--gray-400);
+        border-radius: var(--border-radius-small);
+        padding: 11px 15px;
+        transition: border-color 0.25s ease, box-shadow 0.25s ease;
+        outline: none;
+        resize: vertical;
+        font-style: normal;
+
+        &::placeholder {
+            color: var(--gray-500);
+            opacity: 1;
+        }
+
+        &:hover:not(:disabled) {
+            border-color: var(--green-soft);
+        }
+
+        &:focus {
+            border-color: var(--green);
+            box-shadow: 0 0 0 3px rgba(42, 95, 43, 0.1);
+        }
+
+        &--disabled {
+            background-color: var(--gray-100);
+            color: var(--gray-500);
+            cursor: not-allowed;
+            opacity: 0.6;
+            resize: none;
+
+            &:hover {
+                border-color: var(--gray-400);
+            }
+        }
+
+        &--error {
+            border-color: var(--red);
+
+            &:focus {
+                border-color: var(--red);
+                box-shadow: 0 0 0 3px rgba(244, 163, 6, 0.1);
+            }
+        }
+    }
+
+    &__error {
+        margin-top: 4px;
+        font-family: var(--font-text);
+        font-size: var(--font-size-small);
+        color: var(--red);
+        line-height: 1.4;
+    }
+}

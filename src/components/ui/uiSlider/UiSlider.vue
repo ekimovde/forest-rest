@@ -76,6 +76,7 @@ const swiperOptions = computed(() => {
         breakpoints: props.breakpoints,
         watchSlidesProgress: true,
         watchSlidesVisibility: true,
+        autoHeight: true,
     };
 
     if (props.autoplay) {

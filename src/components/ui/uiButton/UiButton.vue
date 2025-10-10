@@ -3,6 +3,8 @@
         v-bind="componentParams"
         @click="handleClick"
         :is="componentTag"
+        :type="type"
+        :disabled="disabled"
         class="ui-button"
         :class="uiButtonClasses"
     >
@@ -21,11 +23,17 @@ const props = withDefaults(defineProps<{
     href?: string;
     value?: string | number;
     modelValue?: string | number;
+    type?: 'button' | 'submit';
+    disabled?: boolean;
+    view?: 'default' | 'primary';
 }>(), {
     isCustomActive: false,
     tag: 'button',
     href: '',
     modelValue: '',
+    type: 'button',
+    disabled: false,
+    view: 'default',
 });
 
 const isTagLink = computed(() => props.tag === 'link');
@@ -41,6 +49,8 @@ const componentTag = computed(() => {
 
 const uiButtonClasses = computed(() => ({
     'ui-button--is-active': props.isCustomActive || isActive.value,
+    'ui-button--disabled': props.disabled,
+    [`ui-button--view-${props.view}`]: Boolean(props.view),
 }));
 
 const componentParams = computed(() => {
