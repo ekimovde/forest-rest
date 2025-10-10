@@ -1,9 +1,9 @@
-import { SubcategoryId } from "~/enums";
+import { SubcategoryId } from "~/constants";
 
 // --- Чай в чайнике ---
 export const TEA_IN_A_TEAPOT = [
     {
-        id: 1,
+        id: 25,
         title: 'Английский завтрак',
         options: ['750 мл'],
         price: 320,
@@ -11,7 +11,7 @@ export const TEA_IN_A_TEAPOT = [
         subcategoryId: SubcategoryId.TEA_IN_A_TEAPOT
     },
     {
-        id: 2,
+        id: 26,
         title: 'Чабрец',
         options: ['750 мл'],
         price: 320,
@@ -19,7 +19,7 @@ export const TEA_IN_A_TEAPOT = [
         subcategoryId: SubcategoryId.TEA_IN_A_TEAPOT
     },
     {
-        id: 3,
+        id: 27,
         title: 'Эрл Грей',
         options: ['750 мл'],
         price: 320,
@@ -27,7 +27,7 @@ export const TEA_IN_A_TEAPOT = [
         subcategoryId: SubcategoryId.TEA_IN_A_TEAPOT
     },
     {
-        id: 4,
+        id: 28,
         title: 'Сенча',
         options: ['750 мл'],
         price: 320,
@@ -35,7 +35,7 @@ export const TEA_IN_A_TEAPOT = [
         subcategoryId: SubcategoryId.TEA_IN_A_TEAPOT
     },
     {
-        id: 5,
+        id: 29,
         title: 'Молочный Улун',
         options: ['750 мл'],
         price: 320,
@@ -43,7 +43,7 @@ export const TEA_IN_A_TEAPOT = [
         subcategoryId: SubcategoryId.TEA_IN_A_TEAPOT
     },
     {
-        id: 6,
+        id: 30,
         title: 'Жасмин',
         options: ['750 мл'],
         price: 320,
@@ -51,7 +51,7 @@ export const TEA_IN_A_TEAPOT = [
         subcategoryId: SubcategoryId.TEA_IN_A_TEAPOT
     },
     {
-        id: 7,
+        id: 31,
         title: 'Ромашка',
         options: ['750 мл'],
         price: 320,
@@ -63,7 +63,7 @@ export const TEA_IN_A_TEAPOT = [
 // --- Авторский чай ---
 export const AUTHOR_TEA = [
     {
-        id: 1,
+        id: 32,
         title: 'Облепиха с тимьяном и цитрусом',
         options: ['750 мл'],
         price: 370,
@@ -71,7 +71,7 @@ export const AUTHOR_TEA = [
         subcategoryId: SubcategoryId.AUTHOR_TEA
     },
     {
-        id: 2,
+        id: 33,
         title: 'Смородина с мятой',
         options: ['750 мл'],
         price: 370,
@@ -79,7 +79,7 @@ export const AUTHOR_TEA = [
         subcategoryId: SubcategoryId.AUTHOR_TEA
     },
     {
-        id: 3,
+        id: 34,
         title: 'Малина с имбирем и травами',
         options: ['750 мл'],
         price: 370,
@@ -87,7 +87,7 @@ export const AUTHOR_TEA = [
         subcategoryId: SubcategoryId.AUTHOR_TEA
     },
     {
-        id: 4,
+        id: 35,
         title: 'Таежный чай с ягодами',
         options: ['750 мл'],
         price: 370,
@@ -95,7 +95,7 @@ export const AUTHOR_TEA = [
         subcategoryId: SubcategoryId.AUTHOR_TEA
     },
     {
-        id: 5,
+        id: 36,
         title: 'Манго молочный улун',
         options: ['750 мл'],
         price: 370,
@@ -107,7 +107,7 @@ export const AUTHOR_TEA = [
 // --- Кофе ---
 export const COFFEE = [
     {
-        id: 1,
+        id: 37,
         title: 'Эспрессо',
         options: ['60 мл'],
         price: 180,
@@ -115,7 +115,7 @@ export const COFFEE = [
         subcategoryId: SubcategoryId.COFFEE
     },
     {
-        id: 2,
+        id: 38,
         title: 'Американо',
         options: ['200/300/400 мл'],
         price: 200, // TODO: Change price
@@ -123,7 +123,7 @@ export const COFFEE = [
         subcategoryId: SubcategoryId.COFFEE
     },
     {
-        id: 3,
+        id: 39,
         title: 'Капучино',
         options: ['250/350/450 мл'],
         price: 250, // TODO: Change price
@@ -131,7 +131,7 @@ export const COFFEE = [
         subcategoryId: SubcategoryId.COFFEE
     },
     {
-        id: 4,
+        id: 40,
         title: 'Латте',
         options: ['350/450 мл'],
         price: 250, // TODO: Change price
@@ -139,7 +139,7 @@ export const COFFEE = [
         subcategoryId: SubcategoryId.COFFEE
     },
     {
-        id: 5,
+        id: 41,
         title: 'Флэт уайт',
         options: ['200 мл'],
         price: 160,
@@ -151,7 +151,7 @@ export const COFFEE = [
 // --- Матча и кофейные напитки ---
 export const MATCHA_AND_COFFEE_DRINKS = [
     {
-        id: 1,
+        id: 42,
         title: 'Матча на альтернативном молоке',
         options: ['350/450 мл'],
         price: 300, // TODO: Change price
@@ -159,7 +159,7 @@ export const MATCHA_AND_COFFEE_DRINKS = [
         subcategoryId: SubcategoryId.MATCHA_AND_COFFEE_DRINKS
     },
     {
-        id: 2,
+        id: 43,
         title: 'Матча бамбл апельсин',
         options: ['400 мл'],
         price: 300,
@@ -167,7 +167,7 @@ export const MATCHA_AND_COFFEE_DRINKS = [
         subcategoryId: SubcategoryId.MATCHA_AND_COFFEE_DRINKS
     },
     {
-        id: 3,
+        id: 44,
         title: 'Раф классический',
         options: ['350/400 мл'],
         price: 300,
@@ -175,7 +175,7 @@ export const MATCHA_AND_COFFEE_DRINKS = [
         subcategoryId: SubcategoryId.MATCHA_AND_COFFEE_DRINKS
     },
     {
-        id: 4,
+        id: 45,
         title: 'Раф банан-пломбир',
         options: ['350/450 мл'],
         price: 330,
@@ -183,7 +183,7 @@ export const MATCHA_AND_COFFEE_DRINKS = [
         subcategoryId: SubcategoryId.MATCHA_AND_COFFEE_DRINKS
     },
     {
-        id: 5,
+        id: 46,
         title: 'Раф солёная карамель',
         options: ['350/450 мл'],
         price: 330,
@@ -191,7 +191,7 @@ export const MATCHA_AND_COFFEE_DRINKS = [
         subcategoryId: SubcategoryId.MATCHA_AND_COFFEE_DRINKS
     },
     {
-        id: 6,
+        id: 47,
         title: 'Бамбл кофе грейпфрут',
         options: ['400 мл'],
         price: 360,
@@ -199,7 +199,7 @@ export const MATCHA_AND_COFFEE_DRINKS = [
         subcategoryId: SubcategoryId.MATCHA_AND_COFFEE_DRINKS
     },
     {
-        id: 7,
+        id: 48,
         title: 'Айс американо',
         options: ['270 мл'],
         price: 300,
@@ -211,7 +211,7 @@ export const MATCHA_AND_COFFEE_DRINKS = [
 // --- Согревающие напитки ---
 export const WARMING_DRINKS = [
     {
-        id: 1,
+        id: 49,
         title: 'Какао',
         options: ['350/450 мл'],
         price: 350,
@@ -219,7 +219,7 @@ export const WARMING_DRINKS = [
         subcategoryId: SubcategoryId.WARMING_DRINKS
     },
     {
-        id: 1,
+        id: 50,
         title: 'Горячий шоколад',
         options: ['180 мл'],
         price: 300,
@@ -231,7 +231,7 @@ export const WARMING_DRINKS = [
 // --- Смузи ---
 export const SMOOS = [
     {
-        id: 1,
+        id: 51,
         title: 'Малина смородина',
         options: ['350 мл'],
         price: 350,
@@ -239,7 +239,7 @@ export const SMOOS = [
         subcategoryId: SubcategoryId.SMOOS
     },
     {
-        id: 1,
+        id: 52,
         title: 'Клубника-манго-маракуйя',
         options: ['350 мл'],
         price: 380,
@@ -251,7 +251,7 @@ export const SMOOS = [
 // --- Лимонад ---
 export const LEMONADE = [
     {
-        id: 1,
+        id: 53,
         title: 'Классический',
         options: ['400 мл'],
         price: 280,
@@ -259,7 +259,7 @@ export const LEMONADE = [
         subcategoryId: SubcategoryId.LEMONADE
     },
     {
-        id: 2,
+        id: 54,
         title: 'Лаванда-померанец',
         options: ['400 мл'],
         price: 280,
@@ -267,7 +267,7 @@ export const LEMONADE = [
         subcategoryId: SubcategoryId.LEMONADE
     },
     {
-        id: 3,
+        id: 55,
         title: 'Сирень-черная смородина',
         options: ['400 мл'],
         price: 280,
@@ -275,7 +275,7 @@ export const LEMONADE = [
         subcategoryId: SubcategoryId.LEMONADE
     },
     {
-        id: 4,
+        id: 56,
         title: 'Банан-пандан',
         options: ['400 мл'],
         price: 280,
@@ -283,7 +283,7 @@ export const LEMONADE = [
         subcategoryId: SubcategoryId.LEMONADE
     },
     {
-        id: 5,
+        id: 57,
         title: 'Фейхоа',
         options: ['400 мл'],
         price: 280,
@@ -295,7 +295,7 @@ export const LEMONADE = [
 // --- Молочный коктейль ---
 export const MILK_COCKTAIL = [
     {
-        id: 1,
+        id: 58,
         title: 'Ваниль',
         options: ['300 мл'],
         price: 300,
@@ -303,7 +303,7 @@ export const MILK_COCKTAIL = [
         subcategoryId: SubcategoryId.MILK_COCKTAIL
     },
     {
-        id: 2,
+        id: 59,
         title: 'Клубника',
         options: ['300 мл'],
         price: 300,
@@ -311,7 +311,7 @@ export const MILK_COCKTAIL = [
         subcategoryId: SubcategoryId.MILK_COCKTAIL
     },
     {
-        id: 3,
+        id: 60,
         title: 'Шоколад',
         options: ['300 мл'],
         price: 300,
@@ -319,7 +319,7 @@ export const MILK_COCKTAIL = [
         subcategoryId: SubcategoryId.MILK_COCKTAIL
     },
     {
-        id: 4,
+        id: 61,
         title: 'Банан',
         options: ['300 мл'],
         price: 300,
@@ -331,7 +331,7 @@ export const MILK_COCKTAIL = [
 // --- Сок ---
 export const JUICE = [
     {
-        id: 1,
+        id: 62,
         title: 'Вишня',
         options: ['250 мл'],
         price: 180,
@@ -339,7 +339,7 @@ export const JUICE = [
         subcategoryId: SubcategoryId.JUICE
     },
     {
-        id: 2,
+        id: 63,
         title: 'Томат',
         options: ['250 мл'],
         price: 180,
@@ -347,7 +347,7 @@ export const JUICE = [
         subcategoryId: SubcategoryId.JUICE
     },
     {
-        id: 3,
+        id: 64,
         title: 'Апельсин',
         options: ['250 мл'],
         price: 180,
@@ -355,7 +355,7 @@ export const JUICE = [
         subcategoryId: SubcategoryId.JUICE
     },
     {
-        id: 4,
+        id: 65,
         title: 'Ананас',
         options: ['250 мл'],
         price: 180,
@@ -363,7 +363,7 @@ export const JUICE = [
         subcategoryId: SubcategoryId.JUICE
     },
     {
-        id: 5,
+        id: 66,
         title: 'Яблоко',
         options: ['250 мл'],
         price: 180,
@@ -371,7 +371,7 @@ export const JUICE = [
         subcategoryId: SubcategoryId.JUICE
     },
     {
-        id: 6,
+        id: 67,
         title: 'Грейпфрут',
         options: ['250 мл'],
         price: 180,
@@ -383,7 +383,7 @@ export const JUICE = [
 // --- Фреш ---
 export const FRESH = [
     {
-        id: 1,
+        id: 68,
         title: 'Апельсин',
         options: ['250 мл'],
         price: 450,
@@ -391,7 +391,7 @@ export const FRESH = [
         subcategoryId: SubcategoryId.FRESH
     },
     {
-        id: 2,
+        id: 69,
         title: 'Яблоко',
         options: ['250 мл'],
         price: 450,
@@ -399,7 +399,7 @@ export const FRESH = [
         subcategoryId: SubcategoryId.FRESH
     },
     {
-        id: 3,
+        id: 70,
         title: 'Морковь',
         options: ['250 мл'],
         price: 350,
@@ -411,7 +411,7 @@ export const FRESH = [
 // --- Напитки ---
 export const DRINKS = [
     {
-        id: 1,
+        id: 71,
         title: 'Вода (газ/негаз)',
         options: ['250 мл'],
         price: 150,
@@ -419,7 +419,7 @@ export const DRINKS = [
         subcategoryId: SubcategoryId.DRINKS
     },
     {
-        id: 2,
+        id: 72,
         title: 'Кола',
         options: ['250 мл'],
         price: 250,
@@ -427,7 +427,7 @@ export const DRINKS = [
         subcategoryId: SubcategoryId.DRINKS
     },
     {
-        id: 3,
+        id: 73,
         title: 'Морс брусничный',
         options: ['250 мл'],
         price: 100,
@@ -435,7 +435,7 @@ export const DRINKS = [
         subcategoryId: SubcategoryId.DRINKS
     },
     {
-        id: 4,
+        id: 74,
         title: 'Напиток из шиповника',
         options: ['250 мл'],
         price: 100,

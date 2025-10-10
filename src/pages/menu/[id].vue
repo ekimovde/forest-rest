@@ -36,6 +36,10 @@
               v-for="product in filteredProducts"
               :key="`page-menu-id-product-${product.id}`"
               :product="product"
+              :quantity="getItemQuantity(product.id)"
+              @add="addItem(product, 1)"
+              @remove="removeItem(product.id)"
+              @change="updateQuantity(product.id, $event)"
               class="page-menu-id__product-card"
             />
           </div>
@@ -49,8 +53,10 @@ import ProductGroup from '~/components/product/productGroup/ProductGroup.vue';
 import ProductCard from '~/components/product/productCard/ProductCard.vue';
 import UiButton from '~/components/ui/uiButton/UiButton.vue';
 import { CATEGORIES } from '~/mocks';
+import { useCartStore } from '~/stores';
 
 const route = useRoute();
+const { addItem, getItemQuantity, removeItem, updateQuantity } = useCartStore();
 
 const menuId = computed(() => route.params.id as string);
 const subcategoryId = computed(() => route.query.subcategoryId as string);

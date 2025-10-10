@@ -1,9 +1,9 @@
-import { SubcategoryId } from "~/enums";
+import { SubcategoryId } from "~/constants";
 
 // --- Десерты ---
 export const DESSERTS = [
     {
-        id: 1,
+        id: 18,
         title: 'Яблочный штрудель',
         options: ['160 гр'],
         price: 300,
@@ -11,7 +11,7 @@ export const DESSERTS = [
         subcategoryId: SubcategoryId.DESSERTS
     },
     {
-        id: 2,
+        id: 19,
         title: 'Жареное мороженое с вишневым конфи',
         options: ['150 гр'],
         price: 380,
@@ -19,7 +19,7 @@ export const DESSERTS = [
         subcategoryId: SubcategoryId.DESSERTS
     },
     {
-        id: 3,
+        id: 20,
         title: 'Малиновый тирамису',
         options: ['120 гр'],
         price: 440,
@@ -27,7 +27,7 @@ export const DESSERTS = [
         subcategoryId: SubcategoryId.DESSERTS
     },
     {
-        id: 4,
+        id: 21,
         title: 'Тирамису',
         options: ['120 гр'],
         price: 300,
@@ -35,7 +35,7 @@ export const DESSERTS = [
         subcategoryId: SubcategoryId.DESSERTS
     },
     {
-        id: 5,
+        id: 22,
         title: 'Панна котта облепиха',
         options: ['240 гр'],
         price: 480,
@@ -43,7 +43,7 @@ export const DESSERTS = [
         subcategoryId: SubcategoryId.DESSERTS
     },
     {
-        id: 6,
+        id: 23,
         title: 'Панна котта смородина',
         options: ['240 гр'],
         price: 480,
@@ -51,7 +51,7 @@ export const DESSERTS = [
         subcategoryId: SubcategoryId.DESSERTS
     },
     {
-        id: 7,
+        id: 24,
         title: 'Блинчики с вареньем из шишек',
         options: ['140 гр'],
         price: 240,

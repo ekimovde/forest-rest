@@ -51,7 +51,13 @@
               :key="product.id"
               :style="{ height: '100%' }"
             >
-              <ProductCard :product="product" />
+              <ProductCard
+                :product="product"
+                :quantity="getItemQuantity(product.id)"
+                @add="addItem(product, 1)"
+                @remove="removeItem(product.id)"
+                @change="updateQuantity(product.id, $event)"
+              />
             </SwiperSlide>
           </UiSlider>
         </template>
@@ -67,6 +73,9 @@ import UiSlider from '~/components/ui/uiSlider/UiSlider.vue';
 import UiButton from '~/components/ui/uiButton/UiButton.vue';
 import { SwiperSlide } from 'swiper/vue';
 import { CATEGORIES } from '~/mocks';
+import { useCartStore } from '~/stores';
+
+const { addItem, getItemQuantity, removeItem, updateQuantity } = useCartStore();
 
 const categories = computed(() => Object.values(CATEGORIES));
 

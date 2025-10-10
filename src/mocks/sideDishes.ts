@@ -1,9 +1,9 @@
-import { SubcategoryId } from "~/enums";
+import { SubcategoryId } from "~/constants";
 
 // --- Гарниры ---
 export const SIDE_DISHES = [
     {
-        id: 1,
+        id: 138,
         title: 'Рис с овощами',
         options: ['150 гр'],
         price: 120,
@@ -11,7 +11,7 @@ export const SIDE_DISHES = [
         subcategoryId: SubcategoryId.SIDE_DISHES
     },
     {
-        id: 2,
+        id: 139,
         title: 'Картофельные дольки на гриле',
         options: ['150 гр'],
         price: 120,
@@ -19,7 +19,7 @@ export const SIDE_DISHES = [
         subcategoryId: SubcategoryId.SIDE_DISHES
     },
     {
-        id: 3,
+        id: 140,
         title: 'Овощи гриль',
         options: ['200 гр'],
         price: 390,
@@ -27,7 +27,7 @@ export const SIDE_DISHES = [
         subcategoryId: SubcategoryId.SIDE_DISHES
     },
     {
-        id: 4,
+        id: 141,
         title: 'Шампиньоны гриль',
         options: ['100 гр'],
         price: 380,

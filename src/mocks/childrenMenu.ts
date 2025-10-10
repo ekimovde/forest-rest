@@ -1,4 +1,4 @@
-import { SubcategoryId } from "~/enums";
+import { SubcategoryId } from "~/constants";
 
 // --- Детское меню ---
 export const CHILDREN_MENU = [

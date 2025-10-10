@@ -1,5 +1,5 @@
-import { CategoryId, CategoryTitleById, SubcategoryId, SubcategoryTitleById } from '~/enums';
-import type { IProduct } from '~/interfaces/IProduct';
+import { CategoryId, CategoryTitleById, SubcategoryTitleById } from '~/constants';
+import type { IProduct } from '~/interfaces';
 
 import { ROLLS_CATEGORIES } from './rolls';
 

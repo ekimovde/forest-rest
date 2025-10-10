@@ -1,10 +1,13 @@
 .ui-button {
+    $self: &;
+
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
     position: relative;
     transition-property: transform;
+    border: 1px solid transparent;
     border-radius: var(--border-radius-small);
     cursor: pointer;
     font-size: 14px;
@@ -17,19 +20,19 @@
 
     &--disabled {
         cursor: not-allowed;
-        opacity: 0.8;
-    }
-
-    &--is-active {
-        border-color: var(--green);
-        color: var(--green);
+        opacity: 0.6;
     }
 
     &--view-default {
         background-color: var(--white);
-        border: 1px solid var(--btn-border-color,var(--gray-400));
+        border-color: var(--gray-400);
 
-        &:hover:not(:disabled) {
+        &#{$self}--is-active {
+            border-color: var(--green);
+            color: var(--green);
+        }
+
+        &:hover:not(.ui-button--disabled) {
             border-color: var(--green);
         }
     }
@@ -38,7 +41,12 @@
         background-color: var(--green);
         color: var(--white);
 
-        &:hover:not(:disabled) {
+        &#{$self}--is-active {
+            border-color: var(--green);
+            color: var(--green);
+        }
+
+        &:hover:not(.ui-button--disabled) {
             background-color: var(--green-soft);
         }
     }

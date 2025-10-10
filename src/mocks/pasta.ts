@@ -1,9 +1,9 @@
-import { SubcategoryId } from "~/enums";
+import { SubcategoryId } from "~/constants";
 
 // --- Паста ---
 export const PASTA = [
     {
-        id: 1,
+        id: 101,
         title: 'Паста «Карбонара»',
         options: ['270 гр'],
         price: 580,

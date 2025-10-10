@@ -2,11 +2,11 @@
     transition: all 0.25s ease;
 
     &--is-scrolled {
-        position: fixed;
+        position: sticky;
         top: calc(env(safe-area-inset-top) + 65px);
         right: 0;
         left: 0;
-        z-index: 100;
+        z-index: 75;
         background-color: var(--white);
         padding-top: 10px;
         padding-bottom: 10px;

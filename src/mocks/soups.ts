@@ -1,9 +1,9 @@
-import { SubcategoryId } from "~/enums";
+import { SubcategoryId } from "~/constants";
 
 // --- Супы ---
 export const SOUPS = [
     {
-        id: 1,
+        id: 142,
         title: 'Борщ с говядиной',
         options: ['650 гр'],
         price: 490,
@@ -11,7 +11,7 @@ export const SOUPS = [
         subcategoryId: SubcategoryId.SOUPS
     },
     {
-        id: 2,
+        id: 143,
         title: 'Солянка мясная',
         options: ['590 гр'],
         price: 590,
@@ -19,7 +19,7 @@ export const SOUPS = [
         subcategoryId: SubcategoryId.SOUPS
     },
     {
-        id: 3,
+        id: 144,
         title: 'Уха сливочная с семгой',
         options: ['500 гр'],
         price: 450,
@@ -27,7 +27,7 @@ export const SOUPS = [
         subcategoryId: SubcategoryId.SOUPS
     },
     {
-        id: 4,
+        id: 145,
         title: 'Крем суп из белых грибов',
         options: ['200 гр'],
         price: 400,
@@ -35,7 +35,7 @@ export const SOUPS = [
         subcategoryId: SubcategoryId.SOUPS
     },
     {
-        id: 5,
+        id: 146,
         title: 'Суп куриный с лапшой',
         options: ['500 гр'],
         price: 360,

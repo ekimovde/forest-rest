@@ -5,4 +5,16 @@
     row-gap: var(--padding-container-top-bottom);
     margin-top: calc(env(safe-area-inset-top) + var(--header-height) + var(--padding-medium));
   }
+
+  &__widgets {
+    position: fixed;
+    right: 0;
+    bottom: var(--padding-medium);
+    left: 0;
+    z-index: 200;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
 }

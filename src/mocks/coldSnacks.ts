@@ -1,9 +1,9 @@
-import { SubcategoryId } from "~/enums";
+import { SubcategoryId } from "~/constants";
 
 // --- Холодные закуски ---
 export const COLD_SNACKS = [
     {
-        id: 1,
+        id: 9,
         title: 'Сугудай из байкальского омуля',
         options: ['260 гр'],
         price: 760,
@@ -11,7 +11,7 @@ export const COLD_SNACKS = [
         subcategoryId: SubcategoryId.COLD_SNACKS
     },
     {
-        id: 2,
+        id: 10,
         title: 'Семга малосольная',
         options: ['90 гр'],
         price: 860,
@@ -19,7 +19,7 @@ export const COLD_SNACKS = [
         subcategoryId: SubcategoryId.COLD_SNACKS
     },
     {
-        id: 3,
+        id: 11,
         title: 'Соленая грудинка с домашней горчицей',
         options: ['150 гр'],
         price: 320,
@@ -27,7 +27,7 @@ export const COLD_SNACKS = [
         subcategoryId: SubcategoryId.COLD_SNACKS
     },
     {
-        id: 4,
+        id: 12,
         title: 'Ростбиф с маринованным луком и бальзамическим кремом',
         options: ['120 гр'],
         price: 780,
@@ -35,7 +35,7 @@ export const COLD_SNACKS = [
         subcategoryId: SubcategoryId.COLD_SNACKS
     },
     {
-        id: 5,
+        id: 13,
         title: 'Говяжий язык с дижонской горчицей',
         options: ['100 гр'],
         price: 660,
@@ -43,7 +43,7 @@ export const COLD_SNACKS = [
         subcategoryId: SubcategoryId.COLD_SNACKS
     },
     {
-        id: 6,
+        id: 14,
         title: 'Грузди / рыжики соленые с картофелем',
         options: ['260 гр'],
         price: 660,
@@ -51,7 +51,7 @@ export const COLD_SNACKS = [
         subcategoryId: SubcategoryId.COLD_SNACKS
     },
     {
-        id: 7,
+        id: 15,
         title: 'Домашние соленья',
         description: '(Маринованная капуста, малосольные огурцы, помидоры черри в томатном соусе, маринованный лук)',
         options: ['420 гр'],
@@ -60,7 +60,7 @@ export const COLD_SNACKS = [
         subcategoryId: SubcategoryId.COLD_SNACKS
     },
     {
-        id: 8,
+        id: 16,
         title: 'Доска с сырами',
         options: ['210 гр'],
         price: 1090,
@@ -68,7 +68,7 @@ export const COLD_SNACKS = [
         subcategoryId: SubcategoryId.COLD_SNACKS
     },
     {
-        id: 9,
+        id: 17,
         title: 'Хлебная корзина',
         options: ['120 гр'],
         price: 220,

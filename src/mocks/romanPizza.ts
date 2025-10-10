@@ -1,9 +1,9 @@
-import { SubcategoryId } from "~/enums";
+import { SubcategoryId } from "~/constants";
 
 // --- Роман пицца ---
 export const ROMAN_PIZZA = [
     {
-        id: 1,
+        id: 119,
         title: 'С семгой и вялеными томатами',
         options: ['480 гр'],
         price: 1980,
@@ -11,7 +11,7 @@ export const ROMAN_PIZZA = [
         subcategoryId: SubcategoryId.ROMAN_PIZZA
     },
     {
-        id: 2,
+        id: 120,
         title: 'С грушей и горгонзолой',
         options: ['480 гр'],
         price: 1400,
@@ -19,7 +19,7 @@ export const ROMAN_PIZZA = [
         subcategoryId: SubcategoryId.ROMAN_PIZZA
     },
     {
-        id: 3,
+        id: 121,
         title: 'С угрем и соусом терияки',
         options: ['480 гр'],
         price: 1890,
@@ -27,7 +27,7 @@ export const ROMAN_PIZZA = [
         subcategoryId: SubcategoryId.ROMAN_PIZZA
     },
     {
-        id: 4,
+        id: 122,
         title: 'С пармой и пармезаном',
         options: ['480 гр'],
         price: 1600,

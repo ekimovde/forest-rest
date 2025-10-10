@@ -33,18 +33,34 @@
             </span>
         </span>
 
-        <span class="product-card__counter">
-            Counter
-        </span>
+        <div class="product-card__counter">
+            <UiCounter
+                @update:modelValue="emit('change', $event)"
+                @add="emit('add')"
+                @remove="emit('remove')"
+                :price="product.price"
+                :modelValue="quantity"
+            />
+        </div>
     </button>
 </template>
 
 <script setup lang="ts">
-import type { IProduct } from '~/interfaces/IProduct';
+import type { IProduct } from '~/interfaces';
+import UiCounter from '~/components/ui/uiCounter/UiCounter.vue';
 
-defineProps<{
-    product: IProduct;
+const emit = defineEmits<{
+    (event: 'add'): void;
+    (event: 'remove'): void;
+    (event: 'change', value: number): void;
 }>();
+
+withDefaults(defineProps<{
+    product: IProduct;
+    quantity: number;
+}>(), {
+    quantity: 0,
+});
 </script>
 
 <style lang="scss">

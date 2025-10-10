@@ -15,7 +15,7 @@
 </template>
 
 <script setup lang="ts">
-import type { ISwitch } from '~/interfaces/ISwitch';
+import type { ISwitch } from '~/interfaces';
 
 const emit = defineEmits<{
     (event: 'update:modelValue', value: ISwitch['value']): void;

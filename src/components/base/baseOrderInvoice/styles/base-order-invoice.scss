@@ -1,0 +1,25 @@
+.base-order-invoice {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    background-color: var(--white);
+    border-radius: var(--border-radius-small);
+    border: 1px solid var(--gray-400);
+    padding: var(--padding-medium);
+    height: fit-content;
+
+    @media (min-width: 768px) {
+        row-gap: 16px;
+    }
+
+    &__group {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__caption {
+        font-family: var(--font-title);
+        font-size: var(--font-size-large);
+    }
+}

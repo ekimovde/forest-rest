@@ -1,0 +1,41 @@
+.base-widget-cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 12px;
+    height: 48px;
+    background-color: var(--green);
+    border-radius: var(--border-radius-small);
+    color: var(--white);
+    cursor: pointer;
+    padding-right: var(--padding-big);
+    padding-left: var(--padding-big);
+    pointer-events: auto;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: var(--green-soft);
+    }
+
+    &__group {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 4px;
+    }
+
+    &__separator {
+        width: 1px;
+        height: 20px;
+        background-color: var(--white);
+    }
+
+    &__icon {
+        font-size: 22px;
+    }
+
+    &__caption {
+        font-size: var(--font-size-medium);
+        font-weight: 700;
+    }
+}

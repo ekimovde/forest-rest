@@ -1,9 +1,9 @@
-import { SubcategoryId } from "~/enums";
+import { SubcategoryId } from "~/constants";
 
 // --- Сеты ---
 export const SETS = [
     {
-        id: 1,
+        id: 135,
         title: 'Вечеринка',
         description: '(Калифорния с лососем, филадельфия лайт, чука ролл, аляска, сакура)',
         options: ['1600 гр'],
@@ -12,7 +12,7 @@ export const SETS = [
         subcategoryId: SubcategoryId.SETS
     },
     {
-        id: 2,
+        id: 136,
         title: 'Фараон',
         description: '(Филадельфия люкс, калифорния с крабом, спайси лосось, якудза)',
         options: ['1400 гр'],
@@ -21,7 +21,7 @@ export const SETS = [
         subcategoryId: SubcategoryId.SETS
     },
     {
-        id: 3,
+        id: 137,
         title: 'Теплый',
         description: '(Цезарь, яшими с угрем, вулкан)',
         options: ['1600 гр'],

@@ -1,9 +1,9 @@
-import { SubcategoryId } from "~/enums";
+import { SubcategoryId } from "~/constants";
 
 // --- Салаты ---
 export const SALADS = [
     {
-        id: 1,
+        id: 123,
         title: 'Салат из печени кролика с забайкальскими маслятами',
         options: ['200 гр'],
         price: 640,
@@ -11,7 +11,7 @@ export const SALADS = [
         subcategoryId: SubcategoryId.SALADS
     },
     {
-        id: 2,
+        id: 124,
         title: 'Салат с хрустящей говядиной и древесными грибами',
         options: ['200 гр'],
         price: 740,
@@ -19,7 +19,7 @@ export const SALADS = [
         subcategoryId: SubcategoryId.SALADS
     },
     {
-        id: 3,
+        id: 125,
         title: 'Дальневосточный салат с диким папоротником, олениной и грибной эспумой',
         options: ['250 гр'],
         price: 950,
@@ -27,7 +27,7 @@ export const SALADS = [
         subcategoryId: SubcategoryId.SALADS
     },
     {
-        id: 4,
+        id: 126,
         title: 'Салат с ростбифом и вялеными томатами',
         options: ['170 гр'],
         price: 920,
@@ -35,7 +35,7 @@ export const SALADS = [
         subcategoryId: SubcategoryId.SALADS
     },
     {
-        id: 5,
+        id: 127,
         title: 'Салат с бобами эдамаме, авокадо и слайсами цукини',
         options: ['240 гр'],
         price: 490,
@@ -43,7 +43,7 @@ export const SALADS = [
         subcategoryId: SubcategoryId.SALADS
     },
     {
-        id: 6,
+        id: 128,
         title: 'Салат с баклажаном фри с творожным сыром в соусе сладкий чили',
         options: ['230 гр'],
         price: 460,
@@ -51,7 +51,7 @@ export const SALADS = [
         subcategoryId: SubcategoryId.SALADS
     },
     {
-        id: 7,
+        id: 129,
         title: 'Нисуаз с тунцом',
         options: ['220 гр'],
         price: 650,
@@ -59,7 +59,7 @@ export const SALADS = [
         subcategoryId: SubcategoryId.SALADS
     },
     {
-        id: 8,
+        id: 130,
         title: 'Салат с морепродуктами с соусом манго-чили',
         description: '(Гребешки, мидии осьминог, кальмар)',
         options: ['230 гр'],
@@ -68,7 +68,7 @@ export const SALADS = [
         subcategoryId: SubcategoryId.SALADS
     },
     {
-        id: 9,
+        id: 131,
         title: 'Винегрет с сельдью',
         options: ['250 гр'],
         price: 340,
@@ -76,7 +76,7 @@ export const SALADS = [
         subcategoryId: SubcategoryId.SALADS
     },
     {
-        id: 10,
+        id: 132,
         title: 'Цезарь с креветками',
         options: ['220 гр'],
         price: 890,
@@ -84,7 +84,7 @@ export const SALADS = [
         subcategoryId: SubcategoryId.SALADS
     },
     {
-        id: 11,
+        id: 133,
         title: 'Цезарь с курицей',
         options: ['200 гр'],
         price: 480,
@@ -92,7 +92,7 @@ export const SALADS = [
         subcategoryId: SubcategoryId.SALADS
     },
     {
-        id: 12,
+        id: 134,
         title: 'Оливье с малосоленой семгой, перепелиным яйцом и икрой лосося',
         options: ['250 гр'],
         price: 560,

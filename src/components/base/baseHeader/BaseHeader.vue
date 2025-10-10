@@ -23,8 +23,6 @@
 
             <div class="base-header__actions">
                 <UiButtonIcon iconName="bx bx-user" />
-
-                <UiButtonIcon iconName="bx bx-menu" />
             </div>
         </div>
     </header>
@@ -33,7 +31,7 @@
 <script setup lang="ts">
 import UiSwitch from '~/components/ui/uiSwitch/UiSwitch.vue';
 import UiButtonIcon from '~/components/ui/uiButtonIcon/UiButtonIcon.vue';
-import type { ISwitch } from '~/interfaces/ISwitch';
+import type { ISwitch } from '~/interfaces';
 
 const deliveryTypes: ISwitch[] = [
     {

@@ -1,9 +1,9 @@
-import { SubcategoryId } from "~/enums";
+import { SubcategoryId } from "~/constants";
 
 // --- Гриль ---
 export const GRILL = [
     {
-        id: 1,
+        id: 75,
         title: 'Шашлык из цыпленка',
         options: ['300 гр'],
         price: 540,
@@ -11,7 +11,7 @@ export const GRILL = [
         subcategoryId: SubcategoryId.GRILL
     },
     {
-        id: 2,
+        id: 76,
         title: 'Шашлык из свинины',
         options: ['340 гр'],
         price: 610,
@@ -19,7 +19,7 @@ export const GRILL = [
         subcategoryId: SubcategoryId.GRILL
     },
     {
-        id: 3,
+        id: 77,
         title: 'Стейк Нью-Йорк',
         options: ['100 гр'],
         price: 1300,
@@ -27,7 +27,7 @@ export const GRILL = [
         subcategoryId: SubcategoryId.GRILL
     },
     {
-        id: 4,
+        id: 78,
         title: 'Стейк Рибай',
         options: ['100 гр'],
         price: 1720,
@@ -35,7 +35,7 @@ export const GRILL = [
         subcategoryId: SubcategoryId.GRILL
     },
     {
-        id: 5,
+        id: 79,
         title: 'Семга на гриле со свежими овощами ассорти',
         options: ['290 гр'],
         price: 1740,
@@ -43,7 +43,7 @@ export const GRILL = [
         subcategoryId: SubcategoryId.GRILL
     },
     {
-        id: 6,
+        id: 80,
         title: 'Свиные ребра на гриле MAX с картофелем айдахо',
         description: '(соус на выбор: сливочный том ям или деми гласс)',
         options: ['600 гр'],
@@ -52,7 +52,7 @@ export const GRILL = [
         subcategoryId: SubcategoryId.GRILL
     },
     {
-        id: 7,
+        id: 81,
         title: 'Колбаски на гриле с тушеной капустой',
         options: ['400 гр'],
         price: 1390,
@@ -60,7 +60,7 @@ export const GRILL = [
         subcategoryId: SubcategoryId.GRILL
     },
     {
-        id: 8,
+        id: 82,
         title: 'Язык на гриле с картофельным пюре',
         options: ['300 гр'],
         price: 1150,
