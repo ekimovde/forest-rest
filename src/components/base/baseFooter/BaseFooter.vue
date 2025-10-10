@@ -71,6 +71,7 @@
 
 <script setup lang="ts">
 import UiButtonIcon from '~/components/ui/uiButtonIcon/UiButtonIcon.vue';
+import { CATEGORIES } from '~/mocks';
 
 interface FooterBlock {
     title: string;
@@ -80,7 +81,7 @@ interface FooterBlock {
     }[];
 }
 
-const footerBlocks: FooterBlock[] = [
+const footerBlocks = computed<FooterBlock[]>(() => [
     {
         title: 'Меню сайта',
         items: [
@@ -92,21 +93,10 @@ const footerBlocks: FooterBlock[] = [
     },
     {
         title: 'Меню доставки',
-        items: [
-            { title: 'Спринг-роллы', href: '/menu/spring-rolls' },
-            { title: 'Роллы', href: '/menu/rolls' },
-            { title: 'Онигири', href: '/menu/onigiri' },
-            { title: 'Сеты и комбо', href: '/menu/sets' },
-            { title: 'Пицца', href: '/menu/pizza' },
-            { title: 'Супы', href: '/menu/soups' },
-            { title: 'Горячее и WOK', href: '/menu/hot-and-wok' },
-            { title: 'Салаты', href: '/menu/salads' },
-            { title: 'Поке', href: '/menu/poke' },
-            { title: 'Закуски и гарниры', href: '/menu/snacks-and-side-dishes' },
-            { title: 'Десерты', href: '/menu/desserts' },
-            { title: 'Соусы и допы', href: '/menu/sauces-and-extras' },
-            { title: 'Напитки', href: '/menu/drinks' },
-        ],
+        items: Object.values(CATEGORIES).map((category) => ({
+            title: category.title,
+            href: category.href,
+        })),
     },
     {
         title: 'Контакты',
@@ -114,7 +104,7 @@ const footerBlocks: FooterBlock[] = [
             { title: 'Чита', href: '/contacts' },
         ],
     },
-];
+]);
 </script>
 
 <style lang="scss">

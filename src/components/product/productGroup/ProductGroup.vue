@@ -11,15 +11,19 @@
                 <slot name="title" />
             </component>
 
-            <NuxtLink
-                v-if="isViewOnly"
-                :to="href"
-                class="product-group__view-all"
+            <slot
+                v-if="isViewOnly && !hideSlotAction"
+                name="action"
             >
-                Смотреть все
+                <NuxtLink
+                    :to="href"
+                    class="product-group__view-all"
+                >
+                    Смотреть все
 
-                <i class="product-group__icon bx bx-chevron-right"></i>
-            </NuxtLink>
+                    <i class="product-group__icon bx bx-chevron-right"></i>
+                </NuxtLink>
+            </slot>
         </div>
 
         <div
@@ -37,8 +41,10 @@
 const props = withDefaults(defineProps<{
     view?: 'only' | 'full',
     href?: string
+    hideSlotAction?: boolean
 }>(), {
-    view: 'full'
+    view: 'full',
+    hideSlotAction: false
 });
 
 const isViewOnly = computed(() => props.view === 'only');

@@ -10,15 +10,15 @@
                 :spaceBetween="8"
             >
                 <SwiperSlide
-                    v-for="item in catalog"
-                    :key="`base-catalog-${item.href}`"
+                    v-for="category in categories"
+                    :key="`base-catalog-${category.href}`"
                 >
                     <UiButton
                         tag="link"
-                        :href="item.href"
-                        :isCustomActive="isActive(item.href)"
+                        :href="category.href"
+                        :isCustomActive="isActive(category.href)"
                     >
-                        {{ item.title }}
+                        {{ category.title }}
                     </UiButton>
                 </SwiperSlide>
             </UiSlider>
@@ -30,66 +30,7 @@
 import { SwiperSlide } from 'swiper/vue';
 import UiSlider from '~/components/ui/uiSlider/UiSlider.vue';
 import UiButton from '~/components/ui/uiButton/UiButton.vue';
-
-interface IBaseCatalog {
-    title: string;
-    href: string;
-}
-
-const catalog = <IBaseCatalog[]>[
-    {
-        title: 'Спринг-роллы',
-        href: '/menu/spring-rolls',
-    },
-    {
-        title: 'Роллы',
-        href: '/menu/rolls',
-    },
-    {
-        title: 'Онигири',
-        href: '/menu/onigiri',
-    },
-    {
-        title: 'Сеты и комбо',
-        href: '/menu/sets',
-    },
-    {
-        title: 'Пицца',
-        href: '/menu/pizza',
-    },
-    {
-        title: 'Супы',
-        href: '/menu/soups',
-    },
-    {
-        title: 'Горячее и WOK',
-        href: '/menu/hot-and-wok',
-    },
-    {
-        title: 'Салаты',
-        href: '/menu/salads',
-    },
-    {
-        title: 'Поке',
-        href: '/menu/poke',
-    },
-    {
-        title: 'Закуски и гарниры',
-        href: '/menu/snacks-and-side-dishes',
-    },
-    {
-        title: 'Десерты',
-        href: '/menu/desserts',
-    },
-    {
-        title: 'Соусы и допы',
-        href: '/menu/sauces-and-extras',
-    },
-    {
-        title: 'Напитки',
-        href: '/menu/drinks',
-    }
-];
+import { CATEGORIES } from '~/mocks';
 
 const route = useRoute();
 
@@ -99,6 +40,8 @@ const isScrolled = ref(false);
 const baseCatalogClasses = computed(() => ({
     'base-catalog--is-scrolled': isScrolled.value,
 }));
+
+const categories = computed(() => Object.values(CATEGORIES));
 
 const isActive = (href: string) => {
     return route.path.includes(href);
