@@ -1,3 +1,378 @@
 .page-contacts {
-  //
+  &__header {
+    margin-bottom: calc(var(--padding-container-top-bottom) * 1.5);
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: var(--padding-medium);
+    color: var(--gray-900);
+    font-family: var(--font-title);
+    font-size: var(--font-size-huge);
+    font-weight: 700;
+    line-height: 1.2;
+
+    @media (min-width: 768px) {
+      font-size: calc(var(--font-size-huge) * 1.3);
+    }
+  }
+
+  &__subtitle {
+    color: var(--gray-500);
+    font-family: var(--font-text);
+    font-size: var(--font-size-large);
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    row-gap: calc(var(--padding-container-top-bottom) * 1.5);
+  }
+
+  &__section {
+    &--highlight {
+      padding: var(--padding-big);
+      background: linear-gradient(135deg, var(--green-transparent) 0%, var(--purple-transparent) 100%);
+      border-radius: var(--border-radius-medium);
+    }
+  }
+
+  &__section-title {
+    margin-bottom: var(--padding-big);
+    color: var(--gray-900);
+    font-family: var(--font-title);
+    font-size: var(--font-size-big);
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  // Карточки контактов
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--padding-medium);
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--padding-big);
+    text-align: center;
+    background: var(--white);
+    border: 1px solid var(--gray-400);
+    border-radius: var(--border-radius-medium);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+  }
+
+  &__card-icon {
+    display: block;
+    margin-bottom: var(--padding-medium);
+    font-size: 48px;
+    line-height: 1;
+
+    @media (min-width: 768px) {
+      font-size: 56px;
+    }
+  }
+
+  &__card-title {
+    margin-bottom: var(--padding-small);
+    color: var(--gray-900);
+    font-family: var(--font-title);
+    font-size: var(--font-size-large);
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  &__card-link {
+    margin-bottom: var(--padding-small);
+    color: var(--green);
+    font-family: var(--font-text);
+    font-size: var(--font-size-medium);
+    font-weight: 600;
+    line-height: 1.4;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: var(--green-soft);
+      text-decoration: underline;
+    }
+  }
+
+  &__card-value {
+    margin-bottom: var(--padding-small);
+    color: var(--gray-900);
+    font-family: var(--font-text);
+    font-size: var(--font-size-medium);
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  &__card-description {
+    color: var(--gray-700);
+    font-family: var(--font-text);
+    font-size: var(--font-size-small);
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  // Блок адреса
+  &__address-block {
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-big);
+  }
+
+  &__address-info {
+    display: flex;
+    gap: var(--padding-medium);
+    padding: var(--padding-big);
+    background: var(--white);
+    border: 1px solid var(--gray-400);
+    border-radius: var(--border-radius-medium);
+  }
+
+  &__address-icon {
+    flex-shrink: 0;
+    font-size: 32px;
+    line-height: 1;
+  }
+
+  &__address-content {
+    flex: 1;
+  }
+
+  &__address-text {
+    margin-bottom: var(--padding-small);
+    color: var(--gray-700);
+    font-family: var(--font-text);
+    font-size: var(--font-size-medium);
+    font-weight: 400;
+    line-height: 1.6;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    strong {
+      color: var(--gray-900);
+      font-weight: 600;
+    }
+  }
+
+  &__map-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    padding: var(--padding-big);
+    background: var(--gray-200);
+    border: 2px dashed var(--gray-400);
+    border-radius: var(--border-radius-medium);
+  }
+
+  &__map-icon {
+    margin-bottom: var(--padding-medium);
+    font-size: 64px;
+    line-height: 1;
+  }
+
+  &__map-text {
+    color: var(--gray-500);
+    font-family: var(--font-text);
+    font-size: var(--font-size-large);
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  // График работы
+  &__schedule {
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-tiny);
+    padding: var(--padding-big);
+    background: var(--white);
+    border: 1px solid var(--gray-400);
+    border-radius: var(--border-radius-medium);
+  }
+
+  &__schedule-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding-small) var(--padding-medium);
+    border-radius: var(--border-radius-tiny);
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background: var(--gray-200);
+    }
+
+    &--today {
+      background: var(--green-transparent);
+      font-weight: 600;
+
+      .page-contacts__schedule-day,
+      .page-contacts__schedule-time {
+        color: var(--green);
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__schedule-day {
+    color: var(--gray-900);
+    font-family: var(--font-text);
+    font-size: var(--font-size-medium);
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  &__schedule-time {
+    color: var(--gray-700);
+    font-family: var(--font-text);
+    font-size: var(--font-size-medium);
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  &__schedule-note {
+    display: flex;
+    gap: var(--padding-medium);
+    align-items: center;
+    padding: var(--padding-medium);
+    margin-top: var(--padding-medium);
+    background: var(--purple-transparent);
+    border-radius: var(--border-radius-small);
+  }
+
+  &__note-icon {
+    flex-shrink: 0;
+    font-size: 24px;
+    line-height: 1;
+  }
+
+  &__note-text {
+    color: var(--gray-800);
+    font-family: var(--font-text);
+    font-size: var(--font-size-medium);
+    font-weight: 500;
+    line-height: 1.6;
+  }
+
+  // Текст
+  &__text {
+    margin-bottom: var(--padding-big);
+    color: var(--gray-700);
+    font-family: var(--font-text);
+    font-size: var(--font-size-medium);
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  // Преимущества
+  &__highlights {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--padding-medium);
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__highlight-item {
+    display: flex;
+    gap: var(--padding-small);
+    align-items: center;
+    padding: var(--padding-medium);
+    background: var(--white);
+    border-radius: var(--border-radius-small);
+  }
+
+  &__highlight-icon {
+    flex-shrink: 0;
+    font-size: 24px;
+    line-height: 1;
+  }
+
+  &__highlight-text {
+    color: var(--gray-800);
+    font-family: var(--font-text);
+    font-size: var(--font-size-small);
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  // Способы связи
+  &__methods {
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-medium);
+  }
+
+  &__method {
+    display: flex;
+    gap: var(--padding-medium);
+    padding: var(--padding-big);
+    background: var(--white);
+    border: 1px solid var(--gray-400);
+    border-radius: var(--border-radius-medium);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+  }
+
+  &__method-icon {
+    flex-shrink: 0;
+    font-size: 40px;
+    line-height: 1;
+
+    @media (min-width: 768px) {
+      font-size: 48px;
+    }
+  }
+
+  &__method-content {
+    flex: 1;
+  }
+
+  &__method-title {
+    margin-bottom: var(--padding-small);
+    color: var(--gray-900);
+    font-family: var(--font-title);
+    font-size: var(--font-size-large);
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  &__method-text {
+    color: var(--gray-700);
+    font-family: var(--font-text);
+    font-size: var(--font-size-medium);
+    font-weight: 400;
+    line-height: 1.6;
+  }
 }
