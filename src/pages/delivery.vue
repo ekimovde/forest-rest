@@ -5,12 +5,14 @@
 </template>
 
 <script setup lang="ts">
+import { useSeo } from '~/composables/useSeo';
+
 // Устанавливаем мета-данные для SEO
-useHead({
-  title: 'Forest Rest - Доставка',
-  meta: [
-    { name: 'description', content: 'Добро пожаловать в ресторан Forest Rest. Выберите меню и наслаждайтесь вкусными блюдами.' }
-  ]
+useSeo({
+  title: 'Доставка и оплата',
+  description: 'Условия доставки еды из ресторана Forest Rest. Зоны доставки, стоимость, время, способы оплаты. Быстрая и бесплатная доставка при заказе от 1000₽.',
+  keywords: ['доставка еды', 'условия доставки', 'оплата заказа', 'бесплатная доставка', 'Forest Rest доставка'],
+  type: 'website'
 });
 </script>
 

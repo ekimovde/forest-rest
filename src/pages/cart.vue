@@ -155,6 +155,7 @@ import UiButtonInline from '~/components/ui/uiButtonInline/UiButtonInline.vue';
 import { useCartForm } from '~/composables/useCartForm';
 import { useCartStore } from '~/stores';
 import { PaymentMethod, PaymentBanknote } from '~/enums';
+import { useSeo } from '~/composables/useSeo';
 
 const { items, orderPrice, totalPrice } = storeToRefs(useCartStore());
 const { updateQuantity, clearCart } = useCartStore();
@@ -186,11 +187,12 @@ const paymentMethod = ref(PaymentMethod.CASH);
 const paymentBanknote = ref(PaymentBanknote.WITHOUT_CHANGE);
 
 // Устанавливаем мета-данные для SEO
-useHead({
-  title: 'Forest Rest - Корзина',
-  meta: [
-    { name: 'description', content: 'Добро пожаловать в ресторан Forest Rest. Выберите меню и наслаждайтесь вкусными блюдами.' }
-  ]
+useSeo({
+  title: 'Корзина',
+  description: 'Оформление заказа в ресторане Forest Rest. Проверьте состав вашего заказа, укажите данные для доставки и выберите способ оплаты.',
+  keywords: ['корзина', 'оформление заказа', 'заказ еды', 'оплата', 'доставка'],
+  type: 'website',
+  noIndex: true
 });
 </script>
 

@@ -1,0 +1,17 @@
+PLACEHOLDER для Open Graph изображения
+
+Создайте файл og-image.jpg с размерами 1200x630 пикселей
+и поместите его в папку /public/
+
+Инструкция по созданию: /public/og-images/README.md
+
+Требования:
+- Размер: 1200x630 пикселей
+- Формат: JPG или PNG
+- Вес: до 300 KB
+- Содержание: Логотип Forest Rest, слоган, красивое изображение блюда
+
+Рекомендуемые инструменты:
+- Canva: https://www.canva.com/
+- Figma: https://www.figma.com/
+- Adobe Express: https://www.adobe.com/express/

@@ -74,18 +74,23 @@ import UiButton from '~/components/ui/uiButton/UiButton.vue';
 import { SwiperSlide } from 'swiper/vue';
 import { CATEGORIES } from '~/mocks';
 import { useCartStore } from '~/stores';
+import { useSeo } from '~/composables/useSeo';
+import { useRestaurantSchema } from '~/composables/useRestaurantSchema';
 
 const { addItem, getItemQuantity, removeItem, updateQuantity } = useCartStore();
 
 const categories = computed(() => Object.values(CATEGORIES));
 
 // Устанавливаем мета-данные для SEO
-useHead({
-  title: 'Forest Rest - Главная',
-  meta: [
-    { name: 'description', content: 'Добро пожаловать в ресторан Forest Rest. Выберите меню и наслаждайтесь вкусными блюдами.' }
-  ]
+useSeo({
+  title: 'Главная',
+  description: 'Ресторан Forest Rest - доставка изысканных блюд в Москве. Пицца, роллы, салаты, горячие блюда и десерты. Заказывайте онлайн с доставкой на дом!',
+  keywords: ['ресторан', 'доставка еды', 'Forest Rest', 'пицца', 'роллы', 'горячие блюда', 'десерты', 'заказать еду'],
+  type: 'website'
 });
+
+// Добавляем структурированные данные для ресторана
+useRestaurantSchema();
 </script>
 
 <style lang="scss">

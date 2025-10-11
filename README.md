@@ -12,6 +12,7 @@
 - **Swiper** - Modern Mobile Touch Slider
 - **SCSS** - CSS Preprocessor
 - **TypeScript** - JavaScript with syntax for types
+- **@nuxtjs/seo** - SEO & Open Graph optimization
 
 ## 📦 Установка
 
@@ -77,6 +78,32 @@ npm run lint:styles:fix
 
 Подробная инструкция: [.github/DEPLOY.md](.github/DEPLOY.md)
 
+## 🔍 SEO и Open Graph
+
+Проект полностью настроен для поисковой оптимизации:
+
+- ✅ Автоматическая генерация sitemap.xml
+- ✅ Настроенный robots.txt
+- ✅ Meta-теги для всех страниц
+- ✅ Open Graph и Twitter Cards
+- ✅ Schema.org разметка (JSON-LD)
+- ✅ Canonical URLs
+- ⚠️ OG изображения (требуется создать)
+
+### Использование SEO в коде
+
+```typescript
+// В любом компоненте
+useSeo({
+  title: 'Заголовок страницы',
+  description: 'Описание для поисковиков',
+  keywords: ['ключевые', 'слова'],
+  type: 'website'
+});
+```
+
+Подробная документация: [SEO_GUIDE.md](SEO_GUIDE.md)
+
 ## 📁 Структура проекта
 
 ```
@@ -84,10 +111,15 @@ forest-rest/
 ├── .github/
 │   └── workflows/        # GitHub Actions workflows
 ├── public/              # Статические файлы
+│   ├── og-images/      # Open Graph изображения
+│   └── robots.txt      # Robots.txt для поисковых систем
 ├── src/
 │   ├── assets/         # Ресурсы (шрифты, иконки, изображения, стили)
 │   ├── components/     # Vue компоненты
 │   ├── composables/    # Композаблы
+│   │   ├── useSeo.ts           # SEO мета-теги
+│   │   ├── useRestaurantSchema.ts  # JSON-LD схема
+│   │   └── useCartForm.ts
 │   ├── constants/      # Константы
 │   ├── enums/          # Перечисления
 │   ├── interfaces/     # TypeScript интерфейсы
@@ -98,10 +130,14 @@ forest-rest/
 │   ├── schemas/        # Схемы валидации
 │   ├── stores/         # Pinia stores
 │   └── utils/          # Утилиты
+├── .env.example        # Пример переменных окружения
 ├── .gitignore
+├── DEPLOYMENT_GUIDE.md # Краткое руководство по деплою
 ├── eslint.config.js    # Конфигурация ESLint
-├── nuxt.config.ts      # Конфигурация Nuxt
+├── nuxt.config.ts      # Конфигурация Nuxt (с SEO настройками)
 ├── package.json
+├── README.md           # Этот файл
+├── SEO_GUIDE.md        # Подробное SEO руководство
 ├── stylelint.config.cjs # Конфигурация Stylelint
 └── tsconfig.json       # Конфигурация TypeScript
 ```

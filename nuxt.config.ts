@@ -9,6 +9,7 @@ export default defineNuxtConfig({
   },
   compatibilityDate: '2025-07-12',
   modules: [
+    '@nuxtjs/seo',
     '@pinia/nuxt',
     '@vueuse/nuxt',
     'motion-v/nuxt'
@@ -46,5 +47,43 @@ export default defineNuxtConfig({
   },
   alias: {
     '~base': normalizePath(resolve(__dirname, './src')),
+  },
+  site: {
+    url: 'https://ekimovde.github.io',
+    name: 'Forest Rest',
+    description: 'Ресторан Forest Rest - изысканная кухня в атмосфере природы. Доставка блюд высокой кухни, меню из свежих продуктов.',
+    defaultLocale: 'ru',
+  },
+  seo: {
+    redirectToCanonicalSiteUrl: true,
+  },
+  sitemap: {
+    strictNuxtContentPaths: true,
+    autoLastmod: true,
+    exclude: [
+      '/admin/**',
+    ],
+  },
+  ogImage: {
+    enabled: false, // Отключено, так как требует SSR
+    fonts: [
+      'Nunito:400',
+      'Nunito:600',
+      'Nunito:700',
+    ],
+  },
+  robots: {
+    enabled: true,
+  },
+  schemaOrg: {
+    identity: {
+      type: 'Restaurant',
+      name: 'Forest Rest',
+      url: 'https://ekimovde.github.io/forest-rest/',
+      logo: 'https://ekimovde.github.io/forest-rest/logo.png',
+      sameAs: [
+        // Добавьте ссылки на социальные сети, если есть
+      ],
+    }
   }
 });

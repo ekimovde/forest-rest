@@ -54,6 +54,7 @@ import ProductCard from '~/components/product/productCard/ProductCard.vue';
 import UiButton from '~/components/ui/uiButton/UiButton.vue';
 import { CATEGORIES } from '~/mocks';
 import { useCartStore } from '~/stores';
+import { useSeo } from '~/composables/useSeo';
 
 const route = useRoute();
 const { addItem, getItemQuantity, removeItem, updateQuantity } = useCartStore();
@@ -70,14 +71,19 @@ const filteredProducts = computed(() => {
 });
 
 // Устанавливаем мета-данные для SEO
-useHead({
-  title: `Меню - Forest Rest`,
-  meta: [
-    {
-      name: 'description',
-      content: `Меню ${menuId} в ресторане Forest Rest`
-    }
-  ]
+const categoryTitle = computed(() => category.value?.title || 'Меню');
+const categoryDescription = computed(() => {
+  const base = `${categoryTitle.value} от ресторана Forest Rest`;
+  return subcategoryId.value
+    ? `${base}. Выберите из ${filteredProducts.value.length} блюд и закажите с доставкой на дом.`
+    : `${base}. Широкий выбор блюд с доставкой на дом. Свежие продукты, быстрая доставка.`;
+});
+
+useSeo({
+  title: categoryTitle.value,
+  description: categoryDescription.value,
+  keywords: [categoryTitle.value, 'меню ресторана', 'заказать еду', 'доставка', 'Forest Rest'],
+  type: 'website'
 });
 </script>
 

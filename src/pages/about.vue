@@ -5,12 +5,14 @@
 </template>
 
 <script setup lang="ts">
+import { useSeo } from '~/composables/useSeo';
+
 // Устанавливаем мета-данные для SEO
-useHead({
-  title: 'Forest Rest - О нас',
-  meta: [
-    { name: 'description', content: 'Добро пожаловать в ресторан Forest Rest. Выберите меню и наслаждайтесь вкусными блюдами.' }
-  ]
+useSeo({
+  title: 'О нас',
+  description: 'Узнайте больше о ресторане Forest Rest. Наша история, философия и ценности. Изысканная кухня с использованием свежих продуктов высокого качества.',
+  keywords: ['о ресторане', 'Forest Rest', 'история ресторана', 'философия', 'качество продуктов'],
+  type: 'website'
 });
 </script>
 

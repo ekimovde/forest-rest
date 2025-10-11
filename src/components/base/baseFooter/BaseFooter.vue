@@ -16,10 +16,10 @@
                 <div class="base-footer__group">
                     <div class="base-footer__phone">
                         <a
-                            href="tel:79964292405"
+                            href="tel:79148085550"
                             class="base-footer__phone-link"
                         >
-                            +7 (996) 429 24 05
+                            +7 (914) 808-55-50
                         </a>
                     </div>
 
