@@ -1,13 +1,32 @@
 <template>
     <button class="product-card">
-        <picture class="product-card__picture">
+        <div class="product-card__picture">
             <img
+                v-show="!imageError && !isLoading"
                 @error="handleImageError"
+                @load="handleImageLoad"
                 :src="product.image"
                 :alt="product.title"
                 class="product-card__image"
             >
-        </picture>
+
+            <div
+                v-if="isLoading || imageError"
+                class="product-card__placeholder"
+            >
+                <i
+                    class="bx product-card__placeholder-icon"
+                    :class="isLoading ? 'bx-loader-alt bx-spin' : 'bx-dish'"
+                />
+
+                <span
+                    v-if="!isLoading"
+                    class="product-card__placeholder-text"
+                >
+                    Нет фото
+                </span>
+            </div>
+        </div>
 
         <span class="product-card__content">
             <span class="product-card__text">
@@ -63,10 +82,17 @@ withDefaults(defineProps<{
     quantity: 0,
 });
 
-const handleImageError = (event: Event) => {
-    const img = event.target as HTMLImageElement;
+// Состояние для отслеживания загрузки и ошибок изображения
+const isLoading = ref(true);
+const imageError = ref(false);
 
-    img.src = 'https://prosushi.ru/cache/iiko_img/7c0a9269-8fee-4894-a0ce-9e7ef5b0d894_c0ed6b280b665dde75351be0d3a4cc91__small__640x440.jpg';
+const handleImageLoad = () => {
+    isLoading.value = false;
+};
+
+const handleImageError = () => {
+    isLoading.value = false;
+    imageError.value = true;
 };
 </script>
 
