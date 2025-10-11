@@ -6,6 +6,7 @@
     "resolveJsonModule": true,
     "preserveConstEnums": true,
     "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true
-  },
+    "allowSyntheticDefaultImports": true,
+    "types": ["node"]
+  }
 }

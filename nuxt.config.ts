@@ -17,6 +17,8 @@ export default defineNuxtConfig({
     '~/assets/styles/main.scss',
   ],
   app: {
+    baseURL: process.env.NUXT_APP_BASE_URL || '/',
+    buildAssetsDir: '/assets/',
     head: {
       title: 'Forest Rest',
       meta: [
@@ -45,4 +47,4 @@ export default defineNuxtConfig({
   alias: {
     '~base': normalizePath(resolve(__dirname, './src')),
   }
-})
+});
