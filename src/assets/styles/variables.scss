@@ -6,35 +6,35 @@
 
   // Header
   --vh: 9.655px;
-  --header-height: 74.00px;
+  --header-height: 74px;
 
   // Colors - White
-  --white: #fff;
+  --white: #FFF;
 
   // Colors - Gray
-  --gray-100: #f2f2f2;
-  --gray-200: #f7f7f7;
-  --gray-300: #f9f9f9;
-  --gray-400: #e7e8ec;
+  --gray-100: #F2F2F2;
+  --gray-200: #F7F7F7;
+  --gray-300: #F9F9F9;
+  --gray-400: #E7E8EC;
   --gray-500: #949494;
   --gray-700: #434343;
-  --gray-800: #2e2e2e;
+  --gray-800: #2E2E2E;
   --gray-900: #232527;
 
   // Colors - Green
-  --green: #2a5f2b; // #ff4556;
-  --green-soft: #3e823f; // #ff5e6c;
-  --green-light: #93d295; // #ff99a2;
-  --green-transparent: rgba(42,95,43,.1);
+  --green: #2A5F2B; // #ff4556;
+  --green-soft: #3E823F; // #ff5e6c;
+  --green-light: #93D295; // #ff99a2;
+  --green-transparent: rgba(42, 95, 43, 0.1);
 
   // Colors - Red
-  --red: #ff4556;
+  --red: #FF4556;
 
   // Colors - Blue
-  --blue: #5897fb;
-  --purple: #ab47ec;
-  --purple-transparent: rgba(171,71,236,.1);
-  --purple-2: #a159ff;
+  --blue: #5897FB;
+  --purple: #AB47EC;
+  --purple-transparent: rgba(171, 71, 236, 0.1);
+  --purple-2: #A159FF;
 
   // Colors - Black
   --black-secondary: #070707;
@@ -62,8 +62,8 @@
   --modal-drag-height: 40px;
 
   // Fonts
-  --font-title: Rubik, sans-serif;
-  --font-text: Nunito, sans-serif;
+  --font-title: rubik, sans-serif;
+  --font-text: nunito, sans-serif;
 
   // Font Size
   --font-size-tiny: 12px;
@@ -89,7 +89,6 @@
     --padding-huge: 48px;
     --padding-container-left-right: 22px;
     --padding-container-top-bottom: 34px;
-
     --catalog-nav-height: 46px;
   }
 }

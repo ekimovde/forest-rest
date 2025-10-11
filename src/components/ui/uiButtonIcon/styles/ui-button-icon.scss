@@ -1,37 +1,38 @@
 .ui-button-icon {
-    background-color: var(--white);
-    border: 1px solid var(--gray-400);
-    border-radius: 8px;
-    cursor: pointer;
-    display: grid;
-    place-items: center;
-    transition: border-color .25s ease;
+  cursor: pointer;
 
-    &:hover {
-        border-color: var(--green);
+  display: grid;
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  background-color: var(--white);
+  transition: border-color 0.25s ease;
+  place-items: center;
+
+  &:hover {
+    border-color: var(--green);
+  }
+
+  &--size-m {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+
+    @media (min-width: 768px) {
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
     }
+  }
 
-    &--size-m {
-        width: 36px;
-        height: 36px;
-        font-size: 16px;
+  &--size-s {
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
 
-        @media (min-width: 768px) {
-            width: 40px;
-            height: 40px;
-            font-size: 20px;
-        }
+    @media (min-width: 768px) {
+      width: 32px;
+      height: 32px;
+      font-size: 20px;
     }
-
-    &--size-s {
-        width: 28px;
-        height: 28px;
-        font-size: 16px;
-
-        @media (min-width: 768px) {
-            width: 32px;
-            height: 32px;
-            font-size: 20px;
-        }
-    }
+  }
 }

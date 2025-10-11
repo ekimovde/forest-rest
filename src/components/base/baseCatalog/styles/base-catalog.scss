@@ -1,19 +1,20 @@
 .base-catalog {
-    transition: all 0.25s ease;
+  transition: all 0.25s ease;
 
-    &--is-scrolled {
-        position: sticky;
-        top: calc(env(safe-area-inset-top) + 65px);
-        right: 0;
-        left: 0;
-        z-index: 75;
-        background-color: var(--white);
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
+  &--is-scrolled {
+    position: sticky;
+    top: calc(env(safe-area-inset-top) + 65px);
+    right: 0;
+    left: 0;
+    z-index: 75;
 
-    .swiper-slide {
-        width: auto !important;
-        flex-shrink: 0;
-    }
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--white);
+  }
+
+  .swiper-slide {
+    width: auto !important;
+    flex-shrink: 0;
+  }
 }

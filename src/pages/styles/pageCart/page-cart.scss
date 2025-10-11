@@ -1,69 +1,71 @@
 .page-cart {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: var(--padding-container-left-right);
-    width: 100%;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: var(--padding-container-left-right);
+
+  @media (min-width: 1100px) {
+    grid-template-columns: 1fr 450px;
+    column-gap: var(--padding-container-left-right);
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
 
     @media (min-width: 1100px) {
-        grid-template-columns: 1fr 450px;
-        column-gap: var(--padding-container-left-right);
+      row-gap: 24px;
     }
+  }
 
-    &__wrapper {
-        display: flex;
-        flex-direction: column;
-        row-gap: 16px;
+  &__products {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
 
-        @media (min-width: 1100px) {
-            row-gap: 24px;
-        }
+    @media (min-width: 1100px) {
+      row-gap: 16px;
     }
+  }
 
-    &__products {
-        display: flex;
-        flex-direction: column;
-        row-gap: 12px;
+  &__empty-text {
+    color: var(--gray-500);
+    text-align: start;
+    font-size: 16px;
+    line-height: 18px;
+  }
 
-        @media (min-width: 1100px) {
-            row-gap: 16px;
-        }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+
+    @media (min-width: 1100px) {
+      row-gap: 16px;
     }
+  }
 
-    &__empty-text {
-        font-size: 16px;
-        line-height: 18px;
-        text-align: start;
-        color: var(--gray-500);
+  &__form-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 12px;
+
+    @media (min-width: 1100px) {
+      column-gap: 16px;
     }
+  }
 
-    &__form {
-        display: flex;
-        flex-direction: column;
-        row-gap: 12px;
+  &__submit {
+    width: 100%;
+    margin-top: 8px;
 
-        @media (min-width: 1100px) {
-            row-gap: 16px;
-        }
-    }
+    justify-content: center;
+  }
 
-    &__form-group {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 12px;
-
-        @media (min-width: 1100px) {
-            column-gap: 16px;
-        }
-    }
-
-    &__submit {
-        margin-top: 8px;
-        width: 100%;
-        justify-content: center;
-    }
-
-    &__order-invoice {
-        position: sticky;
-        top: calc(var(--header-height) + var(--padding-container-left-right));
-    }
+  &__order-invoice {
+    position: sticky;
+    top: calc(var(--header-height) + var(--padding-container-left-right));
+  }
 }

@@ -1,34 +1,35 @@
 .ui-slider {
-    position: relative;
+  position: relative;
 
-    &--view-catalog {
-        padding-left: 40px;
-        padding-right: 40px;
+  &--view-catalog {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  &__swiper {
+    width: 100%;
+
+    overflow: hidden;
+  }
+
+  &__button-prev,
+  &__button-next {
+    position: absolute;
+    top: 50%;
+    z-index: 25;
+    transform: translateY(-50%);
+    transition: opacity 0.3s ease;
+
+    &--disabled {
+      opacity: 0.3;
     }
+  }
 
-    &__swiper {
-        width: 100%;
-        overflow: hidden;
-    }
+  &__button-prev {
+    left: 0;
+  }
 
-    &__button-prev,
-    &__button-next {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 25;
-        transition: opacity 0.3s ease;
-
-        &--disabled {
-            opacity: 0.3;
-        }
-    }
-
-    &__button-prev {
-        left: 0;
-    }
-
-    &__button-next {
-        right: 0;
-    }
+  &__button-next {
+    right: 0;
+  }
 }

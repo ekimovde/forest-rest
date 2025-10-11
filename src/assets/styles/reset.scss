@@ -1,15 +1,17 @@
 body {
   margin: 0;
+
   padding: 0;
 }
 
 *,
-:after,
-:before {
-  border: 0;
-  box-sizing: border-box;
+::after,
+::before {
   margin: 0;
+
   padding: 0;
+  box-sizing: border-box;
+  border: 0;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -40,6 +42,7 @@ h5,
 h6,
 p {
   margin: 0;
+
   padding: 0;
 }
 
@@ -51,16 +54,18 @@ a {
 
 ol,
 ul {
-  list-style: none;
   margin: 0;
+
   padding: 0;
+  list-style: none;
 }
 
 fieldset,
 legend {
-  border: none;
   margin: 0;
+
   padding: 0;
+  border: none;
 }
 
 button,
@@ -68,19 +73,21 @@ input,
 optgroup,
 select,
 textarea {
+  margin: 0;
+
+  padding: 0;
   border-radius: 0;
   color: inherit;
   font-family: inherit;
   font-size: 100%;
   line-height: inherit;
-  margin: 0;
-  padding: 0;
 }
 
 button {
-  background: none;
-  border: none;
   cursor: pointer;
+
+  border: none;
+  background: none;
 }
 
 button,
@@ -90,17 +97,17 @@ select {
 }
 
 input {
-  background: none;
   border: none;
+  background: none;
 }
 
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
+  -webkit-appearance: none;
 }
 
-input[type=text] {
+input[type="text"] {
   margin: 0;
 }
 
@@ -117,17 +124,18 @@ figure {
 }
 
 img {
-  border-style: none;
   max-width: 100%;
+
   vertical-align: top;
+  border-style: none;
 }
 
 textarea {
   overflow: auto;
 }
 
-[type=checkbox],
-[type=radio] {
-  box-sizing: border-box;
+[type="checkbox"],
+[type="radio"] {
   padding: 0;
+  box-sizing: border-box;
 }

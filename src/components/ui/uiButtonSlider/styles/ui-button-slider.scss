@@ -1,26 +1,29 @@
 .ui-button-slider {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    background-color: var(--white);
-    border: 1px solid var(--gray-400);
-    border-radius: 50%;
-    box-shadow: 0 7px 12px rgba(0,0,0,.07);
-    cursor: pointer;
-    transition: border .25s ease;
-    width: 36px;
-    height: 36px;
-    font-size: 24px;
+  width: 36px;
+  height: 36px;
 
-    &:hover:not(.ui-button-slider--is-disabled) {
-        border-color: var(--green);
-    }
+  cursor: pointer;
 
-    &--is-disabled {
-        opacity: 0.7;
-        cursor: not-allowed;
-        box-shadow: none;
-    }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--gray-400);
+  border-radius: 50%;
+  background-color: var(--white);
+  box-shadow: 0 7px 12px rgba(0, 0, 0, 0.07);
+  font-size: 24px;
+  transition: border 0.25s ease;
+
+  &:hover:not(.ui-button-slider--is-disabled) {
+    border-color: var(--green);
+  }
+
+  &--is-disabled {
+    opacity: 0.7;
+
+    cursor: not-allowed;
+    box-shadow: none;
+  }
 }

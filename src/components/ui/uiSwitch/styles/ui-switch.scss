@@ -1,57 +1,62 @@
 .ui-switch {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: stretch;
+  position: relative;
+  height: 40px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: stretch;
+  padding: var(--padding-tiny);
+  overflow: hidden;
+  border: 1px solid var(--gray-400);
+  border-radius: var(--border-radius-small);
+
+  &__action {
     position: relative;
-    border: 1px solid var(--gray-400);
+    z-index: 2;
+    width: 50%;
+    height: calc(100% - (var(--padding-tiny) * 0.5));
+    flex-grow: 1;
+
+    cursor: pointer;
+    text-align: center;
+    transition: color 0.25s ease;
+
+    &--is-active {
+      color: var(--gray-300);
+    }
+
+    &--is-first {
+      &.ui-switch__action--is-active ~ .ui-switch__slider {
+        left: 1px;
+
+        display: block;
+      }
+    }
+
+    &--is-last {
+      &.ui-switch__action--is-active ~ .ui-switch__slider {
+        left: 50%;
+
+        display: block;
+      }
+    }
+  }
+
+  &__slider {
+    position: absolute;
+    top: 1px;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: calc(50% - 1px);
+    height: calc(100% - 2px);
+    height: calc(100% - (var(--padding-tiny) * 0.5));
+
+    display: none;
     border-radius: var(--border-radius-small);
-    overflow: hidden;
-    padding: var(--padding-tiny);
-    height: 40px;
-
-    &__action {
-        cursor: pointer;
-        flex-grow: 1;
-        position: relative;
-        text-align: center;
-        transition: color .25s ease;
-        z-index: 2;
-        width: 50%;
-        height: calc(100% - (var(--padding-tiny) * 0.5));
-
-        &--is-active {
-            color: var(--gray-300);
-        }
-
-        &--is-first {
-            &.ui-switch__action--is-active ~ .ui-switch__slider {
-                left: 1px;
-                display: block;
-            }
-        }
-
-        &--is-last {
-            &.ui-switch__action--is-active ~ .ui-switch__slider {
-                left: 50%;
-                display: block;
-            }
-        }
-    }
-
-    &__slider {
-        background: var(--green);
-        border-radius: var(--border-radius-small);
-        bottom: 0;
-        display: none;
-        height: calc(100% - 2px);
-        left: 0;
-        position: absolute;
-        top: 1px;
-        transition: left .3s cubic-bezier(0.4, 0, 0.2, 1);
-        z-index: 1;
-        width: calc(50% - 1px);
-        height: calc(100% - (var(--padding-tiny) * 0.5));
-    }
+    background: var(--green);
+    transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }

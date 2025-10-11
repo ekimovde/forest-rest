@@ -1,9 +1,10 @@
 .g-container {
+  width: 100%;
+  max-width: var(--container);
   height: 100%;
   margin: 0 auto;
-  max-width: var(--container);
+
   padding: 0 var(--padding-container-left-right);
-  width: 100%;
 }
 
 .g-h1,
