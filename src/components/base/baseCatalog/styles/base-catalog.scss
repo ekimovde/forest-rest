@@ -1,5 +1,6 @@
 .base-catalog {
   transition: all 0.25s ease;
+  height: var(--catalog-height);
 
   &--is-scrolled {
     position: sticky;
