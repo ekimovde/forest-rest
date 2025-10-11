@@ -15,8 +15,8 @@
                 class="base-header__logo"
             >
                 <img
-                    src="https://logos-world.net/wp-content/uploads/2020/04/McDonalds-Logo.png"
-                    alt="Logo"
+                    src="~/assets/images/logo.png"
+                    alt="Forest Rest"
                     class="base-header__logo-image"
                 >
             </NuxtLink>

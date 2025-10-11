@@ -68,6 +68,7 @@ export const useSeo = (options: SeoOptions = {}) => {
     title,
     meta,
     link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'canonical', href: url },
     ],
   });

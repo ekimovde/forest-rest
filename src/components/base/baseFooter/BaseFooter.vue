@@ -40,13 +40,11 @@
             to="/"
             class="base-footer__logo"
           >
-            <span class="base-footer__logo-icon">
-                🌲
-            </span>
-
-            <span class="base-footer__logo-text">
-                Forest Rest
-            </span>
+            <img
+              src="~/assets/images/logo.png"
+              alt="Forest Rest"
+              class="base-footer__logo-image"
+            />
           </NuxtLink>
 
           <p class="base-footer__description">

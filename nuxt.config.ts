@@ -80,7 +80,7 @@ export default defineNuxtConfig({
       type: 'Restaurant',
       name: 'Forest Rest',
       url: 'https://ekimovde.github.io/forest-rest/',
-      logo: 'https://ekimovde.github.io/forest-rest/logo.png',
+      logo: '/src/assets/images/logo.png',
       sameAs: [
         // Добавьте ссылки на социальные сети, если есть
       ],

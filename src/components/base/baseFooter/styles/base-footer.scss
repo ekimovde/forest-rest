@@ -118,9 +118,7 @@
   }
 
   &__logo {
-    display: flex;
-    align-items: center;
-    gap: var(--padding-small);
+    display: block;
     text-decoration: none;
     transition: opacity 0.3s ease;
 
@@ -129,17 +127,14 @@
     }
   }
 
-  &__logo-icon {
-    font-size: 32px;
-    line-height: 1;
-  }
+  &__logo-image {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
 
-  &__logo-text {
-    color: var(--white);
-    font-family: var(--font-title);
-    font-size: var(--font-size-big);
-    font-weight: 700;
-    line-height: 1;
+    @media (min-width: 768px) {
+      height: 70px;
+    }
   }
 
   &__description {
