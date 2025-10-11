@@ -2,7 +2,8 @@
     <div class="product-basket-card">
         <picture class="product-basket-card__picture">
             <img
-                src="https://prosushi.ru/cache/iiko_img/7c0a9269-8fee-4894-a0ce-9e7ef5b0d894_c0ed6b280b665dde75351be0d3a4cc91__small__640x440.jpg"
+                @error="handleImageError"
+                :src="item.image"
                 :alt="item.title"
                 class="product-basket-card__image"
             >
@@ -54,6 +55,12 @@ const emit = defineEmits<{
 defineProps<{
     item: ICartItem;
 }>();
+
+const handleImageError = (event: Event) => {
+    const img = event.target as HTMLImageElement;
+
+    img.src = 'https://prosushi.ru/cache/iiko_img/7c0a9269-8fee-4894-a0ce-9e7ef5b0d894_c0ed6b280b665dde75351be0d3a4cc91__small__640x440.jpg';
+};
 </script>
 
 <style lang="scss">

@@ -2,7 +2,8 @@
     <button class="product-card">
         <picture class="product-card__picture">
             <img
-                src="https://prosushi.ru/cache/iiko_img/7c0a9269-8fee-4894-a0ce-9e7ef5b0d894_c0ed6b280b665dde75351be0d3a4cc91__small__640x440.jpg"
+                @error="handleImageError"
+                :src="product.image"
                 :alt="product.title"
                 class="product-card__image"
             >
@@ -61,6 +62,12 @@ withDefaults(defineProps<{
 }>(), {
     quantity: 0,
 });
+
+const handleImageError = (event: Event) => {
+    const img = event.target as HTMLImageElement;
+
+    img.src = 'https://prosushi.ru/cache/iiko_img/7c0a9269-8fee-4894-a0ce-9e7ef5b0d894_c0ed6b280b665dde75351be0d3a4cc91__small__640x440.jpg';
+};
 </script>
 
 <style lang="scss">

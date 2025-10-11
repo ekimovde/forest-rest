@@ -7,7 +7,7 @@ export const PASTA = [
         title: 'Паста «Карбонара»',
         options: ['270 гр'],
         price: 580,
-        image: 'https://via.placeholder.com/150',
+        image: 'https://scdn.chibbis.ru/live/products/979bc86c014f1766add26d332ac3cd59.jpeg',
         subcategoryId: SubcategoryId.PASTA
     },
 ];

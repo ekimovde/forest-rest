@@ -138,7 +138,7 @@ export const ROLLS = [
         description: '(Креветка, семга, икра мойвы, огурец, сыр творожный)',
         options: ['320 гр'],
         price: 990,
-        image: 'https://via.placeholder.com/150',
+        image: 'https://scdn.chibbis.ru/live/products/4c32ca056aafb44534e1ca8893dee4b2.jpeg',
         subcategoryId: SubcategoryId.ROLLS
     },
     {

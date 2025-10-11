@@ -7,7 +7,7 @@ export const CHILDREN_MENU = [
         title: 'Картофель фри с томатным соусом',
         options: ['170 гр'],
         price: 250,
-        image: 'https://via.placeholder.com/150',
+        image: 'https://scdn.chibbis.ru/live/products/70336035a72404646e255a1d3645930b.jpeg',
         subcategoryId: SubcategoryId.CHILDREN_MENU
     },
     {
@@ -31,7 +31,7 @@ export const CHILDREN_MENU = [
         title: 'Картофельное пюре с пармезаном',
         options: ['170 гр'],
         price: 180,
-        image: 'https://via.placeholder.com/150',
+        image: 'https://scdn.chibbis.ru/live/products/2d34a6915630e34a42ce3495e8c41c3b.jpeg',
         subcategoryId: SubcategoryId.CHILDREN_MENU
     },
     {

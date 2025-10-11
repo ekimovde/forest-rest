@@ -7,7 +7,7 @@ export const DESSERTS = [
         title: 'Яблочный штрудель',
         options: ['160 гр'],
         price: 300,
-        image: 'https://via.placeholder.com/150',
+        image: 'https://scdn.chibbis.ru/live/products/b9edceef9634de64bcbade1f2186ca5c.jpeg',
         subcategoryId: SubcategoryId.DESSERTS
     },
     {
@@ -55,7 +55,7 @@ export const DESSERTS = [
         title: 'Блинчики с вареньем из шишек',
         options: ['140 гр'],
         price: 240,
-        image: 'https://via.placeholder.com/150',
+        image: 'https://scdn.chibbis.ru/live/products/7aedb6fe06c09a3f4e039f03aaf805ea.jpeg',
         subcategoryId: SubcategoryId.DESSERTS
     },
 ];
