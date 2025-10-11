@@ -1,3 +1,355 @@
 .page-delivery {
-  //
+  &__header {
+    margin-bottom: calc(var(--padding-container-top-bottom) * 1.5);
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: var(--padding-medium);
+    color: var(--gray-900);
+    font-family: var(--font-title);
+    font-size: var(--font-size-huge);
+    font-weight: 700;
+    line-height: 1.2;
+
+    @media (min-width: 768px) {
+      font-size: calc(var(--font-size-huge) * 1.3);
+    }
+  }
+
+  &__subtitle {
+    color: var(--gray-500);
+    font-family: var(--font-text);
+    font-size: var(--font-size-large);
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: calc(var(--padding-container-top-bottom) * 1.5);
+  }
+
+  &__section {
+    &--highlight {
+      padding: var(--padding-big);
+      background: linear-gradient(135deg, var(--green-transparent) 0%, var(--purple-transparent) 100%);
+      border-radius: var(--border-radius-medium);
+    }
+  }
+
+  &__section-title {
+    margin-bottom: var(--padding-big);
+    color: var(--gray-900);
+    font-family: var(--font-title);
+    font-size: var(--font-size-big);
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  // Карточки условий доставки
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--padding-medium);
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 1100px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  &__card {
+    padding: var(--padding-big);
+    background: var(--white);
+    border: 1px solid var(--gray-400);
+    border-radius: var(--border-radius-medium);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+  }
+
+  &__card-icon {
+    display: block;
+    margin-bottom: var(--padding-medium);
+    font-size: 40px;
+    line-height: 1;
+
+    @media (min-width: 768px) {
+      font-size: 48px;
+    }
+  }
+
+  &__card-title {
+    margin-bottom: var(--padding-small);
+    color: var(--gray-900);
+    font-family: var(--font-title);
+    font-size: var(--font-size-large);
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  &__card-text {
+    color: var(--gray-700);
+    font-family: var(--font-text);
+    font-size: var(--font-size-small);
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  // Зоны доставки
+  &__zones {
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-medium);
+
+    @media (min-width: 768px) {
+      gap: var(--padding-big);
+    }
+  }
+
+  &__zone {
+    padding: var(--padding-big);
+    background: var(--white);
+    border: 2px solid var(--gray-400);
+    border-radius: var(--border-radius-medium);
+    transition: border-color 0.3s ease;
+
+    &:hover {
+      border-color: var(--green);
+    }
+  }
+
+  &__zone-header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-small);
+    margin-bottom: var(--padding-medium);
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__zone-title {
+    color: var(--gray-900);
+    font-family: var(--font-title);
+    font-size: var(--font-size-large);
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  &__zone-price {
+    display: inline-block;
+    padding: var(--padding-tiny) var(--padding-medium);
+    color: var(--green);
+    font-family: var(--font-title);
+    font-size: var(--font-size-small);
+    font-weight: 600;
+    background: var(--green-transparent);
+    border-radius: var(--border-radius-tiny);
+    width: fit-content;
+  }
+
+  &__zone-text {
+    margin-bottom: var(--padding-medium);
+    color: var(--gray-700);
+    font-family: var(--font-text);
+    font-size: var(--font-size-medium);
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  &__zone-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--padding-small);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__zone-item {
+    padding: var(--padding-tiny) var(--padding-medium);
+    color: var(--gray-800);
+    font-family: var(--font-text);
+    font-size: var(--font-size-small);
+    font-weight: 400;
+    background: var(--gray-200);
+    border-radius: var(--border-radius-tiny);
+  }
+
+  // Блок информации
+  &__info-block {
+    background: var(--gray-200);
+    border-radius: var(--border-radius-medium);
+  }
+
+  &__text {
+    margin-bottom: var(--padding-medium);
+    color: var(--gray-700);
+    font-family: var(--font-text);
+    font-size: var(--font-size-medium);
+    font-weight: 400;
+    line-height: 1.6;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    strong {
+      color: var(--gray-900);
+      font-weight: 600;
+    }
+  }
+
+  &__highlight {
+    display: flex;
+    gap: var(--padding-medium);
+    align-items: flex-start;
+    padding: var(--padding-medium);
+    margin-top: var(--padding-medium);
+    background: var(--white);
+    border-left: 4px solid var(--purple);
+    border-radius: var(--border-radius-small);
+  }
+
+  &__highlight-icon {
+    flex-shrink: 0;
+    font-size: 24px;
+    line-height: 1;
+  }
+
+  &__highlight-text {
+    color: var(--gray-800);
+    font-family: var(--font-text);
+    font-size: var(--font-size-medium);
+    font-weight: 500;
+    line-height: 1.6;
+  }
+
+  // Способы оплаты
+  &__payment-methods {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--padding-medium);
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__payment-card {
+    display: flex;
+    gap: var(--padding-medium);
+    align-items: flex-start;
+    padding: var(--padding-big);
+    background: var(--white);
+    border: 1px solid var(--gray-400);
+    border-radius: var(--border-radius-medium);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+  }
+
+  &__payment-icon {
+    flex-shrink: 0;
+    font-size: 32px;
+    line-height: 1;
+
+    @media (min-width: 768px) {
+      font-size: 40px;
+    }
+  }
+
+  &__payment-content {
+    flex: 1;
+  }
+
+  &__payment-title {
+    margin-bottom: var(--padding-small);
+    color: var(--gray-900);
+    font-family: var(--font-title);
+    font-size: var(--font-size-medium);
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  &__payment-text {
+    color: var(--gray-700);
+    font-family: var(--font-text);
+    font-size: var(--font-size-small);
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  // Важная информация
+  &__important-list {
+    padding-left: var(--padding-big);
+    margin: 0;
+    list-style: none;
+  }
+
+  &__important-item {
+    position: relative;
+    margin-bottom: var(--padding-medium);
+    color: var(--gray-800);
+    font-family: var(--font-text);
+    font-size: var(--font-size-medium);
+    font-weight: 400;
+    line-height: 1.6;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      position: absolute;
+      left: calc(var(--padding-big) * -1);
+      content: '✓';
+      color: var(--green);
+      font-size: var(--font-size-large);
+      font-weight: 700;
+    }
+  }
+
+  // Контакты
+  &__contact {
+    padding: var(--padding-big);
+    text-align: center;
+    background: var(--gray-200);
+    border-radius: var(--border-radius-medium);
+  }
+
+  &__contact-text {
+    color: var(--gray-800);
+    font-family: var(--font-text);
+    font-size: var(--font-size-large);
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  &__contact-link {
+    color: var(--green);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: var(--green-soft);
+      text-decoration: underline;
+    }
+  }
 }
