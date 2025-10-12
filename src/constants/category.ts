@@ -12,6 +12,14 @@ export const CategoryId = {
     CHILDREN_MENU: 'childrenMenu', // Детское меню
     SNACKS: 'snacks', // Закуски
     SIDE_DISHES: 'sideDishes', // Гарниры
+    TEA_IN_A_TEAPOT: 'teaInATeapot', // Чай в чайнике
+    AUTHOR_TEA: 'authorTea', // Авторский чай
+    COFFEE: 'coffee', // Кофе
+    MATCHA_AND_COFFEE_DRINKS: 'matchaAndCoffeeDrinks', // Матча и кофейные напитки
+    WARMING_DRINKS: 'warmingDrinks', // Согревающие напитки
+    SMOOS: 'smoos', // Смузи
+    LEMONADE: 'lemonade', // Лимонад
+    MILK_COCKTAIL: 'milkCocktail', // Молочный коктейль
 };
 
 export const CategoryTitleById = {
@@ -28,4 +36,12 @@ export const CategoryTitleById = {
     [CategoryId.CHILDREN_MENU]: 'Детское меню',
     [CategoryId.SNACKS]: 'Закуски',
     [CategoryId.SIDE_DISHES]: 'Гарниры',
+    [CategoryId.TEA_IN_A_TEAPOT]: 'Чай в чайнике',
+    [CategoryId.AUTHOR_TEA]: 'Авторский чай',
+    [CategoryId.COFFEE]: 'Кофе',
+    [CategoryId.MATCHA_AND_COFFEE_DRINKS]: 'Матча и кофейные напитки',
+    [CategoryId.WARMING_DRINKS]: 'Согревающие напитки',
+    [CategoryId.SMOOS]: 'Смузи',
+    [CategoryId.LEMONADE]: 'Лимонад',
+    [CategoryId.MILK_COCKTAIL]: 'Молочный коктейль',
 };

@@ -444,15 +444,39 @@ export const DRINKS = [
     },
 ];
 
-export const DRINKS_CATEGORIES = [
+export const TEA_IN_A_TEAPOT_CATEGORIES = [
     ...TEA_IN_A_TEAPOT,
+];
+
+export const AUTHOR_TEA_CATEGORIES = [
     ...AUTHOR_TEA,
+];
+
+export const COFFEE_CATEGORIES = [
     ...COFFEE,
+];
+
+export const MATCHA_AND_COFFEE_DRINKS_CATEGORIES = [
     ...MATCHA_AND_COFFEE_DRINKS,
+];
+
+export const WARMING_DRINKS_CATEGORIES = [
     ...WARMING_DRINKS,
+];
+
+export const SMOOS_CATEGORIES = [
     ...SMOOS,
+];
+
+export const LEMONADE_CATEGORIES = [
     ...LEMONADE,
+];
+
+export const MILK_COCKTAIL_CATEGORIES = [
     ...MILK_COCKTAIL,
+];
+
+export const DRINKS_CATEGORIES = [
     ...JUICE,
     ...FRESH,
     ...DRINKS,
