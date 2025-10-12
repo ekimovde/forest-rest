@@ -8,6 +8,7 @@
             <UiSlider
                 view="catalog"
                 :spaceBetween="8"
+                :slidesPerView="'auto'"
             >
                 <SwiperSlide
                     v-for="category in categories"

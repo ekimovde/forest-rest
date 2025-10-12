@@ -1,5 +1,6 @@
 .ui-slider {
   position: relative;
+  overflow: hidden;
 
   &--view-catalog {
     padding-right: 40px;
@@ -8,7 +9,6 @@
 
   &__swiper {
     width: 100%;
-
     overflow: hidden;
   }
 

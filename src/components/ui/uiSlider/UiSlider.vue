@@ -15,6 +15,7 @@
             class="ui-slider__swiper"
             @swiper="onSwiper"
             @slide-change="onSlideChange"
+            @init="onInit"
         >
             <slot />
         </Swiper>
@@ -77,6 +78,10 @@ const swiperOptions = computed(() => {
         watchSlidesProgress: true,
         watchSlidesVisibility: true,
         autoHeight: true,
+        allowTouchMove: true,
+        resistance: true,
+        resistanceRatio: 0.85,
+        threshold: 5,
     };
 
     if (props.autoplay) {
@@ -101,13 +106,29 @@ const onSwiper = (swiper: SwiperType) => {
     updateNavigationState(swiper);
 };
 
+const onInit = (swiper: SwiperType) => {
+    updateNavigationState(swiper);
+};
+
 const onSlideChange = (swiper: SwiperType) => {
     updateNavigationState(swiper);
 };
 
 const updateNavigationState = (swiper: SwiperType) => {
-    isBeginning.value = swiper.isBeginning;
-    isEnd.value = swiper.isEnd;
+    // Более точное определение границ
+    isBeginning.value = swiper.isBeginning || swiper.activeIndex === 0;
+    isEnd.value = swiper.isEnd || swiper.activeIndex >= swiper.slides.length - 1;
+
+    // Дополнительная проверка для view="catalog"
+    if (props.view === 'catalog') {
+        const totalSlides = swiper.slides.length;
+        const slidesPerView = typeof props.slidesPerView === 'number' ? props.slidesPerView : 1;
+
+        if (totalSlides <= slidesPerView) {
+            isBeginning.value = true;
+            isEnd.value = true;
+        }
+    }
 };
 
 const slidePrev = () => {
@@ -120,8 +141,13 @@ const slideNext = () => {
 
 const handleResize = () => {
     if (swiperInstance.value) {
-        swiperInstance.value.update();
-        updateNavigationState(swiperInstance.value);
+        // Используем nextTick для корректного обновления после изменения размера
+        nextTick(() => {
+            swiperInstance.value?.update();
+            swiperInstance.value?.updateSlides();
+
+            updateNavigationState(swiperInstance.value!);
+        });
     }
 };
 
