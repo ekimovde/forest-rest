@@ -1,0 +1,14 @@
+.profile-card-orders {
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  &__caption {
+    color: var(--gray-500);
+    font-family: var(--font-text);
+    font-size: var(--font-size-medium);
+  }
+}

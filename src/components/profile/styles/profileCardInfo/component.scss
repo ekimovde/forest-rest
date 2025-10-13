@@ -1,0 +1,41 @@
+.profile-card-info {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+
+    @media (min-width: 768px) {
+      row-gap: 20px;
+    }
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      align-items: center;
+      column-gap: 12px;
+      row-gap: 0;
+    }
+  }
+
+  &__label {
+    color: var(--gray-500);
+    font-family: var(--font-text);
+    font-size: var(--font-size-small);
+    font-weight: 600;
+
+    @media (min-width: 768px) {
+      min-width: 100px;
+    }
+  }
+
+  &__value {
+    color: var(--gray-900);
+    font-family: var(--font-text);
+    font-size: var(--font-size-medium);
+  }
+}
