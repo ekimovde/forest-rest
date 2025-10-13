@@ -33,8 +33,8 @@
 </template>
 
 <script setup lang="ts">
-import UiSwitch from '~/components/ui/uiSwitch/UiSwitch.vue';
-import UiButtonIcon from '~/components/ui/uiButtonIcon/UiButtonIcon.vue';
+import UiSwitch from '~/components/ui/UiSwitch.vue';
+import UiButtonIcon from '~/components/ui/UiButtonIcon.vue';
 import type { ISwitch } from '~/interfaces';
 
 const deliveryTypes: ISwitch[] = [

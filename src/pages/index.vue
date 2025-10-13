@@ -69,8 +69,8 @@
 <script setup lang="ts">
 import ProductGroup from '~/components/product/ProductGroup.vue';
 import ProductCard from '~/components/product/ProductCard.vue';
-import UiSlider from '~/components/ui/uiSlider/UiSlider.vue';
-import UiButton from '~/components/ui/uiButton/UiButton.vue';
+import UiSlider from '~/components/ui/UiSlider.vue';
+import UiButton from '~/components/ui/UiButton.vue';
 import { SwiperSlide } from 'swiper/vue';
 import { CATEGORIES } from '~/mocks';
 import { useCartStore } from '~/stores';

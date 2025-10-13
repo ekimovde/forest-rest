@@ -51,7 +51,7 @@
 <script setup lang="ts">
 import ProductGroup from '~/components/product/ProductGroup.vue';
 import ProductCard from '~/components/product/ProductCard.vue';
-import UiButton from '~/components/ui/uiButton/UiButton.vue';
+import UiButton from '~/components/ui/UiButton.vue';
 import { CATEGORIES } from '~/mocks';
 import { useCartStore } from '~/stores';
 import { useSeo } from '~/composables/useSeo';

@@ -67,7 +67,7 @@
 
 <script setup lang="ts">
 import type { IProduct } from '~/interfaces';
-import UiCounter from '~/components/ui/uiCounter/UiCounter.vue';
+import UiCounter from '~/components/ui/UiCounter.vue';
 
 const emit = defineEmits<{
     (event: 'add'): void;

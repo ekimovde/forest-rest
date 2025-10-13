@@ -29,8 +29,8 @@
 
 <script setup lang="ts">
 import { SwiperSlide } from 'swiper/vue';
-import UiSlider from '~/components/ui/uiSlider/UiSlider.vue';
-import UiButton from '~/components/ui/uiButton/UiButton.vue';
+import UiSlider from '~/components/ui/UiSlider.vue';
+import UiButton from '~/components/ui/UiButton.vue';
 import { CATEGORIES } from '~/mocks';
 
 const route = useRoute();

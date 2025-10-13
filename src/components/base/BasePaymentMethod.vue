@@ -27,8 +27,8 @@
 <script setup lang="ts">
 import { PaymentMethod, PaymentBanknote } from '~/enums';
 import type { IDropdownOption, IPaymentBanknote } from '~/interfaces';
-import UiDropdown from '~/components/ui/uiDropdown/UiDropdown.vue';
-import UiButton from '~/components/ui/uiButton/UiButton.vue';
+import UiDropdown from '~/components/ui/UiDropdown.vue';
+import UiButton from '~/components/ui/UiButton.vue';
 
 const PAYMENT_METHODS: IDropdownOption[] = [
     {

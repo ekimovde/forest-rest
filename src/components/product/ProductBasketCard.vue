@@ -57,7 +57,7 @@
 <script setup lang="ts">
 import type { ICartItem } from '~/interfaces';
 import { formatPrice } from '~/utils';
-import UiCounterSimple from '~/components/ui/uiCounterSimple/UiCounterSimple.vue';
+import UiCounterSimple from '~/components/ui/UiCounterSimple.vue';
 
 const emit = defineEmits<{
     (event: 'increment', value: number): void;

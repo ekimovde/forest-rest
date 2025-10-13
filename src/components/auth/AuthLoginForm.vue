@@ -55,9 +55,9 @@
 </template>
 
 <script setup lang="ts">
-import UiInput from '~/components/ui/uiInput/UiInput.vue';
-import UiCheckbox from '~/components/ui/uiCheckbox/UiCheckbox.vue';
-import UiButton from '~/components/ui/uiButton/UiButton.vue';
+import UiInput from '~/components/ui/UiInput.vue';
+import UiCheckbox from '~/components/ui/UiCheckbox.vue';
+import UiButton from '~/components/ui/UiButton.vue';
 import { useLoginForm } from '~/composables/useLoginForm';
 
 const {
