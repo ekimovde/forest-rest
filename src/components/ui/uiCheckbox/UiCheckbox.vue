@@ -19,10 +19,12 @@
         </span>
 
         <span
-            v-if="label"
+            v-if="label || $slots.label"
             class="ui-checkbox__label"
         >
-            {{ label }}
+            <slot name="label">
+                {{ label }}
+            </slot>
         </span>
     </label>
 </template>

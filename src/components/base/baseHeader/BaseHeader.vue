@@ -22,7 +22,11 @@
             </NuxtLink>
 
             <div class="base-header__actions">
-                <UiButtonIcon iconName="bx bx-user" />
+                <UiButtonIcon
+                    iconName="bx bx-user"
+                    tag="link"
+                    href="/profile"
+                />
             </div>
         </div>
     </header>

@@ -34,7 +34,11 @@ import { useCartStore } from '~/stores';
 const route = useRoute();
 const { orderPrice, totalItems } = storeToRefs(useCartStore());
 
-const isWidgetCartVisible = computed(() => !route.path.includes('/cart') && totalItems.value > 0);
+const isWidgetCartVisible = computed(() => {
+  const notAllowedRoutePaths = ['/cart', '/profile'];
+
+  return !notAllowedRoutePaths.includes(route.path) && totalItems.value > 0;
+});
 </script>
 
 <style scoped lang="scss">

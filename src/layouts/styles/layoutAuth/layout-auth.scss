@@ -1,0 +1,62 @@
+.layout-auth {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, var(--gray-200) 0%, var(--white) 100%);
+
+  &__header {
+    flex-shrink: 0;
+    padding-top: var(--padding-medium);
+    padding-bottom: var(--padding-medium);
+    background-color: var(--white);
+    border-bottom: 1px solid var(--gray-400);
+  }
+
+  &__header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__logo {
+    display: inline-block;
+    transition: opacity 0.25s ease;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__logo-image {
+    height: 40px;
+    width: auto;
+
+    @media (min-width: 768px) {
+      height: 50px;
+    }
+  }
+
+  &__main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-top: var(--padding-container-top-bottom);
+    padding-bottom: var(--padding-container-top-bottom);
+  }
+
+  &__footer {
+    flex-shrink: 0;
+    padding-top: var(--padding-big);
+    padding-bottom: var(--padding-big);
+    background-color: var(--white);
+    border-top: 1px solid var(--gray-400);
+  }
+
+  &__footer-text {
+    color: var(--gray-500);
+    font-family: var(--font-text);
+    font-size: var(--font-size-small);
+    text-align: center;
+  }
+}
