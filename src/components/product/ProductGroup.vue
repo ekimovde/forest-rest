@@ -75,5 +75,5 @@ const productGroupTitleClasses = computed(() => ({
 </script>
 
 <style lang="scss">
-    @use '~/components/product/productGroup/styles/product-group' as *;
+    @use '~/components/product/styles/productGroup/component' as *;
 </style>

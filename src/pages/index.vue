@@ -67,8 +67,8 @@
 </template>
 
 <script setup lang="ts">
-import ProductGroup from '~/components/product/productGroup/ProductGroup.vue';
-import ProductCard from '~/components/product/productCard/ProductCard.vue';
+import ProductGroup from '~/components/product/ProductGroup.vue';
+import ProductCard from '~/components/product/ProductCard.vue';
 import UiSlider from '~/components/ui/uiSlider/UiSlider.vue';
 import UiButton from '~/components/ui/uiButton/UiButton.vue';
 import { SwiperSlide } from 'swiper/vue';

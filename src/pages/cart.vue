@@ -142,8 +142,8 @@
 </template>
 
 <script setup lang="ts">
-import ProductGroup from '~/components/product/productGroup/ProductGroup.vue';
-import ProductBasketCard from '~/components/product/productBasketCard/ProductBasketCard.vue';
+import ProductGroup from '~/components/product/ProductGroup.vue';
+import ProductBasketCard from '~/components/product/ProductBasketCard.vue';
 import BaseOrderInvoice from '~/components/base/baseOrderInvoice/BaseOrderInvoice.vue';
 import BasePaymentMethod from '~/components/base/basePaymentMethod/BasePaymentMethod.vue';
 import UiInput from '~/components/ui/uiInput/UiInput.vue';

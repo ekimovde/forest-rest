@@ -83,5 +83,5 @@ const handleImageError = () => {
 </script>
 
 <style lang="scss">
-    @use '~/components/product/productBasketCard/styles/product-basket-card' as *;
+    @use '~/components/product/styles/productBasketCard/component' as *;
 </style>

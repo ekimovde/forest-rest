@@ -97,5 +97,5 @@ const handleImageError = () => {
 </script>
 
 <style lang="scss">
-    @use '~/components/product/productCard/styles/product-card' as *;
+    @use '~/components/product/styles/productCard/component' as *;
 </style>
