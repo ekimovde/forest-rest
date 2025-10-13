@@ -93,5 +93,5 @@ const isPaymentBanknoteSelected = (value: PaymentBanknote) => {
 </script>
 
 <style lang="scss">
-    @use '~/components/base/basePaymentMethod/styles/base-payment-method' as *;
+    @use '~/components/base/styles/basePaymentMethod/component' as *;
 </style>

@@ -64,5 +64,5 @@ onUnmounted(() => {
 </script>
 
 <style lang="scss">
-    @use '~/components/base/baseCatalog/styles/base-catalog' as *;
+    @use '~/components/base/styles/baseCatalog/component' as *;
 </style>

@@ -50,5 +50,5 @@ withDefaults(defineProps<{
 </script>
 
 <style lang="scss">
-    @use '~/components/base/baseOrderInvoice/styles/base-order-invoice' as *;
+    @use '~/components/base/styles/baseOrderInvoice/component' as *;
 </style>

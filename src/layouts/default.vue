@@ -25,10 +25,10 @@
 </template>
 
 <script setup lang="ts">
-import BaseHeader from '~/components/base/baseHeader/BaseHeader.vue';
-import BaseCatalog from '~/components/base/baseCatalog/BaseCatalog.vue';
-import BaseWidgetCart from '~/components/base/baseWidgetCart/BaseWidgetCart.vue';
-import BaseFooter from '~/components/base/baseFooter/BaseFooter.vue';
+import BaseHeader from '~/components/base/BaseHeader.vue';
+import BaseCatalog from '~/components/base/BaseCatalog.vue';
+import BaseWidgetCart from '~/components/base/BaseWidgetCart.vue';
+import BaseFooter from '~/components/base/BaseFooter.vue';
 import { useCartStore } from '~/stores';
 
 const route = useRoute();

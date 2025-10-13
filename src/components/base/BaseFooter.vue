@@ -262,5 +262,5 @@ const currentYear = new Date().getFullYear();
 </script>
 
 <style lang="scss">
-    @use '~/components/base/baseFooter/styles/base-footer' as *;
+    @use '~/components/base/styles/baseFooter/component' as *;
 </style>

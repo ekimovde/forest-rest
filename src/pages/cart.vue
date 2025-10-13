@@ -144,8 +144,8 @@
 <script setup lang="ts">
 import ProductGroup from '~/components/product/ProductGroup.vue';
 import ProductBasketCard from '~/components/product/ProductBasketCard.vue';
-import BaseOrderInvoice from '~/components/base/baseOrderInvoice/BaseOrderInvoice.vue';
-import BasePaymentMethod from '~/components/base/basePaymentMethod/BasePaymentMethod.vue';
+import BaseOrderInvoice from '~/components/base/BaseOrderInvoice.vue';
+import BasePaymentMethod from '~/components/base/BasePaymentMethod.vue';
 import UiInput from '~/components/ui/uiInput/UiInput.vue';
 import UiInputPhone from '~/components/ui/uiInputPhone/UiInputPhone.vue';
 import UiCheckbox from '~/components/ui/uiCheckbox/UiCheckbox.vue';

@@ -69,5 +69,5 @@ onUnmounted(() => {
 </script>
 
 <style lang="scss">
-    @use '~/components/base/baseHeader/styles/base-header' as *;
+    @use '~/components/base/styles/baseHeader/component' as *;
 </style>

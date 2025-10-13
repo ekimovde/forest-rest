@@ -32,5 +32,5 @@ withDefaults(defineProps<{
 </script>
 
 <style lang="scss">
-    @use '~/components/base/baseWidgetCart/styles/base-widget-cart' as *;
+    @use '~/components/base/styles/baseWidgetCart/component' as *;
 </style>
