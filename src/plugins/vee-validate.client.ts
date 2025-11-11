@@ -1,4 +1,4 @@
-import { configure } from 'vee-validate';
+import {configure} from 'vee-validate';
 
 // Конфигурация VeeValidate
 export default defineNuxtPlugin(() => {

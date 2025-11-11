@@ -186,7 +186,7 @@
 </template>
 
 <script setup lang="ts">
-import { CATEGORIES } from '~/mocks';
+import {CATEGORIES} from '~/mocks';
 
 interface FooterBlock {
   title: string;

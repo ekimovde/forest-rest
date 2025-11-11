@@ -1,4 +1,4 @@
-import { SubcategoryId } from "~/constants";
+import {SubcategoryId} from "~/constants";
 
 // --- Роман пицца ---
 export const ROMAN_PIZZA = [

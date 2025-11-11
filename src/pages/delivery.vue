@@ -162,8 +162,8 @@
 </template>
 
 <script setup lang="ts">
-import { useSeo } from '~/composables/useSeo';
-import { DELIVERY_PRICE } from '~/constants/delivery';
+import {useSeo} from '~/composables/useSeo';
+import {DELIVERY_PRICE} from '~/constants/delivery';
 
 // Условия доставки
 const deliveryConditions = [

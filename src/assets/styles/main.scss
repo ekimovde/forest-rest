@@ -4,8 +4,6 @@
 @use "global" as *;
 
 html {
-  min-width: var(--html-min-width);
-  max-width: var(--html-max-width);
   background-color: var(--gray-300);
   color: var(--gray-800);
   font-family: var(--font-text);

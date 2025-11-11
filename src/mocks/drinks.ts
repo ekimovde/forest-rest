@@ -1,4 +1,4 @@
-import { SubcategoryId } from "~/constants";
+import {SubcategoryId} from "~/constants";
 
 // --- Чай в чайнике ---
 export const TEA_IN_A_TEAPOT = [

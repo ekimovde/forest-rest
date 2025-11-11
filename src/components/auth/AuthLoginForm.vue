@@ -55,10 +55,11 @@
 </template>
 
 <script setup lang="ts">
+import {useLoginForm} from '~/composables/useLoginForm';
+
 import UiInput from '~/components/ui/UiInput.vue';
 import UiCheckbox from '~/components/ui/UiCheckbox.vue';
 import UiButton from '~/components/ui/UiButton.vue';
-import { useLoginForm } from '~/composables/useLoginForm';
 
 const {
   email,

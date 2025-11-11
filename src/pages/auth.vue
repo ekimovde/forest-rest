@@ -31,9 +31,10 @@
 </template>
 
 <script setup lang="ts">
+import {useSeo} from '~/composables/useSeo';
+
 import AuthLoginForm from '~/components/auth/AuthLoginForm.vue';
 import AuthRegistrationForm from '~/components/auth/AuthRegistrationForm.vue';
-import { useSeo } from '~/composables/useSeo';
 
 enum AuthTab {
   login = 'login',

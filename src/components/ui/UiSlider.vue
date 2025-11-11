@@ -30,14 +30,15 @@
 </template>
 
 <script setup lang="ts">
-import { Swiper } from 'swiper/vue';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import {Swiper} from 'swiper/vue';
+import {Navigation, Pagination, Autoplay} from 'swiper/modules';
 import type { Swiper as SwiperType } from 'swiper';
+
+import UiButtonSlider from '~/components/ui/UiButtonSlider.vue';
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-
-import UiButtonSlider from '~/components/ui/UiButtonSlider.vue';
 
 interface Props {
     slidesPerView?: number | 'auto';

@@ -12,7 +12,7 @@
 </template>
 
 <script setup lang="ts">
-import { vMaska } from 'maska/vue';
+import {vMaska} from 'maska/vue';
 
 const emit = defineEmits<{
     (event: 'update:modelValue', value: string): void;

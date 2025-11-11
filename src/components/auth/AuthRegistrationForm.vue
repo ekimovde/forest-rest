@@ -92,11 +92,12 @@
 </template>
 
 <script setup lang="ts">
+import {useRegistrationForm} from '~/composables/useRegistrationForm';
+
 import UiInput from '~/components/ui/UiInput.vue';
 import UiInputPhone from '~/components/ui/UiInputPhone.vue';
 import UiCheckbox from '~/components/ui/UiCheckbox.vue';
 import UiButton from '~/components/ui/UiButton.vue';
-import { useRegistrationForm } from '~/composables/useRegistrationForm';
 
 const {
   name,

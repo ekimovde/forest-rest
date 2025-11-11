@@ -67,15 +67,16 @@
 </template>
 
 <script setup lang="ts">
+import {SwiperSlide} from 'swiper/vue';
+import {CATEGORIES} from '~/mocks';
+import {useCartStore} from '~/stores';
+import {useSeo} from '~/composables/useSeo';
+import {useRestaurantSchema} from '~/composables/useRestaurantSchema';
+
 import ProductGroup from '~/components/product/ProductGroup.vue';
 import ProductCard from '~/components/product/ProductCard.vue';
 import UiSlider from '~/components/ui/UiSlider.vue';
 import UiButton from '~/components/ui/UiButton.vue';
-import { SwiperSlide } from 'swiper/vue';
-import { CATEGORIES } from '~/mocks';
-import { useCartStore } from '~/stores';
-import { useSeo } from '~/composables/useSeo';
-import { useRestaurantSchema } from '~/composables/useRestaurantSchema';
 
 const { addItem, getItemQuantity, removeItem, updateQuantity } = useCartStore();
 

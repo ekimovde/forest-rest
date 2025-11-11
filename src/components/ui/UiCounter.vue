@@ -35,7 +35,7 @@
 </template>
 
 <script setup lang="ts">
-import { formatPrice } from '~/utils';
+import {formatPrice} from '~/utils';
 
 const emit = defineEmits<{
     (e: 'update:modelValue', value: number): void

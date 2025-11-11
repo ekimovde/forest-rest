@@ -25,11 +25,12 @@
 </template>
 
 <script setup lang="ts">
+import {useCartStore} from '~/stores';
+
 import BaseHeader from '~/components/base/BaseHeader.vue';
 import BaseCatalog from '~/components/base/BaseCatalog.vue';
 import BaseWidgetCart from '~/components/base/BaseWidgetCart.vue';
 import BaseFooter from '~/components/base/BaseFooter.vue';
-import { useCartStore } from '~/stores';
 
 const route = useRoute();
 const { orderPrice, totalItems } = storeToRefs(useCartStore());

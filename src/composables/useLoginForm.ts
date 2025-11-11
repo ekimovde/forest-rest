@@ -1,5 +1,5 @@
-import { useForm, useField } from 'vee-validate';
-import { loginSchema } from '~/schemas';
+import {useForm, useField} from 'vee-validate';
+import {loginSchema} from '~/schemas';
 
 export const useLoginForm = () => {
     const { handleSubmit, errors, meta, resetForm, setFieldValue } = useForm({

@@ -1,20 +1,18 @@
-import { CategoryId, CategoryTitleById, SubcategoryTitleById } from '~/constants';
-import type { IProduct } from '~/interfaces';
-
-import { ROLLS_CATEGORIES } from './rolls';
-
-import { CHILDREN_MENU_CATEGORIES } from './childrenMenu';
-import { COLD_SNACKS_CATEGORIES } from './coldSnacks';
-import { DESSERTS_CATEGORIES } from './desserts';
-import { GRILL_CATEGORIES } from './grill';
-import { HOT_DISHES_CATEGORIES } from './hotDishes';
-import { HOT_SNACKS_CATEGORIES } from './hotSnacks';
-import { PASTA_CATEGORIES } from './pasta';
-import { PIZZA_CATEGORIES } from './romanPizza';
-import { SALADS_CATEGORIES } from './salads';
-import { SETS_CATEGORIES } from './sets';
-import { SIDE_DISHES_CATEGORIES } from './sideDishes';
-import { SOUPS_CATEGORIES } from './soups';
+import type {IProduct} from '~/interfaces';
+import {CategoryId, CategoryTitleById, SubcategoryTitleById} from '~/constants';
+import {ROLLS_CATEGORIES} from './rolls';
+import {CHILDREN_MENU_CATEGORIES} from './childrenMenu';
+import {COLD_SNACKS_CATEGORIES} from './coldSnacks';
+import {DESSERTS_CATEGORIES} from './desserts';
+import {GRILL_CATEGORIES} from './grill';
+import {HOT_DISHES_CATEGORIES} from './hotDishes';
+import {HOT_SNACKS_CATEGORIES} from './hotSnacks';
+import {PASTA_CATEGORIES} from './pasta';
+import {PIZZA_CATEGORIES} from './romanPizza';
+import {SALADS_CATEGORIES} from './salads';
+import {SETS_CATEGORIES} from './sets';
+import {SIDE_DISHES_CATEGORIES} from './sideDishes';
+import {SOUPS_CATEGORIES} from './soups';
 import {
     DRINKS_CATEGORIES,
     TEA_IN_A_TEAPOT_CATEGORIES,

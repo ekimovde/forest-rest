@@ -1,7 +1,7 @@
-import { defineStore } from 'pinia'
-import { ref, computed } from 'vue'
+import {defineStore} from 'pinia'
+import {ref, computed} from 'vue'
+import {DELIVERY_PRICE} from '~/constants'
 import type { IProduct, ICartItem } from '~/interfaces'
-import { DELIVERY_PRICE } from '~/constants'
 
 export const useCartStore = defineStore(
   'cart',

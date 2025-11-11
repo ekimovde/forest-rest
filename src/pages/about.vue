@@ -93,7 +93,7 @@
 </template>
 
 <script setup lang="ts">
-import { useSeo } from '~/composables/useSeo';
+import {useSeo} from '~/composables/useSeo';
 
 // Данные для карточек философии
 const philosophyCards = [

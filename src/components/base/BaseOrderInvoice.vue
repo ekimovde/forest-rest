@@ -35,8 +35,8 @@
 </template>
 
 <script setup lang="ts">
-import { DELIVERY_PRICE } from '~/constants';
-import { formatPrice } from '~/utils';
+import {DELIVERY_PRICE} from '~/constants';
+import {formatPrice} from '~/utils';
 
 withDefaults(defineProps<{
     orderPrice?: number;

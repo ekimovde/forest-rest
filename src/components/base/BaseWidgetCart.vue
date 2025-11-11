@@ -20,7 +20,7 @@
 </template>
 
 <script setup lang="ts">
-import { formatPrice } from '~/utils';
+import {formatPrice} from '~/utils';
 
 withDefaults(defineProps<{
     totalItems: number;

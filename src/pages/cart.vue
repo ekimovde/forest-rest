@@ -142,6 +142,11 @@
 </template>
 
 <script setup lang="ts">
+import {useCartForm} from '~/composables/useCartForm';
+import {useCartStore} from '~/stores';
+import {PaymentMethod, PaymentBanknote} from '~/enums';
+import {useSeo} from '~/composables/useSeo';
+
 import ProductGroup from '~/components/product/ProductGroup.vue';
 import ProductBasketCard from '~/components/product/ProductBasketCard.vue';
 import BaseOrderInvoice from '~/components/base/BaseOrderInvoice.vue';
@@ -152,10 +157,6 @@ import UiCheckbox from '~/components/ui/UiCheckbox.vue';
 import UiTextarea from '~/components/ui/UiTextarea.vue';
 import UiButton from '~/components/ui/UiButton.vue';
 import UiButtonInline from '~/components/ui/UiButtonInline.vue';
-import { useCartForm } from '~/composables/useCartForm';
-import { useCartStore } from '~/stores';
-import { PaymentMethod, PaymentBanknote } from '~/enums';
-import { useSeo } from '~/composables/useSeo';
 
 const { items, orderPrice, totalPrice } = storeToRefs(useCartStore());
 const { updateQuantity, clearCart } = useCartStore();

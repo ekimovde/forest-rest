@@ -200,7 +200,7 @@
 </template>
 
 <script setup lang="ts">
-import { useSeo } from '~/composables/useSeo';
+import {useSeo} from '~/composables/useSeo';
 
 // Информация о компании
 const companyInfo = [

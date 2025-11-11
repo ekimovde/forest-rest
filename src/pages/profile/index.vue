@@ -14,33 +14,29 @@
     </div>
 
     <div class="page-profile__content">
-      <!-- Админ панель -->
       <ProfileBannerAdmin v-if="isAdmin" />
 
-      <!-- Карточка профиля -->
       <ProfileCardInfo />
 
-      <!-- Карточка истории заказов -->
       <ProfileCardOrders />
 
-      <!-- Карточка адресов доставки -->
       <ProfileCardDelivery />
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
+import {useSeo} from '~/composables/useSeo';
+
 import ProfileBannerAdmin from '~/components/profile/ProfileBannerAdmin.vue';
 import ProfileCardInfo from '~/components/profile/ProfileCardInfo.vue';
 import ProfileCardOrders from '~/components/profile/ProfileCardOrders.vue';
 import ProfileCardDelivery from '~/components/profile/ProfileCardDelivery.vue';
 import UiButton from '~/components/ui/UiButton.vue';
-import { useSeo } from '~/composables/useSeo';
 
 const router = useRouter();
 
-// Проверка роли пользователя (в реальном приложении получается из стора/API)
-const isAdmin = ref(true); // Для демонстрации
+const isAdmin = ref(true);
 
 const handleLogout = () => {
   // Здесь должна быть логика выхода (очистка токена и т.д.)

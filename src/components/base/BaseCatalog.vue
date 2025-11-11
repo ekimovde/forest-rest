@@ -28,10 +28,11 @@
 </template>
 
 <script setup lang="ts">
-import { SwiperSlide } from 'swiper/vue';
+import {SwiperSlide} from 'swiper/vue';
+import {CATEGORIES} from '~/mocks';
+
 import UiSlider from '~/components/ui/UiSlider.vue';
 import UiButton from '~/components/ui/UiButton.vue';
-import { CATEGORIES } from '~/mocks';
 
 const route = useRoute();
 

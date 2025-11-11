@@ -1,5 +1,5 @@
-import { useForm, useField } from 'vee-validate';
-import { cartSchema } from '~/schemas';
+import {useForm, useField} from 'vee-validate';
+import {cartSchema} from '~/schemas';
 
 export const useCartForm = () => {
   const { handleSubmit, errors, meta, resetForm, setFieldValue } = useForm({

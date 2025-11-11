@@ -55,8 +55,9 @@
 </template>
 
 <script setup lang="ts">
+import {formatPrice} from '~/utils';
 import type { ICartItem } from '~/interfaces';
-import { formatPrice } from '~/utils';
+
 import UiCounterSimple from '~/components/ui/UiCounterSimple.vue';
 
 const emit = defineEmits<{
