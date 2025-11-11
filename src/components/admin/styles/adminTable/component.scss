@@ -1,0 +1,125 @@
+.admin-table {
+    overflow-x: auto;
+    background-color: var(--white);
+    border: 1px solid var(--gray-400);
+    border-radius: var(--border-radius-medium);
+
+    &__table {
+        width: 100%;
+        min-width: 1000px;
+        border-collapse: collapse;
+    }
+
+    &__table-head {
+        background-color: var(--gray-200);
+        border-bottom: 1px solid var(--gray-400);
+    }
+
+    &__table-th {
+        padding: 16px 12px;
+        color: var(--gray-900);
+        font-family: var(--font-title);
+        font-size: var(--font-size-small);
+        font-weight: 700;
+        text-align: left;
+        white-space: nowrap;
+
+        @media (min-width: 768px) {
+            padding: 18px 16px;
+        }
+    }
+
+    &__table-row {
+        border-bottom: 1px solid var(--gray-400);
+        transition: background-color 0.25s ease;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        &:hover {
+            background-color: var(--gray-300);
+        }
+    }
+
+    &__table-td {
+        padding: 16px 12px;
+        color: var(--gray-900);
+        font-family: var(--font-text);
+        font-size: var(--font-size-small);
+        vertical-align: middle;
+
+        @media (min-width: 768px) {
+            padding: 18px 16px;
+        }
+
+        &--order {
+            font-weight: 700;
+        }
+
+        &--actions {
+            white-space: nowrap;
+        }
+    }
+
+    &__order-number {
+        color: var(--green);
+        font-weight: 700;
+    }
+
+    &__date {
+        display: block;
+        margin-bottom: 4px;
+        font-weight: 600;
+    }
+
+    &__time {
+        display: block;
+        color: var(--gray-500);
+        font-size: var(--font-size-tiny);
+    }
+
+    &__customer {
+        display: flex;
+        flex-direction: column;
+        row-gap: 4px;
+    }
+
+    &__customer-name {
+        font-weight: 600;
+    }
+
+    &__customer-phone {
+        color: var(--gray-500);
+        font-size: var(--font-size-tiny);
+    }
+
+    &__items-count {
+        color: var(--gray-700);
+    }
+
+    &__total {
+        font-weight: 700;
+        color: var(--gray-900);
+    }
+
+    &__empty {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 60px 20px;
+        color: var(--gray-500);
+    }
+
+    &__empty-icon {
+        margin-bottom: 16px;
+        font-size: 64px;
+        opacity: 0.3;
+    }
+
+    &__empty-text {
+        font-family: var(--font-text);
+        font-size: var(--font-size-medium);
+    }
+}
