@@ -1,4 +1,11 @@
 import {SubcategoryId} from "~/constants";
+import soup1 from '~/assets/images/soups/picture-1.jpg';
+import soup2 from '~/assets/images/soups/picture-2.jpg';
+import soup3 from '~/assets/images/soups/picture-3.jpg';
+import soup4 from '~/assets/images/soups/picture-4.jpg';
+import soup5 from '~/assets/images/soups/picture-5.jpg';
+import soup6 from '~/assets/images/soups/picture-6.jpg';
+import soup7 from '~/assets/images/soups/picture-7.jpg';
 
 // --- Супы ---
 export const SOUPS = [
@@ -6,32 +13,40 @@ export const SOUPS = [
         id: 142,
         title: 'Борщ с говядиной',
         options: ['650 гр'],
-        price: 490,
-        image: 'https://scdn.chibbis.ru/live/products/353f41ea482c64eed73d5b24642cc6cd.jpeg',
+        price: 690,
+        image: soup1,
         subcategoryId: SubcategoryId.SOUPS
     },
     {
         id: 143,
-        title: 'Солянка мясная',
-        options: ['590 гр'],
-        price: 590,
-        image: 'https://scdn.chibbis.ru/live/products/6437cc2bc9872ec2a57112b2551d4033.jpeg',
+        title: 'Крем суп из белых грибов',
+        options: ['200 гр'],
+        price: 400,
+        image: soup2,
         subcategoryId: SubcategoryId.SOUPS
     },
     {
         id: 144,
-        title: 'Уха сливочная с семгой',
-        options: ['500 гр'],
-        price: 450,
-        image: 'https://scdn.chibbis.ru/live/products/cdbfc6b9412ab8d2125e3d5e4e0009c8.jpeg',
+        title: 'Пельмени из оленины в соусе Демиглас (без бульона)',
+        options: ['180 гр'],
+        price: 790,
+        image: soup3,
         subcategoryId: SubcategoryId.SOUPS
     },
     {
         id: 145,
-        title: 'Крем суп из белых грибов',
-        options: ['200 гр'],
-        price: 400,
-        image: 'https://scdn.chibbis.ru/live/products/9d3235b4034700283f713cd56a64e812.jpeg',
+        title: 'Пельмени по домашнему',
+        options: ['300 гр'],
+        price: 390,
+        image: soup4,
+        subcategoryId: SubcategoryId.SOUPS
+    },
+    {
+        id: 146,
+        title: 'Солянка мясная',
+        options: ['590 гр'],
+        price: 690,
+        image: soup5,
         subcategoryId: SubcategoryId.SOUPS
     },
     {
@@ -39,7 +54,15 @@ export const SOUPS = [
         title: 'Суп куриный с лапшой',
         options: ['500 гр'],
         price: 360,
-        image: 'https://scdn.chibbis.ru/live/products/3d14586a802553428dc4d9c15997df24.jpeg',
+        image: soup6,
+        subcategoryId: SubcategoryId.SOUPS
+    },
+    {
+        id: 146,
+        title: 'Уха сливочная с семгой',
+        options: ['500 гр'],
+        price: 590,
+        image: soup7,
         subcategoryId: SubcategoryId.SOUPS
     },
 ];

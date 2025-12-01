@@ -1,61 +1,23 @@
 import {SubcategoryId} from "~/constants";
+import dessert1 from '~/assets/images/desserts/picture-1.jpg';
+import dessert2 from '~/assets/images/desserts/picture-2.jpg';
 
 // --- Десерты ---
 export const DESSERTS = [
     {
         id: 18,
-        title: 'Яблочный штрудель',
-        options: ['160 гр'],
-        price: 300,
-        image: 'https://scdn.chibbis.ru/live/products/b9edceef9634de64bcbade1f2186ca5c.jpeg',
+        title: 'Блинчики с вареньем из шишек',
+        options: ['140 гр'],
+        price: 240,
+        image: dessert1,
         subcategoryId: SubcategoryId.DESSERTS
     },
     {
         id: 19,
-        title: 'Жареное мороженое с вишневым конфи',
-        options: ['150 гр'],
-        price: 380,
-        image: 'https://via.placeholder.com/150',
-        subcategoryId: SubcategoryId.DESSERTS
-    },
-    {
-        id: 20,
-        title: 'Малиновый тирамису',
-        options: ['120 гр'],
-        price: 440,
-        image: 'https://via.placeholder.com/150',
-        subcategoryId: SubcategoryId.DESSERTS
-    },
-    {
-        id: 21,
-        title: 'Тирамису',
-        options: ['120 гр'],
-        price: 300,
-        image: 'https://via.placeholder.com/150',
-        subcategoryId: SubcategoryId.DESSERTS
-    },
-    {
-        id: 22,
-        title: 'Панна котта облепиха',
-        options: ['240 гр'],
-        price: 480,
-        image: 'https://via.placeholder.com/150',
-        subcategoryId: SubcategoryId.DESSERTS
-    },
-    {
-        id: 23,
-        title: 'Панна котта смородина',
-        options: ['240 гр'],
-        price: 480,
-        image: 'https://via.placeholder.com/150',
-        subcategoryId: SubcategoryId.DESSERTS
-    },
-    {
-        id: 24,
-        title: 'Блинчики с вареньем из шишек',
-        options: ['140 гр'],
-        price: 240,
-        image: 'https://scdn.chibbis.ru/live/products/7aedb6fe06c09a3f4e039f03aaf805ea.jpeg',
+        title: 'Яблочный штрудель',
+        options: ['160 гр'],
+        price: 330,
+        image: dessert2,
         subcategoryId: SubcategoryId.DESSERTS
     },
 ];

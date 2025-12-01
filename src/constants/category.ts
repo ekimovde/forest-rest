@@ -20,6 +20,7 @@ export const CategoryId = {
     SMOOS: 'smoos', // Смузи
     LEMONADE: 'lemonade', // Лимонад
     MILK_COCKTAIL: 'milkCocktail', // Молочный коктейль
+    WOK: 'wok', // WOK
 };
 
 export const CategoryTitleById = {
@@ -44,4 +45,5 @@ export const CategoryTitleById = {
     [CategoryId.SMOOS]: 'Смузи',
     [CategoryId.LEMONADE]: 'Лимонад',
     [CategoryId.MILK_COCKTAIL]: 'Молочный коктейль',
+    [CategoryId.WOK]: 'WOK',
 };
