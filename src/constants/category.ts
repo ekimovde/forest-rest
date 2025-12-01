@@ -21,6 +21,7 @@ export const CategoryId = {
     LEMONADE: 'lemonade', // Лимонад
     MILK_COCKTAIL: 'milkCocktail', // Молочный коктейль
     WOK: 'wok', // WOK
+    POKKE: 'pokke', // Покке
 };
 
 export const CategoryTitleById = {
@@ -46,4 +47,5 @@ export const CategoryTitleById = {
     [CategoryId.LEMONADE]: 'Лимонад',
     [CategoryId.MILK_COCKTAIL]: 'Молочный коктейль',
     [CategoryId.WOK]: 'WOK',
+    [CategoryId.POKKE]: 'Покке',
 };

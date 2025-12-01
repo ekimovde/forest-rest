@@ -1,6 +1,7 @@
 import type {IProduct} from '~/interfaces';
 import {CategoryId, CategoryTitleById, SubcategoryTitleById} from '~/constants';
 import {WOK_CATEGORIES} from './wok';
+import {POKKE_CATEGORIES} from './pokke';
 import {ROLLS_CATEGORIES} from './rolls';
 import {CHILDREN_MENU_CATEGORIES} from './children';
 import {DESSERTS_CATEGORIES} from './desserts';
@@ -34,6 +35,12 @@ export const CATEGORIES = {
         href: '/menu/wok',
         subcategories: getSubcategories(WOK_CATEGORIES),
         products: WOK_CATEGORIES,
+    },
+    [CategoryId.POKKE]: {
+        title: CategoryTitleById[CategoryId.POKKE],
+        href: '/menu/pokke',
+        subcategories: getSubcategories(POKKE_CATEGORIES),
+        products: POKKE_CATEGORIES,
     },
     [CategoryId.ROLLS]: {
         title: CategoryTitleById[CategoryId.ROLLS],
@@ -83,18 +90,6 @@ export const CATEGORIES = {
         subcategories: getSubcategories(HOT_DISHES_CATEGORIES),
         products: HOT_DISHES_CATEGORIES,
     },
-    [CategoryId.DESSERTS]: {
-        title: CategoryTitleById[CategoryId.DESSERTS],
-        href: '/menu/desserts',
-        subcategories: getSubcategories(DESSERTS_CATEGORIES),
-        products: DESSERTS_CATEGORIES,
-    },
-    [CategoryId.CHILDREN_MENU]: {
-        title: CategoryTitleById[CategoryId.CHILDREN_MENU],
-        href: '/menu/childrenMenu',
-        subcategories: getSubcategories(CHILDREN_MENU_CATEGORIES),
-        products: CHILDREN_MENU_CATEGORIES,
-    },
     [CategoryId.SNACKS]: {
         title: CategoryTitleById[CategoryId.SNACKS],
         href: '/menu/snacks',
@@ -106,6 +101,18 @@ export const CATEGORIES = {
         href: '/menu/sideDishes',
         subcategories: getSubcategories(SIDE_DISHES_CATEGORIES),
         products: SIDE_DISHES_CATEGORIES,
+    },
+    [CategoryId.DESSERTS]: {
+        title: CategoryTitleById[CategoryId.DESSERTS],
+        href: '/menu/desserts',
+        subcategories: getSubcategories(DESSERTS_CATEGORIES),
+        products: DESSERTS_CATEGORIES,
+    },
+    [CategoryId.CHILDREN_MENU]: {
+        title: CategoryTitleById[CategoryId.CHILDREN_MENU],
+        href: '/menu/childrenMenu',
+        subcategories: getSubcategories(CHILDREN_MENU_CATEGORIES),
+        products: CHILDREN_MENU_CATEGORIES,
     },
     [CategoryId.DRINKS]: {
         title: CategoryTitleById[CategoryId.DRINKS],

@@ -15,6 +15,7 @@ export const SubcategoryId = {
     FRIED_ROLLS: 26, // Роллы жареные
     SNACKS: 26, // Закуски
     WOK: 27, // WOK
+    POKKE: 28, // Покке
 };
 
 export const SubcategoryTitleById = {
@@ -34,4 +35,5 @@ export const SubcategoryTitleById = {
     [SubcategoryId.CHILDREN_MENU]: 'Детское меню',
     [SubcategoryId.SNACKS]: 'Закуски',
     [SubcategoryId.WOK]: 'WOK',
+    [SubcategoryId.POKKE]: 'Покке',
 }
