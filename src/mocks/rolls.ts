@@ -1,68 +1,168 @@
 import {SubcategoryId} from "~/constants";
+import friedRoll1 from '~/assets/images/friedRolls/picture-1.jpg';
+import friedRoll2 from '~/assets/images/friedRolls/picture-2.jpg';
+import friedRoll3 from '~/assets/images/friedRolls/picture-3.jpg';
+import friedRoll4 from '~/assets/images/friedRolls/picture-4.jpg';
+import friedRoll5 from '~/assets/images/friedRolls/picture-5.jpg';
+import friedRoll6 from '~/assets/images/friedRolls/picture-6.jpg';
+import friedRoll7 from '~/assets/images/friedRolls/picture-7.jpg';
+import bakedRoll1 from '~/assets/images/bakedRolls/picture-1.jpg';
+import bakedRoll2 from '~/assets/images/bakedRolls/picture-2.jpg';
+import bakedRoll3 from '~/assets/images/bakedRolls/picture-3.jpg';
+import bakedRoll4 from '~/assets/images/bakedRolls/picture-4.jpg';
+import bakedRoll5 from '~/assets/images/bakedRolls/picture-5.jpg';
+import bakedRoll6 from '~/assets/images/bakedRolls/picture-6.jpg';
+import bakedRoll7 from '~/assets/images/bakedRolls/picture-7.jpg';
+import bakedRoll8 from '~/assets/images/bakedRolls/picture-8.jpg';
+import roll1 from '~/assets/images/rolls/picture-1.jpg';
+import roll2 from '~/assets/images/rolls/picture-2.jpg';
+import roll3 from '~/assets/images/rolls/picture-3.jpg';
+import roll4 from '~/assets/images/rolls/picture-4.jpg';
+import roll5 from '~/assets/images/rolls/picture-5.jpg';
+import roll6 from '~/assets/images/rolls/picture-6.jpg';
+import roll7 from '~/assets/images/rolls/picture-7.jpg';
+import roll8 from '~/assets/images/rolls/picture-8.jpg';
+import roll9 from '~/assets/images/rolls/picture-9.jpg';
 
-// --- Роллы запеченные ---
-export const BAKED_ROLLS = [
+// --- Роллы жареные ---
+export const FRIED_ROLLS = [
     {
         id: 102,
-        title: 'Запеченный вулкан',
-        description: '(Творожный сыр, семга, креветки, икра масаго)',
-        options: ['240 гр'],
-        price: 720,
-        image: 'https://via.placeholder.com/150',
-        subcategoryId: SubcategoryId.BAKED_ROLLS
+        title: 'Калифорния темпура',
+        description: '(рис, нори, творожный сыр, краб микс, огурец, масаго, соевый, васаби, имбирь)',
+        options: ['220 гр'],
+        price: 440,
+        image: friedRoll1,
+        subcategoryId: SubcategoryId.FRIED_ROLLS
     },
     {
         id: 103,
-        title: 'Запеченный ниндзя',
-        description: '(Семга, краб микс, огурец, икра мойвы, кунжут)',
-        options: ['380 гр'],
-        price: 720,
-        image: 'https://via.placeholder.com/150',
-        subcategoryId: SubcategoryId.BAKED_ROLLS
+        title: 'С беконом',
+        description: '(рис, нори, сыр чеддер, бекон, огурец, соевый, васаби, имбирь)',
+        options: ['200 гр'],
+        price: 560,
+        image: friedRoll2,
+        subcategoryId: SubcategoryId.FRIED_ROLLS
     },
     {
         id: 104,
-        title: 'Запеченный с креветкой',
-        description: '(Креветка, творожный сыр, огурец, икра мойвы)',
-        options: ['350 гр'],
-        price: 570,
-        image: 'https://via.placeholder.com/150',
-        subcategoryId: SubcategoryId.BAKED_ROLLS
+        title: 'Сяке хот',
+        description: '(рис, нори, творожный сыр, семга, огурец, соевый, васаби, имбирь)',
+        options: ['230 гр'],
+        price: 690,
+        image: friedRoll3,
+        subcategoryId: SubcategoryId.FRIED_ROLLS
     },
     {
         id: 105,
-        title: 'Запеченный с угрем',
+        title: 'Тортилья сырная с креветкой',
         description: '(Угорь, творожный сыр, огурец)',
-        options: ['350 гр'],
-        price: 780,
-        image: 'https://via.placeholder.com/150',
-        subcategoryId: SubcategoryId.BAKED_ROLLS
+        options: ['220 гр'],
+        price: 590,
+        image: friedRoll4,
+        subcategoryId: SubcategoryId.FRIED_ROLLS
     },
     {
         id: 106,
-        title: 'Запеченный сяке',
-        description: '(Семга, творожный сыр, кунжут, соус унаги)',
-        options: ['350 гр'],
-        price: 440,
-        image: 'https://via.placeholder.com/150',
-        subcategoryId: SubcategoryId.BAKED_ROLLS
+        title: 'Три сыра',
+        description: '(рис, нори, творожный сыр, чеддер, дор блю, соевый, васаби, имбирь)',
+        options: ['250 гр'],
+        price: 560,
+        image: friedRoll5,
+        subcategoryId: SubcategoryId.FRIED_ROLLS
     },
     {
         id: 107,
-        title: 'Запеченный цезарь',
-        description: '(Куриная грудка варено-копченая, салат, помидор, соус цезарь, творожный сыр)',
-        options: ['360 гр'],
+        title: 'Цезарь',
+        description: '(рис, нори, творожный сыр, куриная грудка, салат, помидор, соевый, васаби, имбирь)',
+        options: ['280 гр'],
         price: 490,
-        image: 'https://via.placeholder.com/150',
-        subcategoryId: SubcategoryId.BAKED_ROLLS
+        image: friedRoll6,
+        subcategoryId: SubcategoryId.FRIED_ROLLS
     },
     {
         id: 108,
-        title: 'Запеченный яшими',
-        description: '(Краб микс, семга, креветка, икра мойвы, творожный сыр, соус унаги)',
-        options: ['400 гр'],
-        price: 800,
-        image: 'https://via.placeholder.com/150',
+        title: 'Эби хот',
+        description: '(рис, нори, творожный сыр, креветка темпура, огурец, соевый, васаби, имбирь)',
+        options: ['270 гр'],
+        price: 690,
+        image: friedRoll7,
+        subcategoryId: SubcategoryId.FRIED_ROLLS
+    },
+];
+
+// --- Роллы запеченые ---
+export const BAKED_ROLLS = [
+    {
+        id: 119,
+        title: 'Вулкан',
+        description: '(рис, нори, творожный сыр, сырная шапка, семга, креветка, масаго, соевый, васаби, имбирь)',
+        options: ['320 гр'],
+        price: 690,
+        image: bakedRoll1,
+        subcategoryId: SubcategoryId.BAKED_ROLLS
+    },
+    {
+        id: 120,
+        title: 'Ниндзя',
+        description: '(рис, нори, творожный сыр, сырная шапка, семга, краб микс, огурец, кунжут,соевый, васаби, имбирь)',
+        options: ['350 гр'],
+        price: 590,
+        image: bakedRoll2,
+        subcategoryId: SubcategoryId.BAKED_ROLLS
+    },
+    {
+        id: 121,
+        title: 'С гребешком',
+        description: '(рис, нори, творожный сыр, сырная шапка, гребешок, огурец, соевый, васаби, имбирь',
+        options: ['290 гр'],
+        price: 660,
+        image: bakedRoll3,
+        subcategoryId: SubcategoryId.BAKED_ROLLS
+    },
+    {
+        id: 122,
+        title: 'С креветкой',
+        description: '(рис, нори, творожный сыр, сырная шапка, креветка, огурец,масаго, соевый, васаби, имбирь)',
+        options: ['310 гр'],
+        price: 680,
+        image: bakedRoll4,
+        subcategoryId: SubcategoryId.BAKED_ROLLS
+    },
+    {
+        id: 123,
+        title: 'С угрем',
+        description: '(рис, нори, творожный сыр, сырная шапка, угорь, огурец, соевый, васаби, имбирь)',
+        options: ['320 гр'],
+        price: 750,
+        image: bakedRoll5,
+        subcategoryId: SubcategoryId.BAKED_ROLLS
+    },
+    {
+        id: 119,
+        title: 'Сяке',
+        description: '(рис, нори, творожный сыр, сырная шапка, семга, огурец, кунжут, соус унаги, соевый, васаби, имбирь)',
+        options: ['340 гр'],
+        price: 600,
+        image: bakedRoll6,
+        subcategoryId: SubcategoryId.BAKED_ROLLS
+    },
+    {
+        id: 119,
+        title: 'Цезарь',
+        description: '(рис, нори, творожный сыр, сырная шапка, куриная грудка, салат, помидор, соус цезарь,соевый, васаби, имбирь)',
+        options: ['340 гр'],
+        price: 590,
+        image: bakedRoll7,
+        subcategoryId: SubcategoryId.BAKED_ROLLS
+    },
+    {
+        id: 119,
+        title: 'Яшими',
+        description: '(рис, нори, творожный сыр, сырная шапка, семга, краб микс, креветка,масаго,соус унаги, соевый, васаби, имбирь)',
+        options: ['370 гр'],
+        price: 790,
+        image: bakedRoll8,
         subcategoryId: SubcategoryId.BAKED_ROLLS
     },
 ];
@@ -72,96 +172,86 @@ export const ROLLS = [
     {
         id: 109,
         title: 'Аляска',
-        description: '(Семга, огурец, творожный сыр, кунжут)',
-        options: ['300 гр'],
-        price: 570,
-        image: 'https://via.placeholder.com/150',
+        description: '(рис, нори, творожный сыр, семга, креветка, масаго, соевый, васаби, имбирь)',
+        options: ['250 гр'],
+        price: 600,
+        image: roll1,
         subcategoryId: SubcategoryId.ROLLS
     },
     {
         id: 110,
-        title: 'Калифорния с крабом',
-        description: '(Краб микс, огурец, икра мойвы)',
-        options: ['300 гр'],
-        price: 360,
-        image: 'https://via.placeholder.com/150',
+        title: 'Канни капа',
+        options: ['230 гр'],
+        price: 460,
+        image: roll2,
         subcategoryId: SubcategoryId.ROLLS
     },
     {
         id: 111,
-        title: 'Калифорния с лососем',
-        description: '(Семга, икра мойвы, творожный сыр)',
-        options: ['300 гр'],
-        price: 690,
-        image: 'https://via.placeholder.com/150',
+        title: 'Кранч',
+        description: '(рис, нори, креветка темпура, салат, лук фри, соевый, васаби, имбирь)',
+        options: ['190 гр'],
+        price: 560,
+        image: roll3,
         subcategoryId: SubcategoryId.ROLLS
     },
     {
         id: 112,
-        title: 'Канада с угрем',
-        description: '(Угорь, креветка, огурец, кунжут, творожный сыр, соус унаги)',
-        options: ['300 гр'],
-        price: 1100,
-        image: 'https://via.placeholder.com/150',
+        title: 'С беконом',
+        description: '(рис, нори, творожный сыр, бекон, огурец, соус вок, соевый, васаби, имбирь)',
+        options: ['200 гр'],
+        price: 490,
+        image: roll4,
         subcategoryId: SubcategoryId.ROLLS
     },
     {
         id: 113,
-        title: 'Спайси лосось',
-        description: '(Семга, огурец, соус спайси, соус шрирача)',
-        options: ['340 гр'],
-        price: 720,
-        image: 'https://via.placeholder.com/150',
+        title: 'С гребешком',
+        description: '(рис, нори, творожный сыр, гребешок, масаго, помидор, салат, кунжут, соевый, васаби, имбирь)',
+        options: ['200 гр'],
+        price: 690,
+        image: roll5,
         subcategoryId: SubcategoryId.ROLLS
     },
     {
         id: 114,
-        title: 'Сяке-наги',
-        description: '(Креветка, семга, угорь, огурец, кунжут, сыр творожный, соус унаги)',
-        options: ['300 гр'],
-        price: 700,
-        image: 'https://via.placeholder.com/150',
+        title: 'С семгой и побегами бамбука',
+        description: '(рис, нори, творожный сыр, семга, побеги бамбука, соус спайси, соевый, васаби, имбирь)',
+        options: ['230 гр'],
+        price: 990,
+        image: roll6,
         subcategoryId: SubcategoryId.ROLLS
     },
     {
         id: 115,
-        title: 'Филадельфия лайт',
-        description: '(Семга, огурец, сыр творожный)',
-        options: ['320 гр'],
-        price: 850,
-        image: 'https://via.placeholder.com/150',
+        title: 'С семгой и угрем',
+        options: ['200 гр'],
+        price: 690,
+        image: roll7,
         subcategoryId: SubcategoryId.ROLLS
     },
     {
         id: 116,
-        title: 'Филадельфия люкс',
-        description: '(Креветка, семга, икра мойвы, огурец, сыр творожный)',
-        options: ['320 гр'],
-        price: 990,
-        image: 'https://scdn.chibbis.ru/live/products/4c32ca056aafb44534e1ca8893dee4b2.jpeg',
+        title: 'Филадельфия',
+        description: '(рис, нори, творожный сыр, семга, огурец, соевый, васаби, имбирь)',
+        options: ['260 гр'],
+        price: 880,
+        image: roll8,
         subcategoryId: SubcategoryId.ROLLS
     },
     {
         id: 117,
-        title: 'Чука ролл',
-        description: '(Салат чука, лист салата, кунжут, сыр творожный, ореховый соус)',
-        options: ['280 гр'],
-        price: 350,
-        image: 'https://via.placeholder.com/150',
-        subcategoryId: SubcategoryId.ROLLS
-    },
-    {
-        id: 118,
-        title: 'Якудза',
-        description: '(Краб микс, семга, творожный сыр, огурец, соус спайси)',
-        options: ['320 гр'],
-        price: 680,
-        image: 'https://via.placeholder.com/150',
+        title: 'Филадельфия люкс',
+        description: '(рис, нори, творожный сыр, семга, креветка темпура, масаго, соевый, васаби, имбирь)',
+        options: ['220 гр'],
+        price: 890,
+        image: roll9,
         subcategoryId: SubcategoryId.ROLLS
     },
 ];
 
 export const ROLLS_CATEGORIES = [
+    ...FRIED_ROLLS,
     ...BAKED_ROLLS,
     ...ROLLS,
 ];

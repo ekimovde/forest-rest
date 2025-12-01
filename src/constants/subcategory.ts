@@ -10,7 +10,7 @@ export const SubcategoryId = {
     JUICE: 9, // Сок
     FRESH: 10, // Фреш
     DRINKS: 11, // Напитки
-    BAKED_ROLLS: 12, // Роллы запеченные
+    BAKED_ROLLS: 12, // Роллы запеченые
     ROLLS: 13, // Роллы
     SETS: 14, // Сеты
     COLD_SNACKS: 15, // Холодные закуски
@@ -24,6 +24,7 @@ export const SubcategoryId = {
     PIZZA: 23, // Роман пицца
     DESSERTS: 24, // Десерты
     CHILDREN_MENU: 25, // Детское меню
+    FRIED_ROLLS: 26, // Роллы жареные
 };
 
 export const SubcategoryTitleById = {
@@ -38,7 +39,8 @@ export const SubcategoryTitleById = {
     [SubcategoryId.JUICE]: 'Сок',
     [SubcategoryId.FRESH]: 'Фреш',
     [SubcategoryId.DRINKS]: 'Напитки',
-    [SubcategoryId.BAKED_ROLLS]: 'Роллы запеченные',
+    [SubcategoryId.BAKED_ROLLS]: 'Роллы запеченые',
+    [SubcategoryId.FRIED_ROLLS]: 'Роллы жареные',
     [SubcategoryId.ROLLS]: 'Роллы',
     [SubcategoryId.SETS]: 'Сеты',
     [SubcategoryId.COLD_SNACKS]: 'Холодные закуски',
