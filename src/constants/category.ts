@@ -3,7 +3,7 @@ export const CategoryId = {
     SETS: 'sets', // Сеты
     SALADS: 'salads', // Салаты
     SOUPS: 'soups', // Супы
-    GRILL: 'grill', // Гриль
+    GRILL: 'grill', // Блюда на огне
     PASTA: 'pasta', // Паста
     PIZZA: 'pizza', // Пицца
     HOT_DISHES: 'hotDishes', // Горячие блюда
@@ -22,6 +22,7 @@ export const CategoryId = {
     MILK_COCKTAIL: 'milkCocktail', // Молочный коктейль
     WOK: 'wok', // WOK
     POKKE: 'pokke', // Покке
+    SOUPS_ASIAN: 'soupsAsian', // Супы Азия
 };
 
 export const CategoryTitleById = {
@@ -29,7 +30,7 @@ export const CategoryTitleById = {
     [CategoryId.SETS]: 'Сеты',
     [CategoryId.SALADS]: 'Салаты',
     [CategoryId.SOUPS]: 'Супы',
-    [CategoryId.GRILL]: 'Гриль',
+    [CategoryId.GRILL]: 'Блюда на огне',
     [CategoryId.PASTA]: 'Паста',
     [CategoryId.PIZZA]: 'Пицца',
     [CategoryId.HOT_DISHES]: 'Горячие блюда',
@@ -48,4 +49,5 @@ export const CategoryTitleById = {
     [CategoryId.MILK_COCKTAIL]: 'Молочный коктейль',
     [CategoryId.WOK]: 'WOK',
     [CategoryId.POKKE]: 'Покке',
+    [CategoryId.SOUPS_ASIAN]: 'Супы Азия',
 };

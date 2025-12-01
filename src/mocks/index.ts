@@ -14,6 +14,7 @@ import {SALADS_CATEGORIES} from './salads';
 import {SETS_CATEGORIES} from './sets';
 import {SIDE_DISHES_CATEGORIES} from './sideDishes';
 import {SOUPS_CATEGORIES} from './soups';
+import {SOUPS_ASIAN_CATEGORIES} from './soupsAsian';
 import {DRINKS_CATEGORIES} from './drinks';
 
 const getSubcategories = (products: IProduct[]) => {
@@ -65,6 +66,12 @@ export const CATEGORIES = {
         href: '/menu/soups',
         subcategories: getSubcategories(SOUPS_CATEGORIES),
         products: SOUPS_CATEGORIES,
+    },
+    [CategoryId.SOUPS_ASIAN]: {
+        title: CategoryTitleById[CategoryId.SOUPS_ASIAN],
+        href: '/menu/soupsAsian',
+        subcategories: getSubcategories(SOUPS_ASIAN_CATEGORIES),
+        products: SOUPS_ASIAN_CATEGORIES,
     },
     [CategoryId.GRILL]: {
         title: CategoryTitleById[CategoryId.GRILL],

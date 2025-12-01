@@ -7,7 +7,7 @@ export const SubcategoryId = {
     SIDE_DISHES: 17, // Гарниры
     SOUPS: 18, // Супы
     HOT_DISHES: 20, // Горячие блюда
-    GRILL: 21, // Гриль
+    GRILL: 21, // Блюда на огне
     PASTA: 22, // Паста
     PIZZA: 23, // Роман пицца
     DESSERTS: 24, // Десерты
@@ -16,6 +16,7 @@ export const SubcategoryId = {
     SNACKS: 26, // Закуски
     WOK: 27, // WOK
     POKKE: 28, // Покке
+    SOUPS_ASIAN: 29, // Супы Азия
 };
 
 export const SubcategoryTitleById = {
@@ -28,7 +29,7 @@ export const SubcategoryTitleById = {
     [SubcategoryId.SIDE_DISHES]: 'Гарниры',
     [SubcategoryId.SOUPS]: 'Супы',
     [SubcategoryId.HOT_DISHES]: 'Горячие блюда',
-    [SubcategoryId.GRILL]: 'Гриль',
+    [SubcategoryId.GRILL]: 'Блюда на огне',
     [SubcategoryId.PASTA]: 'Паста',
     [SubcategoryId.PIZZA]: 'Пицца',
     [SubcategoryId.DESSERTS]: 'Десерты',
@@ -36,4 +37,5 @@ export const SubcategoryTitleById = {
     [SubcategoryId.SNACKS]: 'Закуски',
     [SubcategoryId.WOK]: 'WOK',
     [SubcategoryId.POKKE]: 'Покке',
+    [SubcategoryId.SOUPS_ASIAN]: 'Супы Азия',
 }
