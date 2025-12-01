@@ -8,7 +8,7 @@ import {GRILL_CATEGORIES} from './grill';
 import {HOT_DISHES_CATEGORIES} from './hotDishes';
 import {HOT_SNACKS_CATEGORIES} from './hotSnacks';
 import {PASTA_CATEGORIES} from './pasta';
-import {PIZZA_CATEGORIES} from './romanPizza';
+import {PIZZA_CATEGORIES} from './pizza';
 import {SALADS_CATEGORIES} from './salads';
 import {SETS_CATEGORIES} from './sets';
 import {SIDE_DISHES_CATEGORIES} from './sideDishes';

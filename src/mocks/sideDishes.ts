@@ -1,13 +1,16 @@
 import {SubcategoryId} from "~/constants";
+import sideDishes1 from '~/assets/images/sideDishes/picture-1.jpg';
+import sideDishes2 from '~/assets/images/sideDishes/picture-2.jpg';
+import sideDishes3 from '~/assets/images/sideDishes/picture-3.jpg';
 
 // --- Гарниры ---
 export const SIDE_DISHES = [
     {
         id: 138,
-        title: 'Рис с овощами',
-        options: ['150 гр'],
-        price: 120,
-        image: 'https://scdn.chibbis.ru/live/products/f93aceea1f3e5da9a4a8c8f990a9cb28.jpeg',
+        title: 'Картофельное пюре с пармезаном',
+        options: ['170 гр'],
+        price: 220,
+        image: sideDishes1,
         subcategoryId: SubcategoryId.SIDE_DISHES
     },
     {
@@ -15,23 +18,15 @@ export const SIDE_DISHES = [
         title: 'Картофельные дольки на гриле',
         options: ['150 гр'],
         price: 120,
-        image: 'https://scdn.chibbis.ru/live/products/e341b8aea2615e3c26a7938be8936b6f.jpeg',
+        image: sideDishes2,
         subcategoryId: SubcategoryId.SIDE_DISHES
     },
     {
         id: 140,
-        title: 'Овощи гриль',
-        options: ['200 гр'],
-        price: 390,
-        image: 'https://scdn.chibbis.ru/live/products/6562f2af1b805817a3d1a527d7a754b4.jpeg',
-        subcategoryId: SubcategoryId.SIDE_DISHES
-    },
-    {
-        id: 141,
-        title: 'Шампиньоны гриль',
-        options: ['100 гр'],
-        price: 380,
-        image: 'https://via.placeholder.com/150',
+        title: 'Рис с овощами',
+        options: ['150 гр'],
+        price: 120,
+        image: sideDishes3,
         subcategoryId: SubcategoryId.SIDE_DISHES
     },
 ];

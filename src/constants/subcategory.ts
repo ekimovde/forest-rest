@@ -21,7 +21,7 @@ export const SubcategoryId = {
     HOT_DISHES: 20, // Горячие блюда
     GRILL: 21, // Гриль
     PASTA: 22, // Паста
-    ROMAN_PIZZA: 23, // Роман пицца
+    PIZZA: 23, // Роман пицца
     DESSERTS: 24, // Десерты
     CHILDREN_MENU: 25, // Детское меню
 };
@@ -49,7 +49,7 @@ export const SubcategoryTitleById = {
     [SubcategoryId.HOT_DISHES]: 'Горячие блюда',
     [SubcategoryId.GRILL]: 'Гриль',
     [SubcategoryId.PASTA]: 'Паста',
-    [SubcategoryId.ROMAN_PIZZA]: 'Роман пицца',
+    [SubcategoryId.PIZZA]: 'Пицца',
     [SubcategoryId.DESSERTS]: 'Десерты',
     [SubcategoryId.CHILDREN_MENU]: 'Детское меню',
 }
