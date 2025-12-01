@@ -23,6 +23,7 @@ export const CategoryId = {
     WOK: 'wok', // WOK
     POKKE: 'pokke', // Покке
     SOUPS_ASIAN: 'soupsAsian', // Супы Азия
+    CHINESE_CUISINE: 'chineseCuisine', // Китайская кухня
 };
 
 export const CategoryTitleById = {
@@ -50,4 +51,5 @@ export const CategoryTitleById = {
     [CategoryId.WOK]: 'WOK',
     [CategoryId.POKKE]: 'Покке',
     [CategoryId.SOUPS_ASIAN]: 'Супы Азия',
+    [CategoryId.CHINESE_CUISINE]: 'Китайская кухня',
 };

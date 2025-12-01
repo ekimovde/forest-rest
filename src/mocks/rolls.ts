@@ -27,7 +27,7 @@ import roll9 from '~/assets/images/rolls/picture-9.jpg';
 // --- Роллы жареные ---
 export const FRIED_ROLLS = [
     {
-        id: 102,
+        id: 57,
         title: 'Калифорния темпура',
         description: '(рис, нори, творожный сыр, краб микс, огурец, масаго, соевый, васаби, имбирь)',
         options: ['220 гр'],
@@ -36,7 +36,7 @@ export const FRIED_ROLLS = [
         subcategoryId: SubcategoryId.FRIED_ROLLS
     },
     {
-        id: 103,
+        id: 58,
         title: 'С беконом',
         description: '(рис, нори, сыр чеддер, бекон, огурец, соевый, васаби, имбирь)',
         options: ['200 гр'],
@@ -45,7 +45,7 @@ export const FRIED_ROLLS = [
         subcategoryId: SubcategoryId.FRIED_ROLLS
     },
     {
-        id: 104,
+        id: 59,
         title: 'Сяке хот',
         description: '(рис, нори, творожный сыр, семга, огурец, соевый, васаби, имбирь)',
         options: ['230 гр'],
@@ -54,7 +54,7 @@ export const FRIED_ROLLS = [
         subcategoryId: SubcategoryId.FRIED_ROLLS
     },
     {
-        id: 105,
+        id: 60,
         title: 'Тортилья сырная с креветкой',
         description: '(Угорь, творожный сыр, огурец)',
         options: ['220 гр'],
@@ -63,7 +63,7 @@ export const FRIED_ROLLS = [
         subcategoryId: SubcategoryId.FRIED_ROLLS
     },
     {
-        id: 106,
+        id: 61,
         title: 'Три сыра',
         description: '(рис, нори, творожный сыр, чеддер, дор блю, соевый, васаби, имбирь)',
         options: ['250 гр'],
@@ -72,7 +72,7 @@ export const FRIED_ROLLS = [
         subcategoryId: SubcategoryId.FRIED_ROLLS
     },
     {
-        id: 107,
+        id: 62,
         title: 'Цезарь',
         description: '(рис, нори, творожный сыр, куриная грудка, салат, помидор, соевый, васаби, имбирь)',
         options: ['280 гр'],
@@ -81,7 +81,7 @@ export const FRIED_ROLLS = [
         subcategoryId: SubcategoryId.FRIED_ROLLS
     },
     {
-        id: 108,
+        id: 63,
         title: 'Эби хот',
         description: '(рис, нори, творожный сыр, креветка темпура, огурец, соевый, васаби, имбирь)',
         options: ['270 гр'],
@@ -94,7 +94,7 @@ export const FRIED_ROLLS = [
 // --- Роллы запеченые ---
 export const BAKED_ROLLS = [
     {
-        id: 119,
+        id: 64,
         title: 'Вулкан',
         description: '(рис, нори, творожный сыр, сырная шапка, семга, креветка, масаго, соевый, васаби, имбирь)',
         options: ['320 гр'],
@@ -103,7 +103,7 @@ export const BAKED_ROLLS = [
         subcategoryId: SubcategoryId.BAKED_ROLLS
     },
     {
-        id: 120,
+        id: 65,
         title: 'Ниндзя',
         description: '(рис, нори, творожный сыр, сырная шапка, семга, краб микс, огурец, кунжут,соевый, васаби, имбирь)',
         options: ['350 гр'],
@@ -112,7 +112,7 @@ export const BAKED_ROLLS = [
         subcategoryId: SubcategoryId.BAKED_ROLLS
     },
     {
-        id: 121,
+        id: 66,
         title: 'С гребешком',
         description: '(рис, нори, творожный сыр, сырная шапка, гребешок, огурец, соевый, васаби, имбирь',
         options: ['290 гр'],
@@ -121,7 +121,7 @@ export const BAKED_ROLLS = [
         subcategoryId: SubcategoryId.BAKED_ROLLS
     },
     {
-        id: 122,
+        id: 67,
         title: 'С креветкой',
         description: '(рис, нори, творожный сыр, сырная шапка, креветка, огурец,масаго, соевый, васаби, имбирь)',
         options: ['310 гр'],
@@ -130,7 +130,7 @@ export const BAKED_ROLLS = [
         subcategoryId: SubcategoryId.BAKED_ROLLS
     },
     {
-        id: 123,
+        id: 68,
         title: 'С угрем',
         description: '(рис, нори, творожный сыр, сырная шапка, угорь, огурец, соевый, васаби, имбирь)',
         options: ['320 гр'],
@@ -139,7 +139,7 @@ export const BAKED_ROLLS = [
         subcategoryId: SubcategoryId.BAKED_ROLLS
     },
     {
-        id: 119,
+        id: 69,
         title: 'Сяке',
         description: '(рис, нори, творожный сыр, сырная шапка, семга, огурец, кунжут, соус унаги, соевый, васаби, имбирь)',
         options: ['340 гр'],
@@ -148,7 +148,7 @@ export const BAKED_ROLLS = [
         subcategoryId: SubcategoryId.BAKED_ROLLS
     },
     {
-        id: 119,
+        id: 70,
         title: 'Цезарь',
         description: '(рис, нори, творожный сыр, сырная шапка, куриная грудка, салат, помидор, соус цезарь,соевый, васаби, имбирь)',
         options: ['340 гр'],
@@ -157,7 +157,7 @@ export const BAKED_ROLLS = [
         subcategoryId: SubcategoryId.BAKED_ROLLS
     },
     {
-        id: 119,
+        id: 71,
         title: 'Яшими',
         description: '(рис, нори, творожный сыр, сырная шапка, семга, краб микс, креветка,масаго,соус унаги, соевый, васаби, имбирь)',
         options: ['370 гр'],
@@ -170,7 +170,7 @@ export const BAKED_ROLLS = [
 // --- Роллы ---
 export const ROLLS = [
     {
-        id: 109,
+        id: 72,
         title: 'Аляска',
         description: '(рис, нори, творожный сыр, семга, креветка, масаго, соевый, васаби, имбирь)',
         options: ['250 гр'],
@@ -179,7 +179,7 @@ export const ROLLS = [
         subcategoryId: SubcategoryId.ROLLS
     },
     {
-        id: 110,
+        id: 73,
         title: 'Канни капа',
         options: ['230 гр'],
         price: 460,
@@ -187,7 +187,7 @@ export const ROLLS = [
         subcategoryId: SubcategoryId.ROLLS
     },
     {
-        id: 111,
+        id: 74,
         title: 'Кранч',
         description: '(рис, нори, креветка темпура, салат, лук фри, соевый, васаби, имбирь)',
         options: ['190 гр'],
@@ -196,7 +196,7 @@ export const ROLLS = [
         subcategoryId: SubcategoryId.ROLLS
     },
     {
-        id: 112,
+        id: 75,
         title: 'С беконом',
         description: '(рис, нори, творожный сыр, бекон, огурец, соус вок, соевый, васаби, имбирь)',
         options: ['200 гр'],
@@ -205,7 +205,7 @@ export const ROLLS = [
         subcategoryId: SubcategoryId.ROLLS
     },
     {
-        id: 113,
+        id: 76,
         title: 'С гребешком',
         description: '(рис, нори, творожный сыр, гребешок, масаго, помидор, салат, кунжут, соевый, васаби, имбирь)',
         options: ['200 гр'],
@@ -214,7 +214,7 @@ export const ROLLS = [
         subcategoryId: SubcategoryId.ROLLS
     },
     {
-        id: 114,
+        id: 77,
         title: 'С семгой и побегами бамбука',
         description: '(рис, нори, творожный сыр, семга, побеги бамбука, соус спайси, соевый, васаби, имбирь)',
         options: ['230 гр'],
@@ -223,7 +223,7 @@ export const ROLLS = [
         subcategoryId: SubcategoryId.ROLLS
     },
     {
-        id: 115,
+        id: 78,
         title: 'С семгой и угрем',
         options: ['200 гр'],
         price: 690,
@@ -231,7 +231,7 @@ export const ROLLS = [
         subcategoryId: SubcategoryId.ROLLS
     },
     {
-        id: 116,
+        id: 79,
         title: 'Филадельфия',
         description: '(рис, нори, творожный сыр, семга, огурец, соевый, васаби, имбирь)',
         options: ['260 гр'],
@@ -240,7 +240,7 @@ export const ROLLS = [
         subcategoryId: SubcategoryId.ROLLS
     },
     {
-        id: 117,
+        id: 80,
         title: 'Филадельфия люкс',
         description: '(рис, нори, творожный сыр, семга, креветка темпура, масаго, соевый, васаби, имбирь)',
         options: ['220 гр'],

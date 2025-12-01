@@ -6,7 +6,7 @@ import soupsAsian3 from '~/assets/images/soupsAsian/picture-3.jpg';
 // --- Супы Азия ---
 export const SOUPS_ASIAN = [
     {
-        id: 18,
+        id: 113,
         title: 'Ромен',
         description: '(бульон ромен, буженина, лапша удон, яйцо, кинза, зеленый лук, кунжут)',
         options: ['500 гр'],
@@ -15,7 +15,7 @@ export const SOUPS_ASIAN = [
         subcategoryId: SubcategoryId.SOUPS_ASIAN
     },
     {
-        id: 19,
+        id: 114,
         title: 'Том Сом Пла',
         description: '(бульон том ям, лапша рисовая, тилапия, морковь, лук, кинза, зеленый лук)',
         options: ['500 гр'],
@@ -24,7 +24,7 @@ export const SOUPS_ASIAN = [
         subcategoryId: SubcategoryId.SOUPS_ASIAN
     },
     {
-        id: 19,
+        id: 115,
         title: 'Том Ям',
         options: ['500 гр'],
         price: 790,

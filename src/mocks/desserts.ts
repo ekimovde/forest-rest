@@ -5,7 +5,7 @@ import dessert2 from '~/assets/images/desserts/picture-2.jpg';
 // --- Десерты ---
 export const DESSERTS = [
     {
-        id: 18,
+        id: 20,
         title: 'Блинчики с вареньем из шишек',
         options: ['140 гр'],
         price: 240,
@@ -13,7 +13,7 @@ export const DESSERTS = [
         subcategoryId: SubcategoryId.DESSERTS
     },
     {
-        id: 19,
+        id: 21,
         title: 'Яблочный штрудель',
         options: ['160 гр'],
         price: 330,

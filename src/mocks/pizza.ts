@@ -7,7 +7,7 @@ import pizza4 from '~/assets/images/pizza/picture-4.jpg';
 // --- Роман пицца ---
 export const PIZZA = [
     {
-        id: 119,
+        id: 50,
         title: 'С грушей и горгонзолой',
         options: ['480 гр'],
         price: 1400,
@@ -15,7 +15,7 @@ export const PIZZA = [
         subcategoryId: SubcategoryId.PIZZA
     },
     {
-        id: 120,
+        id: 51,
         title: 'С пармой и пармезаном',
         options: ['480 гр'],
         price: 1600,
@@ -23,7 +23,7 @@ export const PIZZA = [
         subcategoryId: SubcategoryId.PIZZA
     },
     {
-        id: 121,
+        id: 52,
         title: 'С семгой и вялеными томатами',
         options: ['480 гр'],
         price: 1980,
@@ -31,7 +31,7 @@ export const PIZZA = [
         subcategoryId: SubcategoryId.PIZZA
     },
     {
-        id: 122,
+        id: 53,
         title: 'С угрем и соусом терияки',
         options: ['480 гр'],
         price: 1890,

@@ -14,7 +14,7 @@ import salads11 from '~/assets/images/salads/picture-11.jpg';
 // --- Салаты ---
 export const SALADS = [
     {
-        id: 123,
+        id: 81,
         title: 'Винегрет с сельдью',
         options: ['250 гр'],
         price: 360,
@@ -22,7 +22,7 @@ export const SALADS = [
         subcategoryId: SubcategoryId.SALADS
     },
     {
-        id: 124,
+        id: 82,
         title: 'Дальневосточный салат с диким папоротником, олениной и грибной эспумой',
         options: ['250 гр'],
         price: 980,
@@ -30,7 +30,7 @@ export const SALADS = [
         subcategoryId: SubcategoryId.SALADS
     },
     {
-        id: 125,
+        id: 83,
         title: 'Нисуаз с тунцом',
         options: ['220 гр'],
         price: 690,
@@ -38,7 +38,7 @@ export const SALADS = [
         subcategoryId: SubcategoryId.SALADS
     },
     {
-        id: 126,
+        id: 84,
         title: 'Оливье с малосоленой семгой, перепелинным яйцом и икрой лосося',
         options: ['250 гр'],
         price: 680,
@@ -46,7 +46,7 @@ export const SALADS = [
         subcategoryId: SubcategoryId.SALADS
     },
     {
-        id: 127,
+        id: 85,
         title: 'Салат из печени кролика с Забайкальскими маслятами',
         options: ['200 гр'],
         price: 660,
@@ -54,7 +54,7 @@ export const SALADS = [
         subcategoryId: SubcategoryId.SALADS
     },
     {
-        id: 128,
+        id: 86,
         title: 'Салат с баклажанами фри с творожным сыром в соусе сладкий чили',
         options: ['230 гр'],
         price: 480,
@@ -62,7 +62,7 @@ export const SALADS = [
         subcategoryId: SubcategoryId.SALADS
     },
     {
-        id: 129,
+        id: 87,
         title: 'Салат с бобами Эдамами, авокадо и слайсами цукини',
         options: ['240 гр'],
         price: 640,
@@ -70,7 +70,7 @@ export const SALADS = [
         subcategoryId: SubcategoryId.SALADS
     },
     {
-        id: 130,
+        id: 88,
         title: 'Салат с ростбифом и вяленными томатами',
         options: ['170 гр'],
         price: 1100,
@@ -78,7 +78,7 @@ export const SALADS = [
         subcategoryId: SubcategoryId.SALADS
     },
     {
-        id: 131,
+        id: 89,
         title: 'Салат с хрустящей говядиной и древесными грибами',
         options: ['200 гр'],
         price: 740,
@@ -86,7 +86,7 @@ export const SALADS = [
         subcategoryId: SubcategoryId.SALADS
     },
     {
-        id: 132,
+        id: 90,
         title: 'Цезарь с креветками',
         options: ['220 гр'],
         price: 890,
@@ -94,7 +94,7 @@ export const SALADS = [
         subcategoryId: SubcategoryId.SALADS
     },
     {
-        id: 133,
+        id: 91,
         title: 'Цезарь с курицей',
         options: ['200 гр'],
         price: 560,

@@ -5,7 +5,7 @@ import drink2 from '~/assets/images/drinks/picture-2.jpg';
 // --- Напитки ---
 export const DRINKS = [
     {
-        id: 71,
+        id: 22,
         title: 'Пиво Бад БЕЗАЛКОГОЛЬНОЕ',
         options: ['450 мл'],
         price: 350,
@@ -13,7 +13,7 @@ export const DRINKS = [
         subcategoryId: SubcategoryId.DRINKS
     },
     {
-        id: 72,
+        id: 23,
         title: 'Сок Вишня',
         options: ['200 мл'],
         price: 150,
@@ -21,7 +21,7 @@ export const DRINKS = [
         subcategoryId: SubcategoryId.DRINKS
     },
     {
-        id: 73,
+        id: 24,
         title: 'Сок Манго',
         options: ['200 мл'],
         price: 150,
@@ -29,7 +29,7 @@ export const DRINKS = [
         subcategoryId: SubcategoryId.DRINKS
     },
     {
-        id: 74,
+        id: 25,
         title: 'Сок Мультифрукт',
         options: ['200 мл'],
         price: 150,
@@ -37,7 +37,7 @@ export const DRINKS = [
         subcategoryId: SubcategoryId.DRINKS
     },
     {
-        id: 74,
+        id: 26,
         title: 'Сок Яблоко',
         options: ['200 мл'],
         price: 150,

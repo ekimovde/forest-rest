@@ -17,7 +17,7 @@ import hotDishe13 from '~/assets/images/hotDishes/picture-13.jpg';
 // --- Горячие блюда ---
 export const HOT_DISHES = [
     {
-        id: 83,
+        id: 36,
         title: 'Ароматные креветки на цукини гриль с хумусом',
         options: ['190 гр'],
         price: 1100,
@@ -25,7 +25,7 @@ export const HOT_DISHES = [
         subcategoryId: SubcategoryId.HOT_DISHES
     },
     {
-        id: 84,
+        id: 37,
         title: 'Буженина запеченая с пюре и соусом из грибов',
         options: ['360 гр'],
         price: 980,
@@ -33,7 +33,7 @@ export const HOT_DISHES = [
         subcategoryId: SubcategoryId.HOT_DISHES
     },
     {
-        id: 85,
+        id: 38,
         title: 'Вареники с картофелем, шкварками и грибным соусом',
         options: ['300 гр'],
         price: 440,
@@ -41,7 +41,7 @@ export const HOT_DISHES = [
         subcategoryId: SubcategoryId.HOT_DISHES
     },
     {
-        id: 86,
+        id: 39,
         title: 'Вареники с творогом, полевым чесноком и сметаной',
         options: ['280 гр'],
         price: 340,
@@ -49,7 +49,7 @@ export const HOT_DISHES = [
         subcategoryId: SubcategoryId.HOT_DISHES
     },
     {
-        id: 87,
+        id: 40,
         title: 'Говядина Брискет с Сибирской кашей',
         options: ['280 гр'],
         price: 1080,
@@ -57,7 +57,7 @@ export const HOT_DISHES = [
         subcategoryId: SubcategoryId.HOT_DISHES
     },
     {
-        id: 88,
+        id: 41,
         title: 'Дорадо запеченная с пармезаном',
         options: ['450 гр'],
         price: 1940,
@@ -65,7 +65,7 @@ export const HOT_DISHES = [
         subcategoryId: SubcategoryId.HOT_DISHES
     },
     {
-        id: 89,
+        id: 42,
         title: 'Жареный картофель со свининой и грибами',
         options: ['350 гр'],
         price: 540,
@@ -73,7 +73,7 @@ export const HOT_DISHES = [
         subcategoryId: SubcategoryId.HOT_DISHES
     },
     {
-        id: 90,
+        id: 43,
         title: 'Колбаски на гриле с тушеной капустой',
         options: ['300 гр'],
         price: 1390,
@@ -81,7 +81,7 @@ export const HOT_DISHES = [
         subcategoryId: SubcategoryId.HOT_DISHES
     },
     {
-        id: 91,
+        id: 44,
         title: 'Мидии в соусе блю чиз',
         options: ['270 гр'],
         price: 990,
@@ -89,7 +89,7 @@ export const HOT_DISHES = [
         subcategoryId: SubcategoryId.HOT_DISHES
     },
     {
-        id: 92,
+        id: 45,
         title: 'Нежный палтус на овощном соте',
         options: ['280 гр'],
         price: 1730,
@@ -97,7 +97,7 @@ export const HOT_DISHES = [
         subcategoryId: SubcategoryId.HOT_DISHES
     },
     {
-        id: 92,
+        id: 46,
         title: 'Свиные ребра на гриле MAX м картофелем айдахо',
         options: ['600 гр'],
         price: 1580,
@@ -105,7 +105,7 @@ export const HOT_DISHES = [
         subcategoryId: SubcategoryId.HOT_DISHES
     },
     {
-        id: 92,
+        id: 47,
         title: 'Утиная грудка с брусничным чатни',
         options: ['100 гр'],
         price: 340,
@@ -113,7 +113,7 @@ export const HOT_DISHES = [
         subcategoryId: SubcategoryId.HOT_DISHES
     },
     {
-        id: 92,
+        id: 48,
         title: 'Щеки в сливочном соусе с картофелем',
         options: ['370 гр'],
         price: 1280,

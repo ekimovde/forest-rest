@@ -4,7 +4,7 @@ import pasta1 from '~/assets/images/pasta/picture-1.jpg';
 // --- Паста ---
 export const PASTA = [
     {
-        id: 101,
+        id: 49,
         title: 'Паста Карбонара',
         options: ['270 гр'],
         price: 580,

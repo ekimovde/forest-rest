@@ -6,7 +6,7 @@ import pokke3 from '~/assets/images/pokke/picture-3.jpg';
 // --- Десерты ---
 export const POKKE = [
     {
-        id: 18,
+        id: 54,
         title: 'С креветкой',
         options: ['250 гр'],
         price: 690,
@@ -14,7 +14,7 @@ export const POKKE = [
         subcategoryId: SubcategoryId.POKKE
     },
     {
-        id: 19,
+        id: 55,
         title: 'С лососем',
         description: '(семга, рис, бобы эдамами, салат чука, огурец, нори, арахис, кунжут, ореховый соус, соус вок)',
         options: ['250 гр'],
@@ -23,7 +23,7 @@ export const POKKE = [
         subcategoryId: SubcategoryId.POKKE
     },
     {
-        id: 19,
+        id: 56,
         title: 'С масляной рыбой',
         options: ['250 гр'],
         price: 690,

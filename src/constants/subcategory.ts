@@ -17,6 +17,7 @@ export const SubcategoryId = {
     WOK: 27, // WOK
     POKKE: 28, // Покке
     SOUPS_ASIAN: 29, // Супы Азия
+    CHINESE_CUISINE: 30, // Китайская кухня
 };
 
 export const SubcategoryTitleById = {
@@ -38,4 +39,5 @@ export const SubcategoryTitleById = {
     [SubcategoryId.WOK]: 'WOK',
     [SubcategoryId.POKKE]: 'Покке',
     [SubcategoryId.SOUPS_ASIAN]: 'Супы Азия',
+    [SubcategoryId.CHINESE_CUISINE]: 'Китайская кухня',
 }

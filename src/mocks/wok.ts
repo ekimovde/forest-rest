@@ -12,7 +12,7 @@ import wok9 from '~/assets/images/wok/picture-9.jpg';
 // --- WOK ---
 export const WOK = [
     {
-        id: 71,
+        id: 116,
         title: 'Соба с креветкой и кальмаром',
         options: ['330 гр'],
         price: 590,
@@ -20,7 +20,7 @@ export const WOK = [
         subcategoryId: SubcategoryId.WOK
     },
     {
-        id: 72,
+        id: 117,
         title: 'Соба с курицей',
         description: '(лапша соба, куриная грудка, морковь, перец, кабачок, соус вок, кунжут, зеленый лук)',
         options: ['330 гр'],
@@ -29,7 +29,7 @@ export const WOK = [
         subcategoryId: SubcategoryId.WOK
     },
     {
-        id: 73,
+        id: 118,
         title: 'Соба со свининой',
         description: '(лапша соба, свинина, морковь, перец, кабачок, соус вок, кунжут, зеленый лук)',
         options: ['330 гр'],
@@ -38,7 +38,7 @@ export const WOK = [
         subcategoryId: SubcategoryId.WOK
     },
     {
-        id: 74,
+        id: 119,
         title: 'Тяхан с креветкой и кальмаром',
         description: '(рис, тигровые креветки, кальмар, морковь, перец, кабачок, соус вок, кунжут, зеленый лук)',
         options: ['330 гр'],
@@ -47,7 +47,7 @@ export const WOK = [
         subcategoryId: SubcategoryId.WOK
     },
     {
-        id: 74,
+        id: 120,
         title: 'Тяхан с курицей',
         description: '(рис, куриная грудка, морковь, перец, кабачок, соус вок, кунжут, зеленый лук)',
         options: ['330 гр'],
@@ -56,7 +56,7 @@ export const WOK = [
         subcategoryId: SubcategoryId.WOK
     },
     {
-        id: 74,
+        id: 121,
         title: 'Тяхан со свининой',
         description: '(рис, свинина, морковь, перец, кабачок, соус вок, кунжут, зеленый лук)',
         options: ['330 гр'],
@@ -65,7 +65,7 @@ export const WOK = [
         subcategoryId: SubcategoryId.WOK
     },
     {
-        id: 74,
+        id: 122,
         title: 'Удон с креветкой и кальмаром',
         options: ['330 гр'],
         price: 590,
@@ -73,7 +73,7 @@ export const WOK = [
         subcategoryId: SubcategoryId.WOK
     },
     {
-        id: 74,
+        id: 123,
         title: 'Удон с курицей',
         description: '(лапша удон, куриная грудка, морковь, перец, кабачок, соус вок, кунжут, зеленый лук)',
         options: ['330 гр'],
@@ -82,7 +82,7 @@ export const WOK = [
         subcategoryId: SubcategoryId.WOK
     },
     {
-        id: 74,
+        id: 124,
         title: 'Удон со свининой',
         description: '(лапша удон, свинина, морковь, перец, кабачок, соус вок, кунжут, зеленый лук)',
         options: ['330 гр'],

@@ -6,7 +6,7 @@ import sideDishes3 from '~/assets/images/sideDishes/picture-3.jpg';
 // --- Гарниры ---
 export const SIDE_DISHES = [
     {
-        id: 138,
+        id: 95,
         title: 'Картофельное пюре с пармезаном',
         options: ['170 гр'],
         price: 220,
@@ -14,7 +14,7 @@ export const SIDE_DISHES = [
         subcategoryId: SubcategoryId.SIDE_DISHES
     },
     {
-        id: 139,
+        id: 96,
         title: 'Картофельные дольки на гриле',
         options: ['150 гр'],
         price: 120,
@@ -22,7 +22,7 @@ export const SIDE_DISHES = [
         subcategoryId: SubcategoryId.SIDE_DISHES
     },
     {
-        id: 140,
+        id: 97,
         title: 'Рис с овощами',
         options: ['150 гр'],
         price: 120,

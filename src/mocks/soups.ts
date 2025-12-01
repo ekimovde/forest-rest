@@ -10,7 +10,7 @@ import soup7 from '~/assets/images/soups/picture-7.jpg';
 // --- Супы ---
 export const SOUPS = [
     {
-        id: 142,
+        id: 106,
         title: 'Борщ с говядиной',
         options: ['650 гр'],
         price: 690,
@@ -18,7 +18,7 @@ export const SOUPS = [
         subcategoryId: SubcategoryId.SOUPS
     },
     {
-        id: 143,
+        id: 107,
         title: 'Крем суп из белых грибов',
         options: ['200 гр'],
         price: 400,
@@ -26,7 +26,7 @@ export const SOUPS = [
         subcategoryId: SubcategoryId.SOUPS
     },
     {
-        id: 144,
+        id: 108,
         title: 'Пельмени из оленины в соусе Демиглас (без бульона)',
         options: ['180 гр'],
         price: 790,
@@ -34,7 +34,7 @@ export const SOUPS = [
         subcategoryId: SubcategoryId.SOUPS
     },
     {
-        id: 145,
+        id: 109,
         title: 'Пельмени по домашнему',
         options: ['300 гр'],
         price: 390,
@@ -42,7 +42,7 @@ export const SOUPS = [
         subcategoryId: SubcategoryId.SOUPS
     },
     {
-        id: 146,
+        id: 110,
         title: 'Солянка мясная',
         options: ['590 гр'],
         price: 690,
@@ -50,7 +50,7 @@ export const SOUPS = [
         subcategoryId: SubcategoryId.SOUPS
     },
     {
-        id: 146,
+        id: 111,
         title: 'Суп куриный с лапшой',
         options: ['500 гр'],
         price: 360,
@@ -58,7 +58,7 @@ export const SOUPS = [
         subcategoryId: SubcategoryId.SOUPS
     },
     {
-        id: 146,
+        id: 112,
         title: 'Уха сливочная с семгой',
         options: ['500 гр'],
         price: 590,

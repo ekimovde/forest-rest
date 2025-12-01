@@ -6,7 +6,7 @@ import set3 from '~/assets/images/sets/picture-3.jpg';
 // --- Сеты ---
 export const SETS = [
     {
-        id: 135,
+        id: 92,
         title: 'Америка',
         description: '(калифорния с крабом, канада с угрем, филадельфиялайт, соевый, васаби, имбирь)',
         options: ['790 гр'],
@@ -15,7 +15,7 @@ export const SETS = [
         subcategoryId: SubcategoryId.SETS
     },
     {
-        id: 136,
+        id: 93,
         title: 'На компанию',
         description: '(Филадельфия люкс, калифорния с крабом, спайси лосось, якудза)',
         options: ['1750 гр'],
@@ -24,7 +24,7 @@ export const SETS = [
         subcategoryId: SubcategoryId.SETS
     },
     {
-        id: 137,
+        id: 94,
         title: 'Трио',
         description: '(филадельфия лайт, запеченный цезарь, жареная калифорния, соевый, васаби, имбирь)',
         options: ['830 гр'],
