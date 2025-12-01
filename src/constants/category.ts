@@ -22,7 +22,7 @@ export const CategoryId = {
     MILK_COCKTAIL: 'milkCocktail', // Молочный коктейль
     WOK: 'wok', // WOK
     POKKE: 'pokke', // Покке
-    SOUPS_ASIAN: 'soupsAsian', // Супы Азия
+    SOUPS_ASIAN: 'asian', // Супы Азия
     CHINESE_CUISINE: 'chineseCuisine', // Китайская кухня
 };
 

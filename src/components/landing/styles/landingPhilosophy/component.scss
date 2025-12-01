@@ -1,0 +1,93 @@
+@use '../shared' as *;
+
+.landing-philosophy {
+    padding: 120px 0;
+    background: rgba(0, 0, 0, 0.3);
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: linear-gradient(90deg, transparent 0%, rgba(212, 175, 55, 0.3) 50%, transparent 100%);
+    }
+
+
+    &__header {
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    &__section-label {
+        @extend .landing-section-label;
+    }
+
+    &__section-title {
+        @extend .landing-section-title;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 32px;
+
+        @media (min-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        @media (min-width: 1024px) {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+        }
+    }
+
+    &__card {
+        padding: 40px 32px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 20px;
+        text-align: center;
+        transition: all 0.4s ease;
+        backdrop-filter: blur(10px);
+
+        &:hover {
+            transform: translateY(-8px);
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(212, 175, 55, 0.3);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    &__icon {
+        width: 64px;
+        height: 64px;
+        margin: 0 auto 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(212, 175, 55, 0.1);
+        border: 1px solid rgba(212, 175, 55, 0.2);
+        border-radius: 16px;
+        font-size: 32px;
+        color: #d4af37;
+    }
+
+    &__title {
+        font-family: var(--font-title);
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 12px;
+        color: var(--white);
+    }
+
+    &__text {
+        font-family: var(--font-text);
+        font-size: 14px;
+        line-height: 1.6;
+        color: rgba(255, 255, 255, 0.7);
+    }
+}

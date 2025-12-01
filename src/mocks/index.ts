@@ -70,7 +70,7 @@ export const CATEGORIES = {
     },
     [CategoryId.SOUPS_ASIAN]: {
         title: CategoryTitleById[CategoryId.SOUPS_ASIAN],
-        href: '/menu/soupsAsian',
+        href: '/menu/asian',
         subcategories: getSubcategories(SOUPS_ASIAN_CATEGORIES),
         products: SOUPS_ASIAN_CATEGORIES,
     },

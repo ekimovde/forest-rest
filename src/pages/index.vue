@@ -1,97 +1,164 @@
 <template>
-  <section class="page-index">
-    <div class="page-index__categories">
-      <ProductGroup
-        v-for="category in categories"
-        :key="category.href"
-        :href="category.href"
-        view="only"
-      >
-        <template #title>
-          {{ category.title }}
-        </template>
+    <section class="page-index">
+        <LandingHero />
 
-        <template #types>
-          <div
-            v-if="category.subcategories.length > 1"
-            class="page-index__types"
-          >
-            <UiButton
-              isCustomActive
-              tag="link"
-              :href="category.href"
-            >
-              Все блюда
-            </UiButton>
+        <LandingPhilosophy :items="philosophyItems" />
 
-            <UiButton
-              v-for="subcategory in category.subcategories"
-              :key="`${category.href}-${subcategory.id}`"
-              tag="link"
-              :href="`${category.href}?subcategoryId=${subcategory.id}`"
-            >
-              {{ subcategory.title }}
-            </UiButton>
-          </div>
-        </template>
+        <LandingFeatures :features="features" />
 
-        <template #default>
-          <UiSlider
-            :slides-per-view="3.2"
-            :space-between="20"
-            :breakpoints="{
-              320: { slidesPerView: 1.5, spaceBetween: 8 },
-              480: { slidesPerView: 2.2, spaceBetween: 8 },
-              768: { slidesPerView: 3.2, spaceBetween: 12 },
-              1024: { slidesPerView: 4.2, spaceBetween: 16 },
-            }"
-          >
-            <SwiperSlide
-              v-for="product in category.products"
-              :key="product.id"
-              :style="{ height: '100%' }"
-            >
-              <ProductCard
-                :product="product"
-                :quantity="getItemQuantity(product.id)"
-                @add="addItem(product, 1)"
-                @remove="removeItem(product.id)"
-                @change="updateQuantity(product.id, $event)"
-              />
-            </SwiperSlide>
-          </UiSlider>
-        </template>
-      </ProductGroup>
-    </div>
-  </section>
+        <LandingMenu :categories="featuredCategories" />
+
+        <LandingGallery :images="galleryImages" />
+
+        <LandingCta />
+    </section>
 </template>
 
 <script setup lang="ts">
-import {SwiperSlide} from 'swiper/vue';
-import {CATEGORIES} from '~/mocks';
-import {useCartStore} from '~/stores';
 import {useSeo} from '~/composables/useSeo';
-import {useRestaurantSchema} from '~/composables/useRestaurantSchema';
+import {CATEGORIES} from '~/mocks';
+import {CategoryId} from '~/constants';
+import LandingHero from '~/components/landing/LandingHero.vue';
+import LandingPhilosophy from '~/components/landing/LandingPhilosophy.vue';
+import LandingFeatures from '~/components/landing/LandingFeatures.vue';
+import LandingMenu from '~/components/landing/LandingMenu.vue';
+import LandingGallery from '~/components/landing/LandingGallery.vue';
+import LandingCta from '~/components/landing/LandingCta.vue';
 
-import ProductGroup from '~/components/product/ProductGroup.vue';
-import ProductCard from '~/components/product/ProductCard.vue';
-import UiSlider from '~/components/ui/UiSlider.vue';
-import UiButton from '~/components/ui/UiButton.vue';
+// Импортируем изображения для категорий
+import rollImage from '~/assets/images/rolls/picture-1.jpg';
+import pizzaImage from '~/assets/images/pizza/picture-1.jpg';
+import grillImage from '~/assets/images/grill/picture-1.jpg';
+import saladImage from '~/assets/images/salads/picture-1.jpg';
+import dessertImage from '~/assets/images/desserts/picture-1.jpg';
+import wokImage from '~/assets/images/wok/picture-1.jpg';
 
-const { addItem, getItemQuantity, removeItem, updateQuantity } = useCartStore();
+// Импортируем изображения для галереи
+import galleryImage1 from '~/assets/images/landing/image-1.jpg';
+import galleryImage2 from '~/assets/images/landing/image-2.jpg';
+import galleryImage3 from '~/assets/images/landing/image-3.jpg';
+import galleryImage4 from '~/assets/images/landing/image-4.jpg';
+import galleryImage5 from '~/assets/images/landing/image-5.jpg';
+import galleryImage6 from '~/assets/images/landing/image-6.jpg';
 
-const categories = computed(() => Object.values(CATEGORIES));
+const philosophyItems = [
+    {
+        icon: 'bx bx-leaf',
+        title: 'Свежие продукты',
+        description: 'Только отборные ингредиенты от проверенных поставщиков'
+    },
+    {
+        icon: 'bx bx-dish',
+        title: 'Мастерство поваров',
+        description: 'Профессионалы с многолетним опытом создают кулинарные шедевры'
+    },
+    {
+        icon: 'bx bx-heart',
+        title: 'С любовью',
+        description: 'Каждое блюдо готовится с заботой и вниманием к деталям'
+    },
+    {
+        icon: 'bx bx-time-five',
+        title: 'Быстрая доставка',
+        description: 'Свежесть и качество сохраняются при доставке'
+    }
+];
+
+const features = [
+    {
+        title: 'Разнообразное меню',
+        description: 'Более 200 блюд от классики до авторских рецептов. Европейская, азиатская кухня и многое другое.'
+    },
+    {
+        title: 'Премиальное качество',
+        description: 'Строгий контроль качества на каждом этапе приготовления. Только лучшие ингредиенты.'
+    },
+    {
+        title: 'Удобный сервис',
+        description: 'Простой онлайн-заказ, различные способы оплаты и бесплатная доставка от 1000₽.'
+    }
+];
+
+const featuredCategories = [
+    {
+        title: CATEGORIES[CategoryId.ROLLS].title,
+        href: CATEGORIES[CategoryId.ROLLS].href,
+        count: CATEGORIES[CategoryId.ROLLS].products.length,
+        image: rollImage
+    },
+    {
+        title: CATEGORIES[CategoryId.PIZZA].title,
+        href: CATEGORIES[CategoryId.PIZZA].href,
+        count: CATEGORIES[CategoryId.PIZZA].products.length,
+        image: pizzaImage
+    },
+    {
+        title: CATEGORIES[CategoryId.GRILL].title,
+        href: CATEGORIES[CategoryId.GRILL].href,
+        count: CATEGORIES[CategoryId.GRILL].products.length,
+        image: grillImage
+    },
+    {
+        title: CATEGORIES[CategoryId.SALADS].title,
+        href: CATEGORIES[CategoryId.SALADS].href,
+        count: CATEGORIES[CategoryId.SALADS].products.length,
+        image: saladImage
+    },
+    {
+        title: CATEGORIES[CategoryId.DESSERTS].title,
+        href: CATEGORIES[CategoryId.DESSERTS].href,
+        count: CATEGORIES[CategoryId.DESSERTS].products.length,
+        image: dessertImage
+    },
+    {
+        title: CATEGORIES[CategoryId.WOK].title,
+        href: CATEGORIES[CategoryId.WOK].href,
+        count: CATEGORIES[CategoryId.WOK].products.length,
+        image: wokImage
+    }
+];
+
+// Изображения для галереи
+const galleryImages = [
+    {
+        src: galleryImage1,
+        alt: 'Интерьер ресторана',
+    },
+    {
+        src: galleryImage2,
+        alt: 'Блюдо из меню',
+    },
+    {
+        src: galleryImage3,
+        alt: 'Атмосфера ресторана',
+    },
+    {
+        src: galleryImage4,
+        alt: 'Шеф-повар за работой',
+    },
+    {
+        src: galleryImage5,
+        alt: 'Подача блюд',
+    },
+    {
+        src: galleryImage6,
+        alt: 'Уютная обстановка',
+    },
+];
+
+
+// Устанавливаем layout
+definePageMeta({
+    layout: 'landing'
+});
 
 // Устанавливаем мета-данные для SEO
 useSeo({
-  title: 'Главная',
-  description: 'Ресторан Forest Rest - доставка изысканных блюд в Москве. Пицца, роллы, салаты, горячие блюда и десерты. Заказывайте онлайн с доставкой на дом!',
-  keywords: ['ресторан', 'доставка еды', 'Forest Rest', 'пицца', 'роллы', 'горячие блюда', 'десерты', 'заказать еду'],
-  type: 'website'
+    title: 'Лендинг',
+    description: 'Forest Rest - премиальный ресторан изысканной кухни. Где природа встречается с гастрономией. Закажите доставку или посетите нас.',
+    keywords: ['ресторан', 'премиальная кухня', 'Forest Rest', 'изысканная кухня', 'доставка еды', 'гастрономия'],
+    type: 'website'
 });
-
-// Добавляем структурированные данные для ресторана
-useRestaurantSchema();
 </script>
 
 <style lang="scss">
